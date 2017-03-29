@@ -1,0 +1,136 @@
+% This is based on the LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.4 for LaTeX2e as of 16. April 2010
+%
+% See http://www.springer.com/computer/lncs/lncs+authors?SGWID=0-40209-0-0-0
+% for the full guidelines.
+%
+\documentclass{article}
+\usepackage[english]{babel}
+
+\usepackage[justification=justified,singlelinecheck=false]{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{justification=centering}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%extended enumerate, such as \begin{compactenum}
+\usepackage{paralist}
+
+%  Error message: "White space in argument"
+\usepackage{cite}
+
+\usepackage[T1]{fontenc}
+
+%for demonstration purposes only
+\usepackage[math]{blindtext}
+
+%Algorithm package
+\usepackage{algorithm, algorithmicx}
+\usepackage{algpseudocode}
+
+%tweak \url{...}
+\usepackage{url}
+\urlstyle{same}
+%improve wrapping of URLs - hint by http://tex.stackexchange.com/a/10419/9075
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+%nicer // - solution by http://tex.stackexchange.com/a/98470/9075
+%DO NOT ACTIVATE -> prevents line breaks
+%\makeatletter
+%\def\Url@twoslashes{\mathchar`\/\@ifnextchar/{\kern-.2em}{}}
+%\g@addto@macro\UrlSpecials{\do\/{\Url@twoslashes}}
+%\makeatother
+
+%required for pdfcomment later
+\usepackage{xcolor}
+
+%enable hyperref without colors and without bookmarks
+\usepackage[
+%pdfauthor={},
+%pdfsubject={},
+%pdftitle={},
+%pdfkeywords={},
+bookmarks=false,
+breaklinks=true,
+colorlinks=true,
+linkcolor=black,
+citecolor=black,
+urlcolor=black,
+%pdfstartpage=19,
+pdfpagelayout=SinglePage,
+pdfstartview=Fit
+]{hyperref}
+%enables correct jumping to figures when referencing
+\usepackage[all]{hypcap}
+
+%enable nice comments
+\usepackage{pdfcomment}
+\newcommand{\commentontext}[2]{\colorbox{yellow!60}{#1}\pdfcomment[color={0.234 0.867 0.211},hoffset=-6pt,voffset=10pt,opacity=0.5]{#2}}
+\newcommand{\commentatside}[1]{\pdfcomment[color={0.045 0.278 0.643},icon=Note]{#1}}
+
+\usepackage[capitalise,nameinlink]{cleveref}
+%Nice formats for \cref
+\crefname{section}{Sect.}{Sect.}
+\Crefname{section}{Section}{Sections}
+
+\usepackage{xspace}
+%\newcommand{\eg}{e.\,g.\xspace}
+%\newcommand{\ie}{i.\,e.\xspace}
+\newcommand{\eg}{e.\,g.,\ }
+\newcommand{\ie}{i.\,e.,\ }
+
+% Define color to use for memory layout illustration
+\definecolor{colorA1}{rgb}{1.,0.,0.}
+\definecolor{colorA2}{rgb}{0.,0.7,0.}
+\definecolor{colorA3}{rgb}{0.45,0.45,0.45}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+\def\leftbracket{[}
+\def\rightbracket{]}
+
+\tikzset{my arrow/.style={
+    blue!60!black,
+    -latex
+  }
+}
+\renewcommand{\figurename}{Figure}
+\begin{document}
+
+\begin{figure}[h!]
+  \begin{subfigure}{0.5 \textwidth}
+    \includegraphics[width=\textwidth]{dge2gb_KNL}
+    \caption{\label{fig:dgemm5000}
+     \textbf{DDR4 memory} with all data  dependencies
+     at \texttt{square tile} granularity.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.5 \textwidth}
+    \includegraphics[width=\textwidth]{dge2gb_KNL_HACK}
+    \caption{\label{fig:dgemm10000}
+      \textbf{DDR4 memory} with some
+      data dependencies at \texttt{lower/upper triangular tile} granularity.}
+  \end{subfigure}
+  \hfill
+    \begin{subfigure}{0.5 \textwidth}
+    \includegraphics[width=\textwidth]{dge2gb_KNL_HBW}
+    \caption{\label{fig:dgemm10000}
+      \textbf{HBW memory} with all data  dependencies 
+      at \texttt{square tile} granularity.}
+    \end{subfigure}
+    \begin{subfigure}{0.5 \textwidth}
+      \includegraphics[width=\textwidth]{dge2gb_KNL_HACK_HBW}
+      \caption{\label{fig:dgemm10000}
+        \textbf{HBW memory} with some 
+        data dependencies at \texttt{lower/upper triangular tile} granularity.}
+  \end{subfigure}
+    \caption{Performance comparison of different implementations of
+      DGE2GB using $68$ threads on the Intel KNL with different
+      square matrices ranging in size from $1,000 \times 1,000$ to $20,000 \times 20,000$.}
+    \label{fig:dgemm_KNL}
+\end{figure}
+
+\end{document}

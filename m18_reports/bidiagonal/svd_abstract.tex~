@@ -1,0 +1,22 @@
+\begin{abstract}
+We present different algorithms for computing two-sided bidiagonal
+factorization, which is required in many scientific applications
+since a bidiagonal form is decisive in computing a singular
+value decomposition (SVD). To this end, we considered a two-stage
+bidiagonalization approach. During the first stage, the full matrix is
+reduced to band bidiagonal form. This stage consists of
+compute-intensive operations and represents the dominant part in terms
+of total flops to solution. On the other hand, the second stage is
+memory-bound and consists in reducing the band bidiagonal matrix to
+bidiagonal form.  In the context of tile algorithms and task-based
+programming model, we focus on the first stage, and propose two
+different implementations. We present the advantages and drawbacks of
+each of the two considered algorithms and discuss how a careful data
+dependency analysis could help releasing unnecessary synchronizations
+and improve the performance.  Through experimental results on both a
+20-core Intel Xeon multicore node and a 68-core Intel Xeon Phi KNL, we
+demonstrate that our resulting task-based OpenMP prototype is
+competitive with state-of-the-art implementations.
+Finally, we discuss potential solutions
+for the design of the second stage which currently on progress.
+\end{abstract}

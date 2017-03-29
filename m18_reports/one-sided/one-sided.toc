@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {2}Tile layout one-sided factorization}{5}
+\contentsline {subsection}{\numberline {2.1}Tile QR factorization}{6}
+\contentsline {subsection}{\numberline {2.2}Tile LU factorization}{6}
+\contentsline {subsection}{\numberline {2.3}Tile Cholesky factorization}{6}
+\contentsline {subsection}{\numberline {2.4}Tile LDLT factorization}{6}
+\contentsline {section}{\numberline {3}Runtime systems}{7}
+\contentsline {section}{\numberline {4}Experimental setup}{8}
+\contentsline {section}{\numberline {5}Cholesky factorization}{9}
+\contentsline {section}{\numberline {6}$LU$ factorization}{10}
+\contentsline {section}{\numberline {7}$QR$ factorization}{11}
+\contentsline {section}{\numberline {8}Symmetric-indefinite factorization}{11}
+\contentsline {section}{\numberline {9}Conclusions}{12}

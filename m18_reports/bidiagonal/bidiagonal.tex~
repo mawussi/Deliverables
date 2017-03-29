@@ -1,0 +1,386 @@
+\documentclass[a4paper,12pt]{article}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DELIVERABLE META DATA
+%
+% Modify so that the meta data is correct for this deliverable.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The WP to which the deliverable belongs (the x in Dx.y).
+
+\def\nlafetMajor{2}
+
+% The deliverable number within the WP (the y in Dx.y).
+
+\def\nlafetMinor{8}
+
+% A long title for the deliverable (for the front page).
+%
+% Look up the correct title in the grant agreement.
+
+\def\nlafetTitle{Prototypes for two-sided bidiagonal factorization}
+
+% A short title for the deliverable (for the header).
+%
+% Shorten the title if necessary to fit the header.
+
+\def\nlafetShortTitle{Bi-diagonal factorization}
+
+% The month when this version was published.
+
+\def\nlafetMonth{April}
+
+% The year when this version was published.
+
+\def\nlafetYear{2017}
+
+% The scheduled delivery of this deliverable.
+%
+% This is the last day of the delivery month found in the grant
+% agreement. November 2015 is referred to as M1. For example, if the
+% delivery month is M6, then the date below should read 2016-04-30
+% since April 2016 is M6.
+
+\def\nlafetScheduledDelivery{2017-04-30}
+
+% The actual delivery of this deliverable.
+%
+% This is the date the deliverable was actually delivered. Do not
+% change this field until the actual delivery.
+
+\def\nlafetActualDelivery{(not yet delivered)}
+
+% The current major and minor version number of this document.
+%
+% The bigger the number, the newer the version. How you assign major
+% and minor version numbers is up to you. The sole purpose of the
+% version number is to make it easier to reference different versions.
+
+\def\nlafetVersionMajor{0}
+\def\nlafetVersionMinor{1}
+
+% The short name (UMU/UNIMAN/STFC/INRIA) of the partner responsible
+% for this deliverable.
+
+\def\nlafetResponsiblePartner{UNIMAN}
+
+% The dissemination level.
+%
+% Either public or confidential. Look up the correct level in the the
+% grant agreement.
+
+ \def\nlafetDisseminationLevel{PU --- Public}
+%\def\nlafetDisseminationLevel{CO --- Confidential}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% PACKAGES REQUIRED BY TEMPLATE
+%
+% Do not touch!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Input and font encoding.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Colored table.
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+% Graphics.
+\usepackage{graphicx}
+
+% Header/footer.
+\usepackage{fancyhdr}
+
+% Margins.
+\usepackage[margin=25mm]{geometry}
+
+% Total page count.
+\usepackage{lastpage}
+
+% URL typesetting.
+\usepackage{url}
+
+% Table with word wrap. 
+\usepackage{tabularx}
+
+
+% My packages
+\usepackage{wrapfig}
+\usepackage{hyperref}
+
+\usepackage[ruled]{algorithm2e}
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+
+\usepackage{graphicx}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{amsthm}
+
+\usepackage{algorithmic}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{url}
+%\usepackage[obeyspaces]{url}
+%\urlstyle{sf}
+
+\usepackage{caption}
+
+%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{xcolor}
+
+
+\usepackage{authblk}
+
+\usepackage{setspace}
+%\usepackage{subcaption}
+
+\usepackage[pagewise]{lineno}
+
+\usepackage{array}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+
+%\linespread{1.6}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{4}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{darkgreen}{rgb}{0.0, 0.2, 0.13}
+
+
+
+%\usepackage[margin=1in]{geometry}
+\usepackage{geometry}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER / FOOTER
+%
+% Do not touch!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{\headrulewidth}
+\lhead{\bf NLAFET}
+\rhead{\bf D\nlafetMajor.\nlafetMinor: \nlafetShortTitle}
+\lfoot{\url{http://www.nlafet.eu/}}
+\cfoot{}
+\rfoot{\thepage/\pageref{LastPage}}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TITLE PAGE
+%
+% Do not touch!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  {
+    \includegraphics[width=0.8\textwidth]{fig/NLAFET-logo2.png}
+  }
+  \par
+  \vspace{5mm}
+  {
+    H2020--FETHPC--2014: GA 671633
+  }
+  \par
+  \vspace{4cm}
+  {
+    \Huge
+    D\nlafetMajor.\nlafetMinor\\[1em]
+    \nlafetTitle
+  }
+  \par
+  \vfill
+  {
+    \Large
+    \nlafetMonth{}
+    \nlafetYear
+  }
+\end{titlepage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT INFORMATION
+%
+% Touch only the following sections:
+% 1. REVISION HISTORY: Add rows as appropriate (remove the current
+%    line first).
+% 2. AUTHOR(S): List the authors and their organization.
+% 3. INTERNAL REVIEWERS: List the internal reviewers and their organizations.
+% 4. CONTRIBUTORS: List any additional contributors and their
+%    organizations, or remove the section if there are no additional
+%    contributors.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+
+
+
+\noindent
+\textsc{Document information}\\[1em]
+\begin{tabular}{@{}ll}
+  Scheduled delivery & \nlafetScheduledDelivery \\
+  Actual delivery & \nlafetActualDelivery \\
+  Version & \nlafetVersionMajor.\nlafetVersionMinor \\
+  Responsible partner & \nlafetResponsiblePartner \\
+\end{tabular}
+
+\vspace{2em}
+
+
+\noindent
+\textsc{Dissemination level}\\[1em]
+\nlafetDisseminationLevel
+
+\vspace{2em}
+
+
+% TODO: List the revision history.
+\noindent
+\textsc{Revision history}\\[1em]
+\begin{tabularx}{\linewidth}{@{}|l|l|l|l|X|}
+  \hline
+  \rowcolor{orange}
+  \bf Date & \bf Editor & \bf Status & \bf Ver. & \bf Changes \\
+  \hline
+  2017-01-18 & Mawussi Zounon & Draft & 0.1 & Initial version of
+                                             document produced. \\
+  \hline
+\end{tabularx}
+
+
+\vspace{2em}
+
+% TODO: List the internal reviewers.
+\noindent
+\textsc{Internal reviewers}\\[1em]
+First Last (UMU/UNIMAN/STFC/INRIA)\\
+First Last (UMU/UNIMAN/STFC/INRIA)
+
+\vspace{2em}
+
+
+
+% TODO: List the authors.
+\noindent
+\textsc{Author(s)}\\[1em]
+\begin{itemize}
+\item Negin Bagherpour, The University of Manchester, Manchester, UK.
+\item Jack Dongarra. Innovative Computing Laboratory, University of Tennessee, Knoxville, 
+TN, USA; Oak Ridge National Laboratory, TN, USA; The University of Manchester, Manchester, UK.
+\item Sven Hammarling The University of Manchester, Manchester, UK.
+\item Nicholas J. Higham, The University of Manchester, Manchester, UK.
+\item Samuel D. Relton, The University of Manchester, Manchester, UK.
+\item Mawussi Zounon, The University of Manchester, Manchester, UK.
+\end{itemize}
+\vspace{2em}
+
+
+
+% TODO: List the internal reviewers.
+\noindent
+\textsc{Internal reviewers}\\[1em]
+Reviwer 1 and Reviwer 2, Affiliation.\\
+
+\vspace{2em}
+
+% TODO: List additional contributors, if any.
+\noindent
+\textsc{Contributors}\\[1em]
+
+\begin{itemize}
+\item The Innovative Computing Laboratory (ICL), the University of Tennessee.
+\item Intel Corporation.
+\end{itemize}
+
+\vspace{2em}
+
+\noindent
+\textsc{Copyright}\\[1em]
+This work is \copyright by the NLAFET Consortium, 2015--2018.
+Its duplication is allowed only for personal, educational, or research uses. 
+
+\vspace{2em}
+
+
+\noindent
+\textsc{Acknowledgements}\\[1em] This project has received funding
+from the \emph{European Union's Horizon 2020 research and innovation
+  programme} under the grant agreement number 671633.  This material
+is based upon work supported in part by the National Science
+Foundation under Grants No. CSR 1514286 and ACI-1339822, NVIDIA, the
+Department of Energy.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLES OF CONTENTS
+%
+% Remove list of figures/tables if not applicable.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\renewcommand{\contentsname}{Table of Contents}
+\tableofcontents
+
+% TODO: Remove if there are no figures.
+\listoffigures
+
+% TODO: Remove if there are no tables.
+%\listoftables
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START OF THE ACTUAL DELIVERABLE
+%
+% The content below acts merely as a placeholder. Use whatever
+% disposition is most appropriate.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{svd_abstract}
+\input{svd_intro}
+\input{svd_tile}
+\input{svd_band}
+\input{svd_bidiag}
+\input{svd_conclusion}
+
+\bibliographystyle{unsrt}
+\bibliography{svd_biblio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END OF THE ACTUAL DELIVERABLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+\grid

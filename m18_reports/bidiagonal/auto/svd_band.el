@@ -1,0 +1,37 @@
+(TeX-add-style-hook
+ "svd_band"
+ (lambda ()
+   (LaTeX-add-labels
+    "sec:band"
+    "fig:qr_1"
+    "fig:qr_update_1"
+    "fig:lq_1"
+    "fig:lq_update_1"
+    "fig:qr_2"
+    "fig:qr_update_2"
+    "fig:lq_2"
+    "fig:lq_update_2"
+    "fig:panel"
+    "fig:dag_panel"
+    "fig:tile_qr_1"
+    "fig:tile_qr_update_1"
+    "fig:tile_qr_2"
+    "fig:tile_qr_update_2"
+    "fig:tile_qr_3"
+    "fig:tile_qr_update_3"
+    "fig:tile_lq_2"
+    "fig:tile_lq_update_2"
+    "fig:tile"
+    "fig:dag_tile"
+    "fig:dge2gb_DDR4"
+    "fig:dge2gb_HBW"
+    "fig:dge2gb_KNL"
+    "fig:dge2gb_HASWELL_20"
+    "fig:dge2gb_HASWELL_10"
+    "fig:dge2gb_HASWELL"
+    "fig:dag_hack"
+    "fig:dge2gb_DDR4_HACK"
+    "fig:dge2gb_HBW_HACK"
+    "fig:dge2gb_KNL_HACK"))
+ :latex)
+

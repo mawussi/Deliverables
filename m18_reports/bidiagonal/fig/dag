@@ -1,0 +1,57 @@
+// Panel Oriented DAG
+digraph {
+	node [color="#e50000" style=filled]
+	edge [splines=curved]
+	qr_1 [label="GEQRT(1,1)"]
+	node [color="#ff474c" style=filled]
+	tsqrt_2 [label="TSQRT(2,1)"]
+	tsqrt_3 [label="TSQRT(3,1)"]
+	tsqrt_4 [label="TSQRT(4,1)"]
+	tsqrt_5 [label="TSQRT(5,1)"]
+	node [color="#15b01a" style=filled]
+	zunmqr_2 [label="ZUNMQR(1,2)"]
+	zunmqr_3 [label="ZUNMQR(1,3)"]
+	zunmqr_4 [label="ZUNMQR(1,4)"]
+	zunmqr_5 [label="ZUNMQR(1,5)"]
+	node [color="#7bb274" style=filled]
+	tsmqr_22 [label="TSMQR(2,2)"]
+	tsmqr_23 [label="TSMQR(2,3)"]
+	tsmqr_24 [label="TSMQR(2,4)"]
+	tsmqr_25 [label="TSMQR(2,5)"]
+	tsmqr_32 [label="TSMQR(3,2)"]
+	tsmqr_33 [label="TSMQR(3,3)"]
+	tsmqr_34 [label="TSMQR(3,4)"]
+	tsmqr_35 [label="TSMQR(3,5)"]
+	tsmqr_42 [label="TSMQR(4,2)"]
+	tsmqr_43 [label="TSMQR(4,3)"]
+	tsmqr_44 [label="TSMQR(4,4)"]
+	tsmqr_45 [label="TSMQR(4,5)"]
+	tsmqr_52 [label="TSMQR(5,2)"]
+	tsmqr_53 [label="TSMQR(5,3)"]
+	tsmqr_54 [label="TSMQR(5,4)"]
+	tsmqr_55 [label="TSMQR(5,5)"]
+		qr_1 -> tsqrt_2
+		tsqrt_2 -> tsqrt_3
+		tsqrt_3 -> tsqrt_4
+		tsqrt_4 -> tsqrt_5
+		tsqrt_5 -> zunmqr_2
+		tsqrt_5 -> zunmqr_3
+		tsqrt_5 -> zunmqr_4
+		tsqrt_5 -> zunmqr_5
+		zunmqr_2 -> tsmqr_22
+		zunmqr_3 -> tsmqr_23
+		zunmqr_4 -> tsmqr_24
+		zunmqr_5 -> tsmqr_25
+		tsmqr_22 -> tsmqr_32
+		tsmqr_23 -> tsmqr_33
+		tsmqr_24 -> tsmqr_34
+		tsmqr_25 -> tsmqr_35
+		tsmqr_32 -> tsmqr_42
+		tsmqr_33 -> tsmqr_43
+		tsmqr_34 -> tsmqr_44
+		tsmqr_35 -> tsmqr_45
+		tsmqr_42 -> tsmqr_52
+		tsmqr_43 -> tsmqr_53
+		tsmqr_44 -> tsmqr_54
+		tsmqr_45 -> tsmqr_55
+}

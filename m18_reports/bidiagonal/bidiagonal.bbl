@@ -1,0 +1,89 @@
+\begin{thebibliography}{10}
+
+\bibitem{golub1965calculating}
+Gene Golub and William Kahan.
+\newblock Calculating the singular values and pseudo-inverse of a matrix.
+\newblock {\em Journal of the Society for Industrial and Applied Mathematics,
+  Series B: Numerical Analysis}, 2(2):205--224, 1965.
+
+\bibitem{dongarra1989block}
+Jack~J Dongarra, Danny~C Sorensen, and Sven~J Hammarling.
+\newblock Block reduction of matrices to condensed forms for eigenvalue
+  computations.
+\newblock {\em Journal of Computational and Applied Mathematics},
+  27(1-2):215--227, 1989.
+
+\bibitem{bischof1987wy}
+Christian Bischof and Charles Van~Loan.
+\newblock The wy representation for products of householder matrices.
+\newblock {\em SIAM Journal on Scientific and Statistical Computing},
+  8(1):s2--s13, 1987.
+
+\bibitem{grosser1999efficient}
+Benedikt Gro{\ss}er and Bruno Lang.
+\newblock Efficient parallel reduction to bidiagonal form.
+\newblock {\em Parallel Computing}, 25(8):969--986, 1999.
+
+\bibitem{haidar2013improved}
+Azzam Haidar, Jakub Kurzak, and Piotr Luszczek.
+\newblock An improved parallel singular value algorithm and its implementation
+  for multicore hardware.
+\newblock In {\em Proceedings of the International Conference on High
+  Performance Computing, Networking, Storage and Analysis}, page~90. ACM, 2013.
+
+\bibitem{DBLP:journals/corr/abs-0709-1272}
+Alfredo Buttari, Julien Langou, Jakub Kurzak, and Jack Dongarra.
+\newblock A class of parallel tiled linear algebra algorithms for multicore
+  architectures.
+\newblock {\em CoRR}, abs/0709.1272, 2007.
+
+\bibitem{FLAWN3}
+John Gunnels and Robert {v}an~{d}e Geijn.
+\newblock Developing linear algebra algorithms: A collection of class projects.
+  {FLAME} {W}orking {N}ote \#3.
+\newblock Technical Report TR-2001-19, The University of Texas at Austin,
+  Department of Computer Sciences, May 2001.
+
+\bibitem{haidar2012analysis}
+Azzam Haidar, Hatem Ltaief, Asim YarKhan, and Jack Dongarra.
+\newblock Analysis of dynamically scheduled tile algorithms for dense linear
+  algebra on multicore architectures.
+\newblock {\em Concurrency and Computation: Practice and Experience},
+  24(3):305--321, 2012.
+
+\bibitem{ltaief2010parallel}
+Hatem Ltaief, Jakub Kurzak, and Jack Dongarra.
+\newblock Parallel two-sided matrix reduction to band bidiagonal form on
+  multicore architectures.
+\newblock {\em IEEE Transactions on Parallel and Distributed Systems},
+  21(4):417--423, 2010.
+
+\bibitem{ltaief2013high}
+Hatem Ltaief, Piotr Luszczek, and Jack Dongarra.
+\newblock High-performance bidiagonal reduction using tile algorithms on
+  homogeneous multicore architectures.
+\newblock {\em ACM Transactions on Mathematical Software (TOMS)}, 39(3):16,
+  2013.
+
+\bibitem{haidar2011parallel}
+Azzam Haidar, Hatem Ltaief, and Jack Dongarra.
+\newblock Parallel reduction to condensed forms for symmetric eigenvalue
+  problems using aggregated fine-grained and memory-aware kernels.
+\newblock In {\em High Performance Computing, Networking, Storage and Analysis
+  (SC), 2011 International Conference for}, pages 1--11. IEEE, 2011.
+
+\bibitem{AugThiNamWac11CCPE}
+C{\'e}dric Augonnet, Samuel Thibault, Raymond Namyst, and Pierre-Andr{\'e}
+  Wacrenier.
+\newblock {StarPU: A Unified Platform for Task Scheduling on Heterogeneous
+  Multicore Architectures}.
+\newblock {\em Concurrency and Computation: Practice and Experience, Special
+  Issue: Euro-Par 2009}, 23:187--198, February 2011.
+
+\bibitem{bosilca2013parsec}
+George Bosilca, Aurelien Bouteiller, Anthony Danalis, Mathieu Faverge, Thomas
+  H{\'e}rault, and Jack~J Dongarra.
+\newblock Parsec: Exploiting heterogeneity to enhance scalability.
+\newblock {\em Computing in Science \& Engineering}, 15(6):36--45, 2013.
+
+\end{thebibliography}
