@@ -1,12 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.19)  29 MAR 2017 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  29 MAR 2017 23:11
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**one-sided.tex
-(./one-sided.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+**\input one-sided.tex
+(./one-sided.tex (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -830,15 +828,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [8]
 Package epstopdf Info: Source file: <fig/kebnekaise_zpotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:42
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 204546 bytes
 (epstopdf)             Output file: <fig/kebnekaise_zpotrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:18
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11158 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_zpotrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_zpotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 619.
+(epstopdf)             \includegraphics on input line 615.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pdf, id=65, 254.9525pt x 1
@@ -847,18 +845,18 @@ File: fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pd
-f used on input line 619.
+f used on input line 615.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_dpotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:47
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 206479 bytes
 (epstopdf)             Output file: <fig/kebnekaise_dpotrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:19
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11588 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_dpotrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_dpotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 620.
+(epstopdf)             \includegraphics on input line 616.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_dpotrf_weak_scaling-eps-converted-to.pdf, id=66, 250.9375pt x 1
@@ -867,18 +865,18 @@ File: fig/kebnekaise_dpotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_dpotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_dpotrf_weak_scaling-eps-converted-to.pd
-f used on input line 620.
+f used on input line 616.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_cpotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:44
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 204404 bytes
 (epstopdf)             Output file: <fig/kebnekaise_cpotrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:19
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11253 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_cpotrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_cpotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 621.
+(epstopdf)             \includegraphics on input line 617.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_cpotrf_weak_scaling-eps-converted-to.pdf, id=67, 254.9525pt x 1
@@ -887,18 +885,18 @@ File: fig/kebnekaise_cpotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_cpotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_cpotrf_weak_scaling-eps-converted-to.pd
-f used on input line 621.
+f used on input line 617.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_spotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:50
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 205829 bytes
 (epstopdf)             Output file: <fig/kebnekaise_spotrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:20
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11254 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_spotrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_spotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 622.
+(epstopdf)             \includegraphics on input line 618.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_spotrf_weak_scaling-eps-converted-to.pdf, id=68, 254.9525pt x 1
@@ -907,18 +905,18 @@ File: fig/kebnekaise_spotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_spotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_spotrf_weak_scaling-eps-converted-to.pd
-f used on input line 622.
+f used on input line 618.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_zpotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:53
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 206036 bytes
 (epstopdf)             Output file: <fig/knl_ram_zpotrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:20
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11570 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_zpotrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_zpotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 645.
+(epstopdf)             \includegraphics on input line 642.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf, id=69, 250.9375pt x 164.
@@ -927,18 +925,18 @@ File: fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 645.
+sed on input line 642.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_dpotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:58
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 206338 bytes
 (epstopdf)             Output file: <fig/knl_ram_dpotrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:21
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11539 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_dpotrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_dpotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 646.
+(epstopdf)             \includegraphics on input line 643.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_dpotrf_weak_scaling-eps-converted-to.pdf, id=70, 250.9375pt x 164.
@@ -947,18 +945,18 @@ File: fig/knl_ram_dpotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_dpotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_dpotrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 646.
+sed on input line 643.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_cpotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:55
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 205397 bytes
 (epstopdf)             Output file: <fig/knl_ram_cpotrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:21
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11234 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_cpotrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_cpotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 647.
+(epstopdf)             \includegraphics on input line 644.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_cpotrf_weak_scaling-eps-converted-to.pdf, id=71, 254.9525pt x 164.
@@ -967,18 +965,18 @@ File: fig/knl_ram_cpotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_cpotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_cpotrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 647.
+sed on input line 644.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_spotrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:17:01
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 206037 bytes
 (epstopdf)             Output file: <fig/knl_ram_spotrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:22
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11575 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_spotrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_spotrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 648.
+(epstopdf)             \includegraphics on input line 645.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf, id=72, 250.9375pt x 164.
@@ -987,20 +985,20 @@ File: fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 648.
+sed on input line 645.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 674.
+(Font)              <17.28> on input line 670.
 Package epstopdf Info: Source file: <fig/kebnekaise_zgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:42
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 201474 bytes
 (epstopdf)             Output file: <fig/kebnekaise_zgetrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:22
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9804 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_zgetrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_zgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 679.
+(epstopdf)             \includegraphics on input line 675.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf, id=73, 254.9525pt x 1
@@ -1009,18 +1007,18 @@ File: fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pd
-f used on input line 679.
+f used on input line 675.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_dgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:48
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 203676 bytes
 (epstopdf)             Output file: <fig/kebnekaise_dgetrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:23
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 10360 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_dgetrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_dgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 680.
+(epstopdf)             \includegraphics on input line 676.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pdf, id=74, 250.9375pt x 1
@@ -1029,18 +1027,18 @@ File: fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pd
-f used on input line 680.
+f used on input line 676.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_cgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:45
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 201372 bytes
 (epstopdf)             Output file: <fig/kebnekaise_cgetrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:23
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9911 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_cgetrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_cgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 681.
+(epstopdf)             \includegraphics on input line 677.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_cgetrf_weak_scaling-eps-converted-to.pdf, id=75, 254.9525pt x 1
@@ -1049,18 +1047,18 @@ File: fig/kebnekaise_cgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_cgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_cgetrf_weak_scaling-eps-converted-to.pd
-f used on input line 681.
+f used on input line 677.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_sgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:51
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 202333 bytes
 (epstopdf)             Output file: <fig/kebnekaise_sgetrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:24
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9878 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_sgetrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_sgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 682.
+(epstopdf)             \includegraphics on input line 678.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_sgetrf_weak_scaling-eps-converted-to.pdf, id=76, 254.9525pt x 1
@@ -1069,20 +1067,20 @@ File: fig/kebnekaise_sgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_sgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_sgetrf_weak_scaling-eps-converted-to.pd
-f used on input line 682.
+f used on input line 678.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 
 [9]
 Package epstopdf Info: Source file: <fig/knl_ram_zgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:53
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 201038 bytes
 (epstopdf)             Output file: <fig/knl_ram_zgetrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:24
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9777 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_zgetrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_zgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 711.
+(epstopdf)             \includegraphics on input line 707.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf, id=80, 254.9525pt x 164.
@@ -1091,18 +1089,18 @@ File: fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 711.
+sed on input line 707.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_dgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:59
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 202061 bytes
 (epstopdf)             Output file: <fig/knl_ram_dgetrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:25
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 10080 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_dgetrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_dgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 712.
+(epstopdf)             \includegraphics on input line 708.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf, id=81, 250.9375pt x 164.
@@ -1111,18 +1109,18 @@ File: fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 712.
+sed on input line 708.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_cgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:56
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 200951 bytes
 (epstopdf)             Output file: <fig/knl_ram_cgetrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:25
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9885 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_cgetrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_cgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 713.
+(epstopdf)             \includegraphics on input line 709.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_cgetrf_weak_scaling-eps-converted-to.pdf, id=82, 254.9525pt x 164.
@@ -1131,18 +1129,18 @@ File: fig/knl_ram_cgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_cgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_cgetrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 713.
+sed on input line 709.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_sgetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:17:02
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 203679 bytes
 (epstopdf)             Output file: <fig/knl_ram_sgetrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:26
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 10364 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_sgetrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_sgetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 714.
+(epstopdf)             \includegraphics on input line 710.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_sgetrf_weak_scaling-eps-converted-to.pdf, id=83, 250.9375pt x 164.
@@ -1151,18 +1149,18 @@ File: fig/knl_ram_sgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_sgetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_sgetrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 714.
+sed on input line 710.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_zgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:43
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 207113 bytes
 (epstopdf)             Output file: <fig/kebnekaise_zgeqrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:26
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11752 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_zgeqrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_zgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 746.
+(epstopdf)             \includegraphics on input line 742.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pdf, id=84, 250.9375pt x 1
@@ -1171,18 +1169,18 @@ File: fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pd
-f used on input line 746.
+f used on input line 742.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_dgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:49
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 207112 bytes
 (epstopdf)             Output file: <fig/kebnekaise_dgeqrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:27
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11748 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_dgeqrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_dgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 747.
+(epstopdf)             \includegraphics on input line 743.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_dgeqrf_weak_scaling-eps-converted-to.pdf, id=85, 250.9375pt x 1
@@ -1191,18 +1189,18 @@ File: fig/kebnekaise_dgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_dgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_dgeqrf_weak_scaling-eps-converted-to.pd
-f used on input line 747.
+f used on input line 743.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_cgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:46
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 204401 bytes
 (epstopdf)             Output file: <fig/kebnekaise_cgeqrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:27
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11250 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_cgeqrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_cgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 748.
+(epstopdf)             \includegraphics on input line 744.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_cgeqrf_weak_scaling-eps-converted-to.pdf, id=86, 254.9525pt x 1
@@ -1211,18 +1209,18 @@ File: fig/kebnekaise_cgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_cgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_cgeqrf_weak_scaling-eps-converted-to.pd
-f used on input line 748.
+f used on input line 744.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_sgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:51
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 205844 bytes
 (epstopdf)             Output file: <fig/kebnekaise_sgeqrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:28
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11260 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_sgeqrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_sgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 749.
+(epstopdf)             \includegraphics on input line 745.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_sgeqrf_weak_scaling-eps-converted-to.pdf, id=87, 254.9525pt x 1
@@ -1231,7 +1229,7 @@ File: fig/kebnekaise_sgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_sgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_sgeqrf_weak_scaling-eps-converted-to.pd
-f used on input line 749.
+f used on input line 745.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 
 [10 <./fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pdf> <./fig/kebnekai
@@ -1239,15 +1237,15 @@ se_dpotrf_weak_scaling-eps-converted-to.pdf> <./fig/kebnekaise_cpotrf_weak_scal
 ing-eps-converted-to.pdf> <./fig/kebnekaise_spotrf_weak_scaling-eps-converted-t
 o.pdf>]
 Package epstopdf Info: Source file: <fig/knl_ram_zgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:54
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 206456 bytes
 (epstopdf)             Output file: <fig/knl_ram_zgeqrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:28
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11594 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_zgeqrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_zgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 779.
+(epstopdf)             \includegraphics on input line 776.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_zgeqrf_weak_scaling-eps-converted-to.pdf, id=129, 250.9375pt x 164
@@ -1256,18 +1254,18 @@ File: fig/knl_ram_zgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_zgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_zgeqrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 779.
+sed on input line 776.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_dgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:17:00
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 205502 bytes
 (epstopdf)             Output file: <fig/knl_ram_dgeqrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:29
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11460 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_dgeqrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_dgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 780.
+(epstopdf)             \includegraphics on input line 777.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_dgeqrf_weak_scaling-eps-converted-to.pdf, id=130, 250.9375pt x 164
@@ -1276,18 +1274,18 @@ File: fig/knl_ram_dgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_dgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_dgeqrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 780.
+sed on input line 777.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_cgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:57
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 206249 bytes
 (epstopdf)             Output file: <fig/knl_ram_cgeqrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:29
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11313 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_cgeqrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_cgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 781.
+(epstopdf)             \includegraphics on input line 778.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_cgeqrf_weak_scaling-eps-converted-to.pdf, id=131, 254.9525pt x 164
@@ -1296,18 +1294,18 @@ File: fig/knl_ram_cgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_cgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_cgeqrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 781.
+sed on input line 778.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_sgeqrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:17:02
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 204964 bytes
 (epstopdf)             Output file: <fig/knl_ram_sgeqrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:30
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 11183 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_sgeqrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_sgeqrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 782.
+(epstopdf)             \includegraphics on input line 779.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_sgeqrf_weak_scaling-eps-converted-to.pdf, id=132, 254.9525pt x 164
@@ -1316,18 +1314,18 @@ File: fig/knl_ram_sgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_sgeqrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_sgeqrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 782.
+sed on input line 779.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_zhetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:41
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 201040 bytes
 (epstopdf)             Output file: <fig/kebnekaise_zhetrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:30
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9786 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_zhetrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_zhetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 808.
+(epstopdf)             \includegraphics on input line 805.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_zhetrf_weak_scaling-eps-converted-to.pdf, id=133, 254.9525pt x 
@@ -1336,18 +1334,18 @@ File: fig/kebnekaise_zhetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_zhetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_zhetrf_weak_scaling-eps-converted-to.pd
-f used on input line 808.
+f used on input line 805.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_dsytrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:46
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 203310 bytes
 (epstopdf)             Output file: <fig/kebnekaise_dsytrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:31
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 10207 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_dsytrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_dsytrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 809.
+(epstopdf)             \includegraphics on input line 806.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_dsytrf_weak_scaling-eps-converted-to.pdf, id=134, 250.9375pt x 
@@ -1356,18 +1354,18 @@ File: fig/kebnekaise_dsytrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_dsytrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_dsytrf_weak_scaling-eps-converted-to.pd
-f used on input line 809.
+f used on input line 806.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_chetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:44
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 202757 bytes
 (epstopdf)             Output file: <fig/kebnekaise_chetrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:31
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9915 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_chetrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_chetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 810.
+(epstopdf)             \includegraphics on input line 807.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_chetrf_weak_scaling-eps-converted-to.pdf, id=135, 254.9525pt x 
@@ -1376,18 +1374,18 @@ File: fig/kebnekaise_chetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_chetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_chetrf_weak_scaling-eps-converted-to.pd
-f used on input line 810.
+f used on input line 807.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/kebnekaise_ssytrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:49
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 201040 bytes
 (epstopdf)             Output file: <fig/kebnekaise_ssytrf_weak_scaling-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:31
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9770 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/kebnekaise_ssytrf_weak
 _scaling-eps-converted-to.pdf fig/kebnekaise_ssytrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 811.
+(epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/kebnekaise_ssytrf_weak_scaling-eps-converted-to.pdf, id=136, 254.9525pt x 
@@ -1396,22 +1394,22 @@ File: fig/kebnekaise_ssytrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use fig/kebnekaise_ssytrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/kebnekaise_ssytrf_weak_scaling-eps-converted-to.pd
-f used on input line 811.
+f used on input line 808.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 
 [11 <./fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf> <./fig/knl_ram_dpo
 trf_weak_scaling-eps-converted-to.pdf> <./fig/knl_ram_cpotrf_weak_scaling-eps-c
 onverted-to.pdf> <./fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/knl_ram_zhetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:52
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 200910 bytes
 (epstopdf)             Output file: <fig/knl_ram_zhetrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:32
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9906 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_zhetrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_zhetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 836.
+(epstopdf)             \includegraphics on input line 833.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_zhetrf_weak_scaling-eps-converted-to.pdf, id=172, 250.9375pt x 164
@@ -1420,18 +1418,18 @@ File: fig/knl_ram_zhetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_zhetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_zhetrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 836.
+sed on input line 833.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_dsytrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:58
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 202250 bytes
 (epstopdf)             Output file: <fig/knl_ram_dsytrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:32
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9896 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_dsytrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_dsytrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 837.
+(epstopdf)             \includegraphics on input line 834.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_dsytrf_weak_scaling-eps-converted-to.pdf, id=173, 250.9375pt x 164
@@ -1440,18 +1438,18 @@ File: fig/knl_ram_dsytrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_dsytrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_dsytrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 837.
+sed on input line 834.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_chetrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:16:55
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 201636 bytes
 (epstopdf)             Output file: <fig/knl_ram_chetrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:33
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 10060 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_chetrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_chetrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 838.
+(epstopdf)             \includegraphics on input line 835.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_chetrf_weak_scaling-eps-converted-to.pdf, id=174, 250.9375pt x 164
@@ -1460,18 +1458,18 @@ File: fig/knl_ram_chetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_chetrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_chetrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 838.
+sed on input line 835.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/knl_ram_ssytrf_weak_scaling.eps>
-(epstopdf)                    date: 2017-03-29 18:17:00
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 201635 bytes
 (epstopdf)             Output file: <fig/knl_ram_ssytrf_weak_scaling-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-29 18:17:33
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 10042 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/knl_ram_ssytrf_weak_sc
 aling-eps-converted-to.pdf fig/knl_ram_ssytrf_weak_scaling.eps>
-(epstopdf)             \includegraphics on input line 839.
+(epstopdf)             \includegraphics on input line 836.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf, id=175, 250.9375pt x 164
@@ -1480,16 +1478,16 @@ File: fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
  <use fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf>
 Package pdftex.def Info: fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf u
-sed on input line 839.
+sed on input line 836.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
-
-(./one-sided.bbl [12 <./fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf
-> <./fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pdf> <./fig/kebnekaise
-_cgetrf_weak_scaling-eps-converted-to.pdf> <./fig/kebnekaise_sgetrf_weak_scalin
-g-eps-converted-to.pdf>] [13 <./fig/knl_ram_zgetrf_weak_scaling-eps-converted-t
-o.pdf> <./fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf> <./fig/knl_ram_
-cgetrf_weak_scaling-eps-converted-to.pdf> <./fig/knl_ram_sgetrf_weak_scaling-ep
-s-converted-to.pdf>]) 
+ [12 <./fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf> <./fig/kebneka
+ise_dgetrf_weak_scaling-eps-converted-to.pdf> <./fig/kebnekaise_cgetrf_weak_sca
+ling-eps-converted-to.pdf> <./fig/kebnekaise_sgetrf_weak_scaling-eps-converted-
+to.pdf>]
+(./one-sided.bbl [13 <./fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf> <
+./fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf> <./fig/knl_ram_cgetrf_w
+eak_scaling-eps-converted-to.pdf> <./fig/knl_ram_sgetrf_weak_scaling-eps-conver
+ted-to.pdf>]) 
 AED: lastpage setting LastPage
 [14 <./fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pdf> <./fig/kebnekai
 se_dgeqrf_weak_scaling-eps-converted-to.pdf> <./fig/kebnekaise_cgeqrf_weak_scal
@@ -1507,11 +1505,11 @@ g-eps-converted-to.pdf> <./fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf
 Here is how much of TeX's memory you used:
  5789 strings out of 493029
  86353 string characters out of 6136234
- 155968 words of memory out of 5000000
+ 155966 words of memory out of 5000000
  9130 multiletter control sequences out of 15000+600000
  77718 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,43p,357b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,43p,364b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/
 lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/f
 onts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.
@@ -1526,7 +1524,7 @@ xmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8
 </usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on one-sided.pdf (17 pages, 1878902 bytes).
+Output written on one-sided.pdf (17 pages, 1878765 bytes).
 PDF statistics:
  435 PDF objects out of 1000 (max. 8388607)
  354 compressed objects within 4 object streams

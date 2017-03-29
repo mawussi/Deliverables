@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: one-sided.aux
-A level-1 auxiliary file: one-sided-linear.aux
+A level-1 auxiliary file: one-sided-tile.aux
 The style file: plain.bst
 Database file #1: one-sided.bib
 Warning--string name "pub-siam" is undefined
@@ -13,7 +13,7 @@ Warning--empty publisher in lug99
 Warning--empty journal in dongarra2011achieving
 You've used 8 entries,
             2118 wiz_defined-function locations,
-            544 strings with 5973 characters,
+            544 strings with 5971 characters,
 and the built_in function-call counts, 3206 in all, are:
 = -- 275
 > -- 269
