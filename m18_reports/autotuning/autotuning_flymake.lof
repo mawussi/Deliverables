@@ -2,3 +2,4 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces The optimal block size for DGETRF appears to depend linearly on the matrix size. In this model the intercept is $92.25$ with a gradient of $0.008$.}}{7}
 \contentsline {figure}{\numberline {3}{\ignorespaces The optimal block size for SPOTRF appears to depend logarithmically on the matrix size. The least-squares fit provides the block size function $y = -898 + 135\qopname \relax o{log}(x)$.}}{7}
 \contentsline {figure}{\numberline {4}{\ignorespaces The optimal block size for DPOTRF appears to be a step function. The three constants in this step function are $124$, $291$, and $487$.}}{8}
+\contentsline {figure}{\numberline {5}{\ignorespaces }}{8}

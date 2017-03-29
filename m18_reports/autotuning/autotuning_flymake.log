@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  29 MAR 2017 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  29 MAR 2017 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/srelton/Dropbox/NLAFET-manc/m18_reports/autotuning/autotuning_flymake.t
+**/home/srelton/NLAFET/Deliverables/m18_reports/autotuning/autotuning_flymake.t
 ex
 
-(/home/srelton/Dropbox/NLAFET-manc/m18_reports/autotuning/autotuning_flymake.te
+(/home/srelton/NLAFET/Deliverables/m18_reports/autotuning/autotuning_flymake.te
 x
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
@@ -775,10 +775,10 @@ LaTeX Warning: Citation `ansel:pact:2014' on page 4 undefined on input line 471
 
 [4] [5]
 Package epstopdf Info: Source file: <fig/curvefit_const.eps>
-(epstopdf)                    date: 2017-03-27 14:26:25
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 201161 bytes
 (epstopdf)             Output file: <fig/curvefit_const-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-27 14:26:29
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 9629 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_const-eps-con
 verted-to.pdf fig/curvefit_const.eps>
@@ -792,21 +792,17 @@ File: fig/curvefit_const-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/curvefit_const-eps-converted-to.pdf used on input 
 line 603.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
-
-
-LaTeX Warning: Reference `fig.fit_const' on page 6 undefined on input line 612.
-
-
 Package epstopdf Info: Source file: <fig/curvefit_linear.eps>
-(epstopdf)                    date: 2017-03-27 14:26:25
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 206682 bytes
 (epstopdf)             Output file: <fig/curvefit_linear-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-27 14:42:54
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 11252 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_linear-eps-co
 nverted-to.pdf fig/curvefit_linear.eps>
 (epstopdf)             \includegraphics on input line 627.
 Package epstopdf Info: Output file is already uptodate.
+
 <fig/curvefit_linear-eps-converted-to.pdf, id=32, 249.93375pt x 160.6pt>
 File: fig/curvefit_linear-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -814,21 +810,17 @@ File: fig/curvefit_linear-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/curvefit_linear-eps-converted-to.pdf used on input
  line 627.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
-
-
-LaTeX Warning: Reference `fig.fit_linear' on page 6 undefined on input line 635
-.
-
 Package epstopdf Info: Source file: <fig/curvefit_log.eps>
-(epstopdf)                    date: 2017-03-27 14:26:26
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 206627 bytes
 (epstopdf)             Output file: <fig/curvefit_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-27 14:56:40
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 11245 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_log-eps-conve
 rted-to.pdf fig/curvefit_log.eps>
 (epstopdf)             \includegraphics on input line 644.
 Package epstopdf Info: Output file is already uptodate.
+
 <fig/curvefit_log-eps-converted-to.pdf, id=33, 249.93375pt x 160.6pt>
 File: fig/curvefit_log-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -836,39 +828,56 @@ File: fig/curvefit_log-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/curvefit_log-eps-converted-to.pdf used on input li
 ne 644.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
-
-
-LaTeX Warning: Reference `fig.fit_log' on page 6 undefined on input line 652.
-
-[6]
+ [6]
 Package epstopdf Info: Source file: <fig/curvefit_step.eps>
-(epstopdf)                    date: 2017-03-27 14:26:25
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 206226 bytes
 (epstopdf)             Output file: <fig/curvefit_step-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-27 15:08:02
+(epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 11091 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_step-eps-conv
 erted-to.pdf fig/curvefit_step.eps>
 (epstopdf)             \includegraphics on input line 668.
 Package epstopdf Info: Output file is already uptodate.
- <fig/curvefit_step-eps-converted-to.pdf, id=38, 249.93375pt x 160.6pt>
+
+<fig/curvefit_step-eps-converted-to.pdf, id=38, 249.93375pt x 160.6pt>
 File: fig/curvefit_step-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_step-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_step-eps-converted-to.pdf used on input l
 ine 668.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
+ [7]
+
+/home/srelton/NLAFET/Deliverables/m18_reports/autotuning/autotuning_flymake.tex
+:722: Package keyval Error: options undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.722 ...ncludegraphics[options]{figures/path.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `fig.fit_step' on page 7 undefined on input line 678.
+LaTeX Warning: File `figures/path.pdf' not found on input line 722.
 
 
-LaTeX Warning: Reference `fig.fit_log' on page 7 undefined on input line 696.
+/home/srelton/NLAFET/Deliverables/m18_reports/autotuning/autotuning_flymake.tex
+:722: Package pdftex.def Error: File `figures/path.pdf' not found.
 
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.722 ...ncludegraphics[options]{figures/path.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Reference `fig.fit_step' on page 7 undefined on input line 696.
-
-[7]
 No file autotuning_flymake.bbl.
 
 AED: lastpage setting LastPage
@@ -881,10 +890,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4430 strings out of 493029
- 57083 string characters out of 6136234
- 132603 words of memory out of 5000000
- 7837 multiletter control sequences out of 15000+600000
+ 4433 strings out of 493029
+ 57116 string characters out of 6136234
+ 132635 words of memory out of 5000000
+ 7839 multiletter control sequences out of 15000+600000
  39362 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,43p,366b,368s stack positions out of 5000i,500n,10000p,200000b,80000s

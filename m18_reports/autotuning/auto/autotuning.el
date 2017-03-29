@@ -5,10 +5,10 @@
                      '(("article" "a4paper" "12pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("fontenc" "T1") ("geometry" "margin=25mm")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
    (TeX-run-style-hooks
     "latex2e"
     "article"
@@ -49,6 +49,10 @@
     "fig.fit_log"
     "fig.fit_step"
     "sec.performance"
+    "fig.tuned_gemm"
+    "fig.tuned_potrf"
+    "fig.tuned_getrf"
+    "fig.tuned_geqrf"
     "sec.conclusions")
    (LaTeX-add-bibliographies
     "/home/srelton/MATFUN/Total_Bibliography.bib"))
