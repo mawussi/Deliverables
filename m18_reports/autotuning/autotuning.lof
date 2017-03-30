@@ -1,9 +1,0 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces The optimal block size for DGEMM is independent of the matrix size so a constant model is most appropriate. On this architecture the constant is $304$.}}{6}
-\contentsline {figure}{\numberline {2}{\ignorespaces The optimal block size for DGETRF appears to depend linearly on the matrix size. In this model the intercept is $92.25$ with a gradient of $0.008$.}}{7}
-\contentsline {figure}{\numberline {3}{\ignorespaces The optimal block size for SPOTRF appears to depend logarithmically on the matrix size. The least-squares fit provides the block size function $y = -898 + 135\qopname \relax o{log}(x)$.}}{7}
-\contentsline {figure}{\numberline {4}{\ignorespaces The optimal block size for DPOTRF appears to be a step function. The three constants in this step function are $124$, $291$, and $487$.}}{8}
-\contentsline {figure}{\numberline {5}{\ignorespaces Lua code implementing the curves fitted to the single and double precision Cholesky factorizations. The arguments to the function are \texttt {dtype}, a character which determines the precisions of the computation, and \texttt {n}, the size of the matrix.}}{9}
-\contentsline {figure}{\numberline {6}{\ignorespaces Tuned and untuned performance for the GEMM kernel. Single precision is on the left and double precision on the right. }}{10}
-\contentsline {figure}{\numberline {7}{\ignorespaces Tuned and untuned performance for Cholesky factorization. Single precision is on the left and double precision on the right. }}{10}
-\contentsline {figure}{\numberline {8}{\ignorespaces Tuned and untuned performance for $LU$ factorization. Single precision is on the left and double precision on the right. }}{11}
-\contentsline {figure}{\numberline {9}{\ignorespaces Tuned and untuned performance for $QR$ factorization. Single precision is on the left and double precision on the right. }}{11}
