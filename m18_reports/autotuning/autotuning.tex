@@ -1,6 +1,5 @@
 \documentclass[a4paper,12pt]{article}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DELIVERABLE META DATA
 %
@@ -320,7 +319,7 @@ spawn in a parallel section of code), or even categorical variables
 In this document we discuss, with a specific focus on the needs of the
 NLAFET project, how to optimise such parameters via autotuning.  In
 particular we concentrate on off-line autotuning; meaning that the
-optimisation is performed before running the user runs the software on
+optimisation is performed before the user runs the software on
 their own problems.  An alternative approach is on-line autotuning,
 where the parameters are allowed to vary during the execution of a
 large problem.  This latter approach will be covered in other NLAFET
@@ -344,8 +343,8 @@ many other libraries such as Intel MKL.  In terms of autotuning, this
 means that positive integers controlling the size of the blocks must
 be chosen to maximize performance.  Note that the optimal block size
 may be different for each linear algebra routine.  For example,
-performing a matrix multiplication may required a different block size
-than an $LU$ factorization.
+performing a matrix multiplication may require a different block size
+to an $LU$ factorization.
 
 Other algorithms,
 especially for sparse matrices,
@@ -390,8 +389,8 @@ The grid-sweep will act as a baseline for us to test the efficiency of
 other optimisation strategies considered.
 
 To test our choice of autotuning strategy,
-we will show the results when this strategy is employed to tune
-the PLASMA library for dense linear algebra over a range of architectures.
+we will show the results when this procedure is employed to tune
+the PLASMA library for dense linear algebra.
 
 The rest of this report is organised as follows.
 In section~\ref{sec.review} we compare a number of existing
@@ -407,7 +406,7 @@ to the block size data allows us to select near-optimal block sizes
 for all sizes of input matrix.
 In section~\ref{sec.performance} we show how our
 tuning strategy improves the performance of PLASMA for
-a number of PLASMA routines before giving some concluding remarks in
+a number of different routines before giving some concluding remarks in
 section~\ref{sec.conclusions}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
