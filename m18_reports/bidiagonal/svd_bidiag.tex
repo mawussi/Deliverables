@@ -20,9 +20,9 @@ The first consists of using an existing LAPACK routine:
 while LAPACK does not provide any routine to reduce a
 full matrix to band bidiagonal form,
 the GBBRD routine available in LAPACK is designed to
-reduce a band matrix to bidiagonal form.
+reduce a band matrix to a bidiagonal one.
 Relying on a vendor optimized GEBBRD kernel
-(for instance Intel MKL) this can be a reasonable solution.
+(for instance Intel MKL), this can be a reasonable solution.
 
 On the other hand, we can implement our own state-of-the-art
 solution for the second stage.

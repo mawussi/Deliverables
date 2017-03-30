@@ -19,8 +19,8 @@ the traditional approach, for computing the singular
 values and optionally the singular vectors,
 consists of the following steps:
 \begin{enumerate}
-\item Reduction of the matrix $A$ to bidiagonal form: $A =
-  U_1BV^T_1$ if $A$ is real ($A = U_1BV^H_1$ if $A$ is complex), where
+\item Reduction of the matrix $A$ to a bidiagonal form:
+$A = U_1BV^T_1$ if $A$ is real ( and $A = U_1BV^H_1$ if $A$ is complex), where
   $U_1$ and $V_1$ are orthogonal (unitary if $A$ is complex), and $B$ is
   real and upper bidiagonal when $m \ge n$ or lower bidiagonal when $m < n$,
   so that $B$ is nonzero on only the main diagonal and either the first
@@ -54,8 +54,8 @@ proposed a new variant which has the advantage of exploiting
 Level-3 BLAS operations.
 Instead of applying the householder transformations to
 one column at a time,
-their algorithm uses a aggregated householder transformations
-strategy~\cite{bischof1987wy} to process a few columns at a time,
+this algorithm uses an aggregated householder transformation
+strategy~\cite{bischof1987wy} to process a few columns at each time,
 giving us the opportunity to use compute-intensive Level-3 BLAS kernels.
 This modification to the bidiagonalization algorithm helps
 to reformulate approximately 50\% of the process as Level-3 BLAS operations
@@ -64,8 +64,8 @@ as reported by Gro{\ss}er and Lang in~\cite{grosser1999efficient}.
 To address the remaining 50\% of Level-2 BLAS operations in the
 algorithm, in 1999, Gro{\ss}er and Lang introduced a two-staged
 approach.
-As illustrated in Figure~\ref{fig:two_stage},
-the first stage consists of reducing the full matrix into a
+As illustrated in Figure~\ref{fig:two_stage}, the algorithm consists of
+a first stage for reducing the full matrix into a
 band bidiagonal form (Figure~\ref{fig:SVD_band_bidiag}) using only
 compute-intensive kernels,
 followed by a second stage to reduce the band
