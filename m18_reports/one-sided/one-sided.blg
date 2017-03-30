@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: one-sided.aux
-A level-1 auxiliary file: one-sided-linear.aux
+A level-1 auxiliary file: one-sided-tile.aux
 The style file: plain.bst
 Database file #1: one-sided.bib
 Warning--string name "pub-siam" is undefined
@@ -10,46 +10,47 @@ Warning--string name "pub-siam:adr" is undefined
 --line 23 of file one-sided.bib
 Database file #2: svd_biblio.bib
 Warning--empty publisher in lug99
+Warning--empty journal in becker2011towards
 Warning--empty journal in dongarra2011achieving
-You've used 8 entries,
+You've used 11 entries,
             2118 wiz_defined-function locations,
-            544 strings with 5973 characters,
-and the built_in function-call counts, 3206 in all, are:
-= -- 275
-> -- 269
-< -- 2
-+ -- 107
-- -- 98
-* -- 269
-:= -- 585
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 71
+            561 strings with 6558 characters,
+and the built_in function-call counts, 4351 in all, are:
+= -- 387
+> -- 333
+< -- 3
++ -- 132
+- -- 120
+* -- 354
+:= -- 777
+add.period$ -- 35
+call.type$ -- 11
+change.case$ -- 91
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 93
-empty$ -- 170
-format.name$ -- 98
-if$ -- 616
+cite$ -- 14
+duplicate$ -- 133
+empty$ -- 252
+format.name$ -- 120
+if$ -- 853
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 9
-newline$ -- 43
-num.names$ -- 16
-pop$ -- 79
+int.to.str$ -- 11
+missing$ -- 12
+newline$ -- 58
+num.names$ -- 22
+pop$ -- 102
 preamble$ -- 1
-purify$ -- 64
+purify$ -- 81
 quote$ -- 0
-skip$ -- 60
+skip$ -- 85
 stack$ -- 0
-substring$ -- 70
-swap$ -- 13
-text.length$ -- 2
+substring$ -- 135
+swap$ -- 21
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
-warning$ -- 2
-while$ -- 19
-width$ -- 9
-write$ -- 87
-(There were 4 warnings)
+type$ -- 40
+warning$ -- 3
+while$ -- 30
+width$ -- 13
+write$ -- 119
+(There were 5 warnings)

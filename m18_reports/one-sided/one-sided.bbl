@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{addh09}
 Emmanuel Agullo, Jim Demmel, Jack Dongarra, Bilel Hadri, Jakub Kurzak, Julien
@@ -36,11 +36,23 @@ C\'{e}dric Augonnet, Samuel Thibault, Raymond Namyst, and Pierre-Andr\'{e}
 \newblock {\em Concurrency and Computation: Practice and Experience},
   23(2):187--198, February 2011.
 
+\bibitem{becker2011towards}
+Dulceneia Becker, Mathieu Faverge, and Jack~J Dongarra.
+\newblock Towards a parallel tile ldl factorization for multicore
+  architectures.
+\newblock 2011.
+
 \bibitem{DBLP:journals/corr/abs-0709-1272}
 Alfredo Buttari, Julien Langou, Jakub Kurzak, and Jack Dongarra.
 \newblock A class of parallel tiled linear algebra algorithms for multicore
   architectures.
 \newblock {\em CoRR}, abs/0709.1272, 2007.
+
+\bibitem{buttari2008parallel}
+Alfredo Buttari, Julien Langou, Jakub Kurzak, and Jack Dongarra.
+\newblock Parallel tiled qr factorization for multicore architectures.
+\newblock {\em Concurrency and Computation: Practice and Experience},
+  20(13):1573--1590, 2008.
 
 \bibitem{dongarra2011achieving}
 Jack~J Dongarra, Mathieu Faverge, Hatem Ltaief, and Piotr Luszczek.
@@ -54,5 +66,12 @@ John Gunnels and Robert {v}an~{d}e Geijn.
   {FLAME} {W}orking {N}ote \#3.
 \newblock Technical Report TR-2001-19, The University of Texas at Austin,
   Department of Computer Sciences, May 2001.
+
+\bibitem{hadri2010tile}
+Bilel Hadri, Hatem Ltaief, Emmanuel Agullo, and Jack Dongarra.
+\newblock Tile qr factorization with parallel panel processing for multicore
+  architectures.
+\newblock In {\em Parallel \& Distributed Processing (IPDPS), 2010 IEEE
+  International Symposium on}, pages 1--10. IEEE, 2010.
 
 \end{thebibliography}

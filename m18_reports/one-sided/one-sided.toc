@@ -1,9 +1,5 @@
 \contentsline {section}{\numberline {1}Introduction}{4}
 \contentsline {section}{\numberline {2}Tile layout one-sided factorization}{5}
-\contentsline {subsection}{\numberline {2.1}Tile QR factorization}{6}
-\contentsline {subsection}{\numberline {2.2}Tile LU factorization}{6}
-\contentsline {subsection}{\numberline {2.3}Tile Cholesky factorization}{6}
-\contentsline {subsection}{\numberline {2.4}Tile LDLT factorization}{6}
 \contentsline {section}{\numberline {3}Runtime systems}{7}
 \contentsline {section}{\numberline {4}Experimental setup}{8}
 \contentsline {section}{\numberline {5}Cholesky factorization}{9}

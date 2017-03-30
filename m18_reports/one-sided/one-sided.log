@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.19)  29 MAR 2017 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.19)  30 MAR 2017 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -775,11 +775,11 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \openout3 = `one-sided.toc'.
 
 
-(./one-sided.lof [2])
+(./one-sided.lof)
 \tf@lof=\write4
 \openout4 = `one-sided.lof'.
 
- (./one-sided.lot)
+ [2] (./one-sided.lot)
 \tf@lot=\write5
 \openout5 = `one-sided.lot'.
 
@@ -841,7 +841,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_zpotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 619.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pdf, id=65, 254.9525pt x 1
+<fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pdf, id=66, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_zpotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -861,7 +861,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_dpotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 620.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_dpotrf_weak_scaling-eps-converted-to.pdf, id=66, 250.9375pt x 1
+<fig/kebnekaise_dpotrf_weak_scaling-eps-converted-to.pdf, id=67, 250.9375pt x 1
 64.615pt>
 File: fig/kebnekaise_dpotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -881,7 +881,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_cpotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 621.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_cpotrf_weak_scaling-eps-converted-to.pdf, id=67, 254.9525pt x 1
+<fig/kebnekaise_cpotrf_weak_scaling-eps-converted-to.pdf, id=68, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_cpotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -901,7 +901,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_spotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 622.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_spotrf_weak_scaling-eps-converted-to.pdf, id=68, 254.9525pt x 1
+<fig/kebnekaise_spotrf_weak_scaling-eps-converted-to.pdf, id=69, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_spotrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -921,7 +921,7 @@ aling-eps-converted-to.pdf fig/knl_ram_zpotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 645.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf, id=69, 250.9375pt x 164.
+<fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf, id=70, 250.9375pt x 164.
 615pt>
 File: fig/knl_ram_zpotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -941,7 +941,7 @@ aling-eps-converted-to.pdf fig/knl_ram_dpotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 646.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_dpotrf_weak_scaling-eps-converted-to.pdf, id=70, 250.9375pt x 164.
+<fig/knl_ram_dpotrf_weak_scaling-eps-converted-to.pdf, id=71, 250.9375pt x 164.
 615pt>
 File: fig/knl_ram_dpotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -961,7 +961,7 @@ aling-eps-converted-to.pdf fig/knl_ram_cpotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 647.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_cpotrf_weak_scaling-eps-converted-to.pdf, id=71, 254.9525pt x 164.
+<fig/knl_ram_cpotrf_weak_scaling-eps-converted-to.pdf, id=72, 254.9525pt x 164.
 615pt>
 File: fig/knl_ram_cpotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -981,7 +981,7 @@ aling-eps-converted-to.pdf fig/knl_ram_spotrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 648.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf, id=72, 250.9375pt x 164.
+<fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf, id=73, 250.9375pt x 164.
 615pt>
 File: fig/knl_ram_spotrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1003,7 +1003,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_zgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 679.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf, id=73, 254.9525pt x 1
+<fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf, id=74, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_zgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1023,7 +1023,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_dgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 680.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pdf, id=74, 250.9375pt x 1
+<fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pdf, id=75, 250.9375pt x 1
 64.615pt>
 File: fig/kebnekaise_dgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1043,7 +1043,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_cgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 681.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_cgetrf_weak_scaling-eps-converted-to.pdf, id=75, 254.9525pt x 1
+<fig/kebnekaise_cgetrf_weak_scaling-eps-converted-to.pdf, id=76, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_cgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1063,7 +1063,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_sgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 682.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_sgetrf_weak_scaling-eps-converted-to.pdf, id=76, 254.9525pt x 1
+<fig/kebnekaise_sgetrf_weak_scaling-eps-converted-to.pdf, id=77, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_sgetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1085,7 +1085,7 @@ aling-eps-converted-to.pdf fig/knl_ram_zgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 711.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf, id=80, 254.9525pt x 164.
+<fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf, id=81, 254.9525pt x 164.
 615pt>
 File: fig/knl_ram_zgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1105,7 +1105,7 @@ aling-eps-converted-to.pdf fig/knl_ram_dgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 712.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf, id=81, 250.9375pt x 164.
+<fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf, id=82, 250.9375pt x 164.
 615pt>
 File: fig/knl_ram_dgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1125,7 +1125,7 @@ aling-eps-converted-to.pdf fig/knl_ram_cgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 713.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_cgetrf_weak_scaling-eps-converted-to.pdf, id=82, 254.9525pt x 164.
+<fig/knl_ram_cgetrf_weak_scaling-eps-converted-to.pdf, id=83, 254.9525pt x 164.
 615pt>
 File: fig/knl_ram_cgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1145,7 +1145,7 @@ aling-eps-converted-to.pdf fig/knl_ram_sgetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 714.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_sgetrf_weak_scaling-eps-converted-to.pdf, id=83, 250.9375pt x 164.
+<fig/knl_ram_sgetrf_weak_scaling-eps-converted-to.pdf, id=84, 250.9375pt x 164.
 615pt>
 File: fig/knl_ram_sgetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1165,7 +1165,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_zgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 746.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pdf, id=84, 250.9375pt x 1
+<fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pdf, id=85, 250.9375pt x 1
 64.615pt>
 File: fig/kebnekaise_zgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1185,7 +1185,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_dgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 747.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_dgeqrf_weak_scaling-eps-converted-to.pdf, id=85, 250.9375pt x 1
+<fig/kebnekaise_dgeqrf_weak_scaling-eps-converted-to.pdf, id=86, 250.9375pt x 1
 64.615pt>
 File: fig/kebnekaise_dgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1205,7 +1205,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_cgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 748.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_cgeqrf_weak_scaling-eps-converted-to.pdf, id=86, 254.9525pt x 1
+<fig/kebnekaise_cgeqrf_weak_scaling-eps-converted-to.pdf, id=87, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_cgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1225,7 +1225,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_sgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 749.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_sgeqrf_weak_scaling-eps-converted-to.pdf, id=87, 254.9525pt x 1
+<fig/kebnekaise_sgeqrf_weak_scaling-eps-converted-to.pdf, id=88, 254.9525pt x 1
 64.615pt>
 File: fig/kebnekaise_sgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1250,7 +1250,7 @@ aling-eps-converted-to.pdf fig/knl_ram_zgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 779.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_zgeqrf_weak_scaling-eps-converted-to.pdf, id=129, 250.9375pt x 164
+<fig/knl_ram_zgeqrf_weak_scaling-eps-converted-to.pdf, id=130, 250.9375pt x 164
 .615pt>
 File: fig/knl_ram_zgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1270,7 +1270,7 @@ aling-eps-converted-to.pdf fig/knl_ram_dgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 780.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_dgeqrf_weak_scaling-eps-converted-to.pdf, id=130, 250.9375pt x 164
+<fig/knl_ram_dgeqrf_weak_scaling-eps-converted-to.pdf, id=131, 250.9375pt x 164
 .615pt>
 File: fig/knl_ram_dgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1290,7 +1290,7 @@ aling-eps-converted-to.pdf fig/knl_ram_cgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 781.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_cgeqrf_weak_scaling-eps-converted-to.pdf, id=131, 254.9525pt x 164
+<fig/knl_ram_cgeqrf_weak_scaling-eps-converted-to.pdf, id=132, 254.9525pt x 164
 .615pt>
 File: fig/knl_ram_cgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1310,7 +1310,7 @@ aling-eps-converted-to.pdf fig/knl_ram_sgeqrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 782.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_sgeqrf_weak_scaling-eps-converted-to.pdf, id=132, 254.9525pt x 164
+<fig/knl_ram_sgeqrf_weak_scaling-eps-converted-to.pdf, id=133, 254.9525pt x 164
 .615pt>
 File: fig/knl_ram_sgeqrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1330,7 +1330,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_zhetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_zhetrf_weak_scaling-eps-converted-to.pdf, id=133, 254.9525pt x 
+<fig/kebnekaise_zhetrf_weak_scaling-eps-converted-to.pdf, id=134, 254.9525pt x 
 164.615pt>
 File: fig/kebnekaise_zhetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1350,7 +1350,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_dsytrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 809.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_dsytrf_weak_scaling-eps-converted-to.pdf, id=134, 250.9375pt x 
+<fig/kebnekaise_dsytrf_weak_scaling-eps-converted-to.pdf, id=135, 250.9375pt x 
 164.615pt>
 File: fig/kebnekaise_dsytrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1370,7 +1370,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_chetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 810.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_chetrf_weak_scaling-eps-converted-to.pdf, id=135, 254.9525pt x 
+<fig/kebnekaise_chetrf_weak_scaling-eps-converted-to.pdf, id=136, 254.9525pt x 
 164.615pt>
 File: fig/kebnekaise_chetrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1390,7 +1390,7 @@ _scaling-eps-converted-to.pdf fig/kebnekaise_ssytrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 811.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/kebnekaise_ssytrf_weak_scaling-eps-converted-to.pdf, id=136, 254.9525pt x 
+<fig/kebnekaise_ssytrf_weak_scaling-eps-converted-to.pdf, id=137, 254.9525pt x 
 164.615pt>
 File: fig/kebnekaise_ssytrf_weak_scaling-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1414,7 +1414,7 @@ aling-eps-converted-to.pdf fig/knl_ram_zhetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 836.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_zhetrf_weak_scaling-eps-converted-to.pdf, id=172, 250.9375pt x 164
+<fig/knl_ram_zhetrf_weak_scaling-eps-converted-to.pdf, id=173, 250.9375pt x 164
 .615pt>
 File: fig/knl_ram_zhetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1434,7 +1434,7 @@ aling-eps-converted-to.pdf fig/knl_ram_dsytrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 837.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_dsytrf_weak_scaling-eps-converted-to.pdf, id=173, 250.9375pt x 164
+<fig/knl_ram_dsytrf_weak_scaling-eps-converted-to.pdf, id=174, 250.9375pt x 164
 .615pt>
 File: fig/knl_ram_dsytrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1454,7 +1454,7 @@ aling-eps-converted-to.pdf fig/knl_ram_chetrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 838.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_chetrf_weak_scaling-eps-converted-to.pdf, id=174, 250.9375pt x 164
+<fig/knl_ram_chetrf_weak_scaling-eps-converted-to.pdf, id=175, 250.9375pt x 164
 .615pt>
 File: fig/knl_ram_chetrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1474,7 +1474,7 @@ aling-eps-converted-to.pdf fig/knl_ram_ssytrf_weak_scaling.eps>
 (epstopdf)             \includegraphics on input line 839.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf, id=175, 250.9375pt x 164
+<fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf, id=176, 250.9375pt x 164
 .615pt>
 File: fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1505,11 +1505,11 @@ ram_dsytrf_weak_scaling-eps-converted-to.pdf> <./fig/knl_ram_chetrf_weak_scalin
 g-eps-converted-to.pdf> <./fig/knl_ram_ssytrf_weak_scaling-eps-converted-to.pdf
 >] (./one-sided.aux (./one-sided-tile.aux)) ) 
 Here is how much of TeX's memory you used:
- 5789 strings out of 493029
- 86353 string characters out of 6136234
- 155968 words of memory out of 5000000
- 9130 multiletter control sequences out of 15000+600000
- 77718 words of font info for 72 fonts, out of 8000000 for 9000
+ 5790 strings out of 493029
+ 86377 string characters out of 6136234
+ 155979 words of memory out of 5000000
+ 9131 multiletter control sequences out of 15000+600000
+ 71721 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,13n,43p,357b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/
@@ -1518,18 +1518,18 @@ onts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.
 enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on one-sided.pdf (17 pages, 1878902 bytes).
+share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
+7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on one-sided.pdf (17 pages, 1883531 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
+ 439 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
