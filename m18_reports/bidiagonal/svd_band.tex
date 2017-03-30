@@ -1,7 +1,7 @@
 \section{Reduction  to band bidiagonal form}
 \label{sec:band}
 The idea of using a tile algorithm to factorize a full matrix into
-band bidiagonal is not new.
+a band bidiagonal one is not new.
 The approach was first introduced in 2010 by
 Dongarra~et~al\@.~\cite{ltaief2010parallel},
 and improved in 2013~\cite{haidar2013improved}
@@ -98,11 +98,11 @@ Figure~\ref{fig:rect_panel},
 shows that a full factorization of a panel
 starts with the $QR$ factorization of the first tile
 (Figure~\ref{fig:geqrt_1}), which means only one CPU core is busy
-while the others remain idle. Once the first tile is factorized the
+while the others remain idle. Once the first tile is factorized, the
 rest of work (to annihilate the tiles below using the TSQRT
 kernel) can commence.
 Since the elimination procedure modifies the entries of the
-top triangular tile only one square tile can be eliminated at a time
+top triangular tile, only one square tile can be eliminated at a time
 to guarantee a correct result.
 Put differently,
 the panel factorization introduces synchronization points
@@ -124,9 +124,8 @@ which shows the DAG of the corresponding operations.
 
 One can overcome this synchronization issue by overlapping the panel
 factorization and the update steps.
-The algorithm can then progress onto the next step even
-though the previous step is not completed,
-as long as we respect the data dependencies.
+As long as we respect the data dependencies, the algorithm can then progress onto the next step even
+though the previous step is not completed.
 In addition, when working on a panel we can
 take advantage of ``tall and skinny'' QR factorization
 strategies:
@@ -149,7 +148,7 @@ As depicted in Figure~\ref{fig:tile}, the algorithm starts with the
 factorization of the tile $A(1,1)$ (Figure~\ref{fig:tile_qr_1}),
 before applying the corresponding transformations to the rest of the
 tile-row (Figure~\ref{fig:tile_qr_update_1}).
-Once the first tile is factorized
+Once the first tile is factorized,
 the remaining tiles in the panel are successively eliminated
 and, in the same way, the trailing submatrices are updated immediately
 (as illustrated in Figures~\ref{fig:tile_qr_2}
@@ -392,7 +391,7 @@ between full tiles.
 This introduces an unnecessary dependency between
 the first tile-row update and the first tile-column
 elimination through the A(1,1) tile.
-To solve this we might want to
+To solve this issue, we might want to
 split all A(i,i) tiles into upper and lower parts.
 
 Alternatively, one can modify the way OpenMP expresses
@@ -410,7 +409,7 @@ while write or output dependency on B would be
 The OpenMP runtime system then ensures that the dependency criteria
 are satisfied on each of the $nb \times nb$ entries before executing
 the corresponding kernel. But instead of using
-\texttt{depend(in:B[0:nb*nb])}, if one uses \texttt{depend(in:B[i])}
+\texttt{depend(in:B[0:nb*nb])}, if one uses \texttt{depend(in:B[i])},
 the runtime system will check only the $i^{th}$ entry of the tile to
 decide whether to execute the kernel or not. Although specifying the
 whole ranges is the recommended way, using only a single entry is an
@@ -440,7 +439,7 @@ demonstrated by the corresponding DAG depicted in Figure~\ref{fig:dag_hack}.
 
 We also applied this modification to the early update strategy
 to remove the synchronisation point observed previously.
-Infact, since we are working at the triangular tile granularity this
+In fact, since we are working at the triangular tile granularity this
 releases all unnecessarily dependencies,
 the panel and tile strategies should provide comparative results.
 
@@ -515,7 +514,7 @@ Intel’s Math Kernel Library (MKL), when all the singular vectors are
 requested and up to 10 times faster if only the singular values are
 required. This shows the efficiency of the Plasma-2.8.0 bidiagonalization
 kernel, and the performance of our OpenMP implementation
-compared Plasma-2.8.0 demonstrates the effectiveness of our prototype.
+in comparison with Plasma-2.8.0 demonstrates the effectiveness of our prototype.
 
 Furthermore, the hint of working at triangular tile granularity helps
 to gain only a slight performance improvement for the early update
@@ -525,4 +524,4 @@ oriented strategy with dependencies at full tile granularity,
 as it is reasonably efficient and respects the standard OpenMP programming
 conventions.
 In addition by declaring data dependencies in a conventional
-way the code can be safely extended to a distributed memory environment.
+way, the code can be safely extended to a distributed memory environment.

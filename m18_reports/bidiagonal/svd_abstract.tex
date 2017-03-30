@@ -1,28 +1,23 @@
 \begin{abstract}
 We present different algorithms for computing a two-sided bidiagonal
-factorization of a matrix.
-This factorization is required in many scientific applications,
-since a bidiagonal form is a stepping stone on the path towards the
-singular value decomposition (SVD).
-To this end, we split the bidiagonalization into a two-stage process.
-During the first stage, the full matrix is
-reduced to band bidiagonal form: this stage consists of
-compute-intensive operations and represents the dominant cost
-(in terms of total flops) to solution.
-On the other hand, the second stage is
-memory-bound and consists of reducing the band bidiagonal matrix to
-bidiagonal form.
-In the context of tile algorithms and task-based programming,
-we focus primarily on the first stage and propose two
-different implementations.
-We analyse the pros and cons of each of these two algorithms
-and discuss how a careful data
-dependency analysis can help remove unnecessary task dependencies
-and improve the performance further.
-Through experimental results on both a
-20-core Intel Xeon multicore node and a 68-core Intel Xeon Phi KNL, we
-demonstrate that our resulting task-based OpenMP prototype is
-competitive with state-of-the-art implementations.
-Finally, we discuss potential solutions
-for the design of the second stage which is currently in progress.
+factorization of a matrix.  This factorization is required in many
+scientific applications, since a bidiagonal form is a stepping stone
+on the path towards the singular value decomposition (SVD).  
+To this end, we split the bidiagonalization into a two-stage process.  During the first 
+stage, the full matrix is reduced to band bidiagonal form:
+this stage consists of compute-intensive operations and represents the
+dominant cost (in terms of total flops) to solution.  On the other
+hand, the second stage, consisting of reducing the
+band bidiagonal matrix to bidiagonal form is memory-bound.  In the context of tile
+algorithms and task-based programming, we focus primarily on the first
+stage and propose two different implementations.  We analyse the pros
+and cons of each of these two algorithms and discuss how a careful
+data dependency analysis can help remove unnecessary task dependencies
+and improve the performance further.  Through experimental results on
+both a 20-core Intel Xeon multicore node and a 68-core Intel Xeon Phi
+KNL, we demonstrate that our resulting task-based OpenMP prototype is
+competitive with state-of-the-art implementations.  Finally, we
+discuss potential solutions for the design of the second stage which
+is currently in progress.
 \end{abstract}
+
