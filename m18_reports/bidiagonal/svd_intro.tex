@@ -6,7 +6,7 @@ transform a full matrix into bidiagonal form using orthogonal transformations.
 A matrix bidiagonalization is required as a precursor to computing the
 singular value decomposition (SVD).
 The SVD of an $m\times n$ matrix $A$ is given by:
-$A = U \Sigma V^T$ or ($A = U \Sigma V^H$ if A is complex) where
+$A = U \Sigma V^T$ or ($A = U \Sigma V^H$ if $A$ is complex) where
 $U$ and $V$ are orthogonal (unitary) and $\Sigma$ is an $m\times n$
 matrix with real diagonal elements, $\sigma_i$ , commonly ordered such
 that: $\sigma_1 \ge \sigma_2 \ge \dots \ge \sigma_{min(m,n)} \ge 0.$
@@ -19,8 +19,8 @@ the traditional approach, for computing the singular
 values and optionally the singular vectors,
 consists of the following steps:
 \begin{enumerate}
-\item Reduction of the matrix $A$ to a bidiagonal form:
-$A = U_1BV^T_1$ if $A$ is real ( and $A = U_1BV^H_1$ if $A$ is complex), where
+\item Reduction of the matrix $A$ to bidiagonal form:
+$A = U_1BV^T_1$ if $A$ is real (and $A = U_1BV^H_1$ if $A$ is complex), where
   $U_1$ and $V_1$ are orthogonal (unitary if $A$ is complex), and $B$ is
   real and upper bidiagonal when $m \ge n$ or lower bidiagonal when $m < n$,
   so that $B$ is nonzero on only the main diagonal and either the first
@@ -65,11 +65,11 @@ To address the remaining 50\% of Level-2 BLAS operations in the
 algorithm, in 1999, Gro{\ss}er and Lang introduced a two-staged
 approach.
 As illustrated in Figure~\ref{fig:two_stage}, the algorithm consists of
-a first stage for reducing the full matrix into a
+a first stage for reducing the full matrix into
 band bidiagonal form (Figure~\ref{fig:SVD_band_bidiag}) using only
 compute-intensive kernels,
 followed by a second stage to reduce the band
-matrix to a bidiagonal form (Figure~\ref{fig:SVD_bidiag}) with
+matrix to bidiagonal form (Figure~\ref{fig:SVD_bidiag}) with
 memory-bound kernels.
 Since the first stage is a compute-intensive
 algorithm and represents the dominant part of the process,
