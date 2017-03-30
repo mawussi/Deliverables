@@ -29,7 +29,7 @@ and the update of the corresponding trailing matrix
 This procedure is repeated until the whole matrix is reduced to
 band bidiagonal form, as illustrated in Figure~\ref{fig:panel}.
 It is important to notice that we describe this strategy
-at tile-column (panel) and tile-row granularity but
+at the tile-column (panel) and tile-row granularity but
 tile algorithms are used underneath to process each panel
 and the update of the trailing matrix.
 We can think of this as a direct translation of the LAPACK
@@ -92,13 +92,15 @@ more modern tile-based algorithm.
 \end{figure}
 
 The main advantage of this strategy is its simplicity,
-the algorithm is very close to the LAPACK version. However the
-individual steps of the QR factorization illustrated in
-Figure~\ref{fig:rect_panel},
-shows that a full factorization of a panel
+the algorithm is very close to the LAPACK version.
+However,
+the individual steps of the QR factorization illustrated in
+Figure~\ref{fig:rect_panel}
+show that a full factorization of a panel
 starts with the $QR$ factorization of the first tile
 (Figure~\ref{fig:geqrt_1}), which means only one CPU core is busy
-while the others remain idle. Once the first tile is factorized, the
+while the others remain idle.
+Once the first tile is factorized, the
 rest of work (to annihilate the tiles below using the TSQRT
 kernel) can commence.
 Since the elimination procedure modifies the entries of the
@@ -245,7 +247,7 @@ synchronization points.
 However,
 all the ZUNMQR kernels in charge of updating the
 first tile-row have to be completed before starting
-any TSQRT kernel,
+any TSQRT kernels,
 since the ZUNMQR kernels use the entries of the top left tile and
 those entries will be overwritten if any TSQRT kernels are
 launched before the end of the first tile-row update.
@@ -268,14 +270,12 @@ and leads to high levels of parallelism.
 In order to assess the performance of each strategy,
 we design an OpenMP task-based version of each of the two strategies.
 In all the experiments within this section,
-\texttt{Early update} and \texttt{Late update} will denote
-the two strategies explained above, respectively.
-We also compare these strategies to the PLASMA 2.8.0 kernel
+we compare these strategies to the PLASMA 2.8.0 kernel
 designed for reduction of a full matrix to band bidiagonal form.
-The experiments have been performed with a
+The experiments have been performed on a
 NUMA node (two-socket Xeon(R) CPU E5-2650 v3 @ 2.30GHz--Haswell)
 and a 68-core
-Intel KNL\footnote{https://ark.intel.com/products/94035/Intel-Xeon-Phi-Processor-7250-16GB-1\_40-GHz-68-core}
+Intel KNL\footnote{\url{https://ark.intel.com/products/94035/Intel-Xeon-Phi-Processor-7250-16GB-1\_40-GHz-68-core}}
 and all the computations are done in double precision arithmetic.
 The performance (GFlop/s) displayed is calculated by dividing the
 standard theoretical flops by the time to solution.
@@ -324,7 +324,7 @@ standard theoretical flops by the time to solution.
 In addition to the traditional DDR4, the Intel KNL has a high
 bandwidth memory called Multi-Channel DRAM (MCDRAM) with a
 bandwidth four times greater than the DDR4 bandwidth,
-but with a storage capacity limited to 16GB.
+but with the storage capacity limited to 16GB.
 There are different configuration options
 of MCDRAM, but in this experiment it has been configured
 in flat mode i\@.e\@.~the 16GB memory can be directly allocated from within

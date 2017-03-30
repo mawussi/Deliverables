@@ -14,7 +14,8 @@ We demonstrated that while the improvement makes sense for the
 late update approach,
 the gain is not significant enough for the early update strategy
 to sacrifice the robustness of the kernel.
-Furthermore we have demonstrated the efficiency of our
+Furthermore,
+we have demonstrated the efficiency of our
 implementation by showing that it is competitive
 with the state-of-the-art kernels.
 
@@ -26,13 +27,13 @@ currently in development.
 Since this work focused on square matrices,
 future work will be devoted to designing specialized kernels
 for very tall matrices
-(number of lines more than 3x the number of columns)
+(number of rows more than 3x the number of columns)
 which require different algorithms to keep the
 computational resources working at full efficiency.
-Also the current version of our prototype is based on
-OpenMP runtime system which is limited to shared memory systems.
+Also the current version of our prototype is based on OpenMP,
+which is limited to shared memory systems.
 In the future,
 we will consider using distributed memory runtime
 systems such as StarPU~\cite{AugThiNamWac11CCPE} and
 PaRSEC~\cite{bosilca2013parsec}
-to achieve an extreme-scale implementation.
+to achieve an extreme-scale, heterogeneous implementation.
