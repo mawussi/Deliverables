@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  29 MAR 2017 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  30 MAR 2017 08:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.te
+**/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.te
 x
 
-(/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex
+(/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 1: Undefined control sequence.
 l.1 \section
             {Introduction}
@@ -20,7 +20,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 1: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -344,7 +344,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no : in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 9: Undefined control sequence.
 l.9 $A = U \Sigma V^T (A = U \Sigma V^H \text
                                              {if A is complex})$ where
@@ -673,7 +673,7 @@ Overfull \hbox (7.50002pt too wide) in paragraph at lines 1--16
  []
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 17: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1495,7 +1495,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{golub1965calculating}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 37: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -2054,7 +2054,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{dongarra1989block}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 48: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -2273,7 +2273,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{bischof1987wy}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 54: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -2524,7 +2524,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{grosser1999efficient}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 58: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -2704,7 +2704,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 63: Undefined control sequence.
 <write> ...rence `fig:two_stage' on page \thepage 
                                                   \space undefined\on@line .
@@ -2794,7 +2794,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 65: Undefined control sequence.
 <write> ...`fig:SVD_band_bidiag' on page \thepage 
                                                   \space undefined\on@line .
@@ -2905,7 +2905,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 67: Undefined control sequence.
 <write> ...ence `fig:SVD_bidiag' on page \thepage 
                                                   \space undefined\on@line .
@@ -3174,17 +3174,16 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no . in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{haidar2013improved}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 73: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.73 ...zzam~et\@.~al\@.~\cite{haidar2013improved}
+l.73 ...y Azzam~et~al\@.~\cite{haidar2013improved}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3614,7 +3613,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 84: Undefined control sequence.
 <write> ... Reference `sec:tile' on page \thepage 
                                                   \space undefined\on@line .
@@ -3677,7 +3676,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 85: Undefined control sequence.
 <write> ... Reference `sec:band' on page \thepage 
                                                   \space undefined\on@line .
@@ -3880,7 +3879,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 90: Undefined control sequence.
 <write> ...eference `sec:bidiag' on page \thepage 
                                                   \space undefined\on@line .
@@ -4024,7 +4023,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 93: Undefined control sequence.
 <write> ...ence `sec:conclusion' on page \thepage 
                                                   \space undefined\on@line .
@@ -4066,7 +4065,7 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 76--94
  []
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 95: LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4084,7 +4083,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 96: LaTeX Error: Environment subfigure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4103,7 +4102,7 @@ Missing character: There is no ] in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 3 in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 96: Missing number, treated as zero.
 <to be read again> 
                    }
@@ -4113,7 +4112,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 96: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
@@ -4126,7 +4125,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 97: Undefined control sequence.
 l.97     \includegraphics
                          [width=3.5cm, height=3.5cm]{fig/SVD_1_grid}
@@ -4169,7 +4168,7 @@ Missing character: There is no / in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no D in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 97: Missing $ inserted.
 <inserted text> 
                 $
@@ -4178,13 +4177,13 @@ l.97 ...aphics[width=3.5cm, height=3.5cm]{fig/SVD_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 97: Double subscript.
 l.97 ...hics[width=3.5cm, height=3.5cm]{fig/SVD_1_
                                                   grid}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 97: Extra }, or forgotten $.
 l.97 ...width=3.5cm, height=3.5cm]{fig/SVD_1_grid}
                                                   
@@ -4195,7 +4194,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 98: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4207,7 +4206,7 @@ l.98     \caption
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 98: Missing } inserted.
 <inserted text> 
                 }
@@ -4220,7 +4219,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 Missing character: There is no 5 in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 98: Missing $ inserted.
 <inserted text> 
                 $
@@ -4241,7 +4240,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no . in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 99: LaTeX Error: \begin{document} ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4255,7 +4254,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 101: LaTeX Error: Environment subfigure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4274,7 +4273,7 @@ Missing character: There is no ] in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 3 in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 101: Missing number, treated as zero.
 <to be read again> 
                    }
@@ -4284,7 +4283,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 101: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
@@ -4297,7 +4296,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 102: Undefined control sequence.
 l.102     \includegraphics
                           [width=3.5cm, height=3.5cm]{fig/SVD_band_bidiag}
@@ -4340,7 +4339,7 @@ Missing character: There is no / in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no D in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 102: Missing $ inserted.
 <inserted text> 
                 $
@@ -4349,7 +4348,7 @@ l.102 ...phics[width=3.5cm, height=3.5cm]{fig/SVD_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 102: Extra }, or forgotten $.
 l.102 ...3.5cm, height=3.5cm]{fig/SVD_band_bidiag}
                                                   
@@ -4360,7 +4359,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 103: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4373,7 +4372,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 105: LaTeX Error: \begin{document} ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4386,7 +4385,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 105: Missing $ inserted.
 <inserted text> 
                 $
@@ -4398,7 +4397,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 105: Missing } inserted.
 <inserted text> 
                 }
@@ -4411,7 +4410,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 107: LaTeX Error: Environment subfigure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4430,7 +4429,7 @@ Missing character: There is no ] in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 3 in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 107: Missing number, treated as zero.
 <to be read again> 
                    }
@@ -4440,7 +4439,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 107: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
@@ -4453,7 +4452,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 108: Undefined control sequence.
 l.108     \includegraphics
                           [width=3.5cm, height=3.5cm]{fig/SVD_bidiag}
@@ -4496,7 +4495,7 @@ Missing character: There is no / in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no D in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 108: Missing $ inserted.
 <inserted text> 
                 $
@@ -4505,7 +4504,7 @@ l.108 ...phics[width=3.5cm, height=3.5cm]{fig/SVD_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 108: Extra }, or forgotten $.
 l.108 ...idth=3.5cm, height=3.5cm]{fig/SVD_bidiag}
                                                   
@@ -4516,7 +4515,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 109: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4529,7 +4528,7 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 111: LaTeX Error: \begin{document} ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4542,7 +4541,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 111: Missing $ inserted.
 <inserted text> 
                 $
@@ -4554,7 +4553,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 111: Missing } inserted.
 <inserted text> 
                 }
@@ -4567,7 +4566,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 112: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4634,7 +4633,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/svd_intro_flymake.tex:
+/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/svd_intro_flymake.tex:
 114: LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.

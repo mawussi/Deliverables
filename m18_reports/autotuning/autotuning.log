@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  29 MAR 2017 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  30 MAR 2017 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -752,7 +752,13 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@lof=\write4
 \openout4 = `autotuning.lof'.
 
- [2] [3] [4] [5]
+ [2] [3] [4]
+Overfull \hbox (3.06789pt too wide) in paragraph at lines 573--579
+[]\T1/lmr/m/n/12 We can also de-fine mul-ti-ple ini-tial guesses for the op-ti-
+mal block size us-ing the command-
+ []
+
+[5]
 Package epstopdf Info: Source file: <fig/curvefit_const.eps>
 (epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 201161 bytes
@@ -761,15 +767,14 @@ Package epstopdf Info: Source file: <fig/curvefit_const.eps>
 (epstopdf)                    size: 9629 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_const-eps-con
 verted-to.pdf fig/curvefit_const.eps>
-(epstopdf)             \includegraphics on input line 604.
+(epstopdf)             \includegraphics on input line 610.
 Package epstopdf Info: Output file is already uptodate.
-
-<fig/curvefit_const-eps-converted-to.pdf, id=33, 249.93375pt x 160.6pt>
+ <fig/curvefit_const-eps-converted-to.pdf, id=33, 249.93375pt x 160.6pt>
 File: fig/curvefit_const-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_const-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_const-eps-converted-to.pdf used on input 
-line 604.
+line 610.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
 Package epstopdf Info: Source file: <fig/curvefit_linear.eps>
 (epstopdf)                    date: 2017-03-29 21:21:02
@@ -779,7 +784,7 @@ Package epstopdf Info: Source file: <fig/curvefit_linear.eps>
 (epstopdf)                    size: 11252 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_linear-eps-co
 nverted-to.pdf fig/curvefit_linear.eps>
-(epstopdf)             \includegraphics on input line 628.
+(epstopdf)             \includegraphics on input line 634.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/curvefit_linear-eps-converted-to.pdf, id=34, 249.93375pt x 160.6pt>
@@ -787,7 +792,7 @@ File: fig/curvefit_linear-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_linear-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_linear-eps-converted-to.pdf used on input
- line 628.
+ line 634.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
 Package epstopdf Info: Source file: <fig/curvefit_log.eps>
 (epstopdf)                    date: 2017-03-29 21:21:02
@@ -797,7 +802,7 @@ Package epstopdf Info: Source file: <fig/curvefit_log.eps>
 (epstopdf)                    size: 11245 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_log-eps-conve
 rted-to.pdf fig/curvefit_log.eps>
-(epstopdf)             \includegraphics on input line 645.
+(epstopdf)             \includegraphics on input line 651.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/curvefit_log-eps-converted-to.pdf, id=35, 249.93375pt x 160.6pt>
@@ -805,7 +810,7 @@ File: fig/curvefit_log-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_log-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_log-eps-converted-to.pdf used on input li
-ne 645.
+ne 651.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
  [6 <./fig/curvefit_const-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/curvefit_step.eps>
@@ -816,7 +821,7 @@ Package epstopdf Info: Source file: <fig/curvefit_step.eps>
 (epstopdf)                    size: 11091 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_step-eps-conv
 erted-to.pdf fig/curvefit_step.eps>
-(epstopdf)             \includegraphics on input line 669.
+(epstopdf)             \includegraphics on input line 675.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/curvefit_step-eps-converted-to.pdf, id=50, 249.93375pt x 160.6pt>
@@ -824,7 +829,7 @@ File: fig/curvefit_step-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_step-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_step-eps-converted-to.pdf used on input l
-ine 669.
+ine 675.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
  [7 <./fig/curvefit_linear-eps-converted-to.pdf> <./fig/curvefit_log-eps-conver
 ted-to.pdf>]
@@ -836,7 +841,7 @@ Package epstopdf Info: Source file: <fig/tuned_sgemm.eps>
 (epstopdf)                    size: 8967 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_sgemm-eps-conver
 ted-to.pdf fig/tuned_sgemm.eps>
-(epstopdf)             \includegraphics on input line 739.
+(epstopdf)             \includegraphics on input line 779.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/tuned_sgemm-eps-converted-to.pdf, id=69, 254.9525pt x 164.615pt>
@@ -844,7 +849,7 @@ File: fig/tuned_sgemm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_sgemm-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_sgemm-eps-converted-to.pdf used on input lin
-e 739.
+e 779.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dgemm.eps>
 (epstopdf)                    date: 2017-03-29 21:34:09
@@ -854,7 +859,7 @@ Package epstopdf Info: Source file: <fig/tuned_dgemm.eps>
 (epstopdf)                    size: 8959 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dgemm-eps-conver
 ted-to.pdf fig/tuned_dgemm.eps>
-(epstopdf)             \includegraphics on input line 740.
+(epstopdf)             \includegraphics on input line 780.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/tuned_dgemm-eps-converted-to.pdf, id=70, 250.9375pt x 164.615pt>
@@ -862,10 +867,8 @@ File: fig/tuned_dgemm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dgemm-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dgemm-eps-converted-to.pdf used on input lin
-e 740.
+e 780.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
- [8 <./fig/curvefit_step-eps-converted-to.pdf> <./fig/tuned_sgemm-eps-converted
--to.pdf> <./fig/tuned_dgemm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/tuned_spotrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:13
 (epstopdf)                    size: 198148 bytes
@@ -874,15 +877,15 @@ Package epstopdf Info: Source file: <fig/tuned_spotrf.eps>
 (epstopdf)                    size: 8963 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_spotrf-eps-conve
 rted-to.pdf fig/tuned_spotrf.eps>
-(epstopdf)             \includegraphics on input line 757.
+(epstopdf)             \includegraphics on input line 797.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_spotrf-eps-converted-to.pdf, id=98, 254.9525pt x 164.615pt>
+<fig/tuned_spotrf-eps-converted-to.pdf, id=71, 254.9525pt x 164.615pt>
 File: fig/tuned_spotrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_spotrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_spotrf-eps-converted-to.pdf used on input li
-ne 757.
+ne 797.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dpotrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:10
@@ -892,15 +895,15 @@ Package epstopdf Info: Source file: <fig/tuned_dpotrf.eps>
 (epstopdf)                    size: 8805 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dpotrf-eps-conve
 rted-to.pdf fig/tuned_dpotrf.eps>
-(epstopdf)             \includegraphics on input line 758.
+(epstopdf)             \includegraphics on input line 798.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_dpotrf-eps-converted-to.pdf, id=99, 250.9375pt x 164.615pt>
+<fig/tuned_dpotrf-eps-converted-to.pdf, id=72, 250.9375pt x 164.615pt>
 File: fig/tuned_dpotrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dpotrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dpotrf-eps-converted-to.pdf used on input li
-ne 758.
+ne 798.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_sgetrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:12
@@ -910,15 +913,15 @@ Package epstopdf Info: Source file: <fig/tuned_sgetrf.eps>
 (epstopdf)                    size: 9383 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_sgetrf-eps-conve
 rted-to.pdf fig/tuned_sgetrf.eps>
-(epstopdf)             \includegraphics on input line 773.
+(epstopdf)             \includegraphics on input line 813.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_sgetrf-eps-converted-to.pdf, id=100, 250.9375pt x 164.615pt>
+<fig/tuned_sgetrf-eps-converted-to.pdf, id=73, 250.9375pt x 164.615pt>
 File: fig/tuned_sgetrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_sgetrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_sgetrf-eps-converted-to.pdf used on input li
-ne 773.
+ne 813.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dgetrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:10
@@ -928,16 +931,17 @@ Package epstopdf Info: Source file: <fig/tuned_dgetrf.eps>
 (epstopdf)                    size: 8965 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dgetrf-eps-conve
 rted-to.pdf fig/tuned_dgetrf.eps>
-(epstopdf)             \includegraphics on input line 774.
+(epstopdf)             \includegraphics on input line 814.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_dgetrf-eps-converted-to.pdf, id=101, 250.9375pt x 164.615pt>
+<fig/tuned_dgetrf-eps-converted-to.pdf, id=74, 250.9375pt x 164.615pt>
 File: fig/tuned_dgetrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dgetrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dgetrf-eps-converted-to.pdf used on input li
-ne 774.
+ne 814.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
+ [8 <./fig/curvefit_step-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/tuned_sgeqrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:11
 (epstopdf)                    size: 200081 bytes
@@ -946,15 +950,15 @@ Package epstopdf Info: Source file: <fig/tuned_sgeqrf.eps>
 (epstopdf)                    size: 9368 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_sgeqrf-eps-conve
 rted-to.pdf fig/tuned_sgeqrf.eps>
-(epstopdf)             \includegraphics on input line 790.
+(epstopdf)             \includegraphics on input line 830.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_sgeqrf-eps-converted-to.pdf, id=102, 250.9375pt x 164.615pt>
+<fig/tuned_sgeqrf-eps-converted-to.pdf, id=84, 250.9375pt x 164.615pt>
 File: fig/tuned_sgeqrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_sgeqrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_sgeqrf-eps-converted-to.pdf used on input li
-ne 790.
+ne 830.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dgeqrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:09
@@ -964,49 +968,50 @@ Package epstopdf Info: Source file: <fig/tuned_dgeqrf.eps>
 (epstopdf)                    size: 8823 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dgeqrf-eps-conve
 rted-to.pdf fig/tuned_dgeqrf.eps>
-(epstopdf)             \includegraphics on input line 791.
+(epstopdf)             \includegraphics on input line 831.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_dgeqrf-eps-converted-to.pdf, id=103, 250.9375pt x 164.615pt>
+<fig/tuned_dgeqrf-eps-converted-to.pdf, id=85, 250.9375pt x 164.615pt>
 File: fig/tuned_dgeqrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dgeqrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dgeqrf-eps-converted-to.pdf used on input li
-ne 791.
+ne 831.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
- [9 <./fig/tuned_spotrf-eps-converted-to.pdf> <./fig/tuned_dpotrf-eps-converted
--to.pdf> <./fig/tuned_sgetrf-eps-converted-to.pdf> <./fig/tuned_dgetrf-eps-conv
-erted-to.pdf>] (./autotuning.bbl)
+ (./autotuning.bbl [9])
 
 AED: lastpage setting LastPage
-[10 <./fig/tuned_sgeqrf-eps-converted-to.pdf> <./fig/tuned_dgeqrf-eps-converted
--to.pdf>] (./autotuning.aux) ) 
+[10 <./fig/tuned_sgemm-eps-converted-to.pdf> <./fig/tuned_dgemm-eps-converted-t
+o.pdf> <./fig/tuned_spotrf-eps-converted-to.pdf> <./fig/tuned_dpotrf-eps-conver
+ted-to.pdf>] [11 <./fig/tuned_sgetrf-eps-converted-to.pdf> <./fig/tuned_dgetrf-
+eps-converted-to.pdf> <./fig/tuned_sgeqrf-eps-converted-to.pdf> <./fig/tuned_dg
+eqrf-eps-converted-to.pdf>] (./autotuning.aux) ) 
 Here is how much of TeX's memory you used:
- 4475 strings out of 493029
- 58361 string characters out of 6136234
- 132683 words of memory out of 5000000
- 7873 multiletter control sequences out of 15000+600000
+ 4476 strings out of 493029
+ 58375 string characters out of 6136234
+ 135693 words of memory out of 5000000
+ 7874 multiletter control sequences out of 15000+600000
  39362 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,308b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/
-usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx1
-2.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on autotuning.pdf (11 pages, 314359 bytes).
+ 38i,12n,43p,379b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/
+texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
+ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on autotuning.pdf (12 pages, 318664 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 207 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

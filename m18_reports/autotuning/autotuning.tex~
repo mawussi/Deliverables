@@ -227,6 +227,7 @@
 \noindent
 \textsc{Author(s)}\\[1em]
 % First Last (UMU/UNIMAN/STFC/INRIA)
+Negin Baghepour (UNIMAN)\\
 Samuel Relton (UNIMAN)\\
 Mawussi Zounon (UNIMAN)
 
@@ -713,14 +714,126 @@ software can find the appropriate block sizes at runtime.
 \section{Performance results}
 \label{sec.performance}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-\item Try pre/post tuning results vs MKL.
-\end{itemize}
+In this section we aim to demonstrate the
+improvements in performance that can be gained
+by applying the procedure described in the
+previous sections.
+Using a 2 socket NUMA node with
+Haswell cores (2 x Xeon(R) CPU E5-2650 v3, 2.30GHz)
+we ran the OpenTuner procedure to obtain the
+best block sizes,
+fit various curves to the resulting data
+as described in section~\ref{sec.curvefitting},
+and then encoded these curves in Lua functions.
+
+We will compare the performance of OpenMP PLASMA
+using the default parameters (i\@.e\@.~taking a block size of $256$)
+against our tuned version for four different routines:
+matrix multiplication, Cholesky factorization,
+$LU$ factorization, and $QR$ factorization.
+In each case we will show the performance using square matrices of
+various sizes in both single and double precision.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.85]{fig/tuned_sgemm.eps}
+  \includegraphics[scale=0.85]{fig/tuned_dgemm.eps}
+  \caption{Tuned and untuned performance for the GEMM kernel. Single
+    precision is on the left and double precision on the right.
+    \label{fig.tuned_gemm} }
+\end{figure}
+First, in Figure~\ref{fig.tuned_gemm},
+we look at the performance of GEMM (matrix multiplication)
+before and after tuning.
+Single precision is on the left and double precision on the right.
+As we can see,
+the tuned version always performs at least as well as
+the untuned version and is often superior.
+Both versions converge to a similar performance,
+with the tuned version being marginally better.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.85]{fig/tuned_spotrf.eps}
+  \includegraphics[scale=0.85]{fig/tuned_dpotrf.eps}
+  \caption{Tuned and untuned performance for Cholesky factorization. Single
+    precision is on the left and double precision on the right.
+    \label{fig.tuned_potrf} }
+\end{figure}
+
+Next we consider POTRF (the Cholesky decomposition)
+in Figure~\ref{fig.tuned_potrf}.
+As before we see that the tuned version is almost
+always superior to the untuned version
+and the two versions appear to converge to similar
+GFlop rates.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.85]{fig/tuned_sgetrf.eps}
+  \includegraphics[scale=0.85]{fig/tuned_dgetrf.eps}
+  \caption{Tuned and untuned performance for $LU$ factorization. Single
+    precision is on the left and double precision on the right.
+    \label{fig.tuned_getrf} }
+\end{figure}
+In Figure~\ref{fig.tuned_getrf} we see the results of
+GETRF (the $LU$ factorization).
+In this case
+we see that the tuned version always preferable
+and the gap between the two versions has widened.
+Indeed for the larger matrices in our tests we see a
+performance gap of over 100 GFlop/s between them,
+in both precisions.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.85]{fig/tuned_sgeqrf.eps}
+  \includegraphics[scale=0.85]{fig/tuned_dgeqrf.eps}
+  \caption{Tuned and untuned performance for $QR$ factorization. Single
+    precision is on the left and double precision on the right.
+    \label{fig.tuned_geqrf} }
+\end{figure}
+
+Finally,
+Figure~\ref{fig.tuned_geqrf} shows the results
+for GEQRF (the $QR$ factorization).
+In single precision arithmetic the tuned version
+is only slightly better than the untuned version.
+However,
+in double precision,
+the tuned version is far superior and is around 150 GFlop/s
+faster at one point.
+In both cases the two versions converge to a similar
+performance as the matrix size increases,
+though the tuned version is slightly faster.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec.conclusions}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To conclude,
+we have described a process to move from a
+piece of software with no tuning whatsoever
+towards software which is highly tuned for a given architecture.
+Our process makes use of the OpenTuner optimization
+software to find optimal parameters,
+combined with data analysis and curve fitting techniques
+which can then be translated to the Lua scripting language.
+
+As seen from our experiments with the PLASMA library
+for dense linear algebra,
+we can obtain results that are superior to untuned versions
+in almost every test case.
+
+Future work in this area could focus on functions with multiple
+tuning paramers.
+In such functions it may be more difficult
+to fit a surface to the data found by OpenTuner.
+Some possible ways to tackle this may be to fit
+each parameter separately and use a copula
+(an idea borrowed from statistics),
+or to apply Gaussian process regression in this
+multi-dimensional setting.
 
 \bibliographystyle{plain}
 \bibliography{/home/srelton/MATFUN/Total_Bibliography.bib}

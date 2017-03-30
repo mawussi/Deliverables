@@ -5,10 +5,10 @@
                      '(("article" "a4paper" "12pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("fontenc" "T1") ("geometry" "margin=25mm")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
     "article"
@@ -48,6 +48,7 @@
     "fig.fit_linear"
     "fig.fit_log"
     "fig.fit_step"
+    "fig.lua_code"
     "sec.performance"
     "fig.tuned_gemm"
     "fig.tuned_potrf"
