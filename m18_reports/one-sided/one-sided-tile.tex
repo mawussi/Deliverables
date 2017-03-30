@@ -19,8 +19,8 @@ typically workon on the block-column level (also known as panel),
 which fails to exhibit enough parallelism to
 keep all the cores busy.
 Finally, while all factorization algorithms in LAPACK are based on
-a recursive panel update followed by the corresponding trailing
-matrix update, the panel update uses memory-bound operations.
+a recursive panel factorization followed by the corresponding trailing
+matrix update, the panel factorization uses memory-bound operations.
 
 In order to use modern many/multi-core architectures at full
 efficiency, a new generation of linear algebra libraries such as
@@ -74,8 +74,8 @@ algorithms for one-sided factorizations.
 In 2008, Buttari et al.~\cite{buttari2008parallel},
 introduced the first algorithm for parallel tiled QR factorization for
 multicore architectures.
-This algorithm was extended in 2010 by
-Hadri et al~\cite{hadri2010tile} to present a new fully asynchronous
+This algorithm has been extended in 2010 by
+Hadri et al.~\cite{hadri2010tile} to present a new fully asynchronous
 method for computing a QR factorization of tall and skinny matrices.
 The Cholesky and LU factorization versions are studied
 in~\cite{DBLP:journals/corr/abs-0709-1272}, while the algorithm to
