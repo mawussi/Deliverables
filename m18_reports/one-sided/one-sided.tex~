@@ -373,7 +373,7 @@ the four factorizations mentioned above
 using a variety of runtime systems in a multi-core environment.
 Each system is utilizing the same DAG and differs only in the way
 that tasks are assigned to the available cores.
-We also compare against reference LAPACK and Intel MKL
+We also compare against reference Intel MKL
 for completeness.
 The performance of each implementation is measured
 on modern computer architectures:
@@ -558,7 +558,6 @@ implementation of the routines at the LAPACK level of abstraction,
 along with the scheduling system used in the task-based libraries.
 The libraries used are:
 \begin{itemize}
-\item LAPACK 3.7.0,
 \item Intel MKL,
 \item PLASMA 2.8.0 (Quark),
 \item PLASMA 17 (OpenMP), and
@@ -566,11 +565,8 @@ The libraries used are:
 \end{itemize}
 
 First,
-to provide a base result for comparison,
-we will use Netlib LAPACK linked to multi-threaded Intel MKL BLAS.
-Second,
 we use the vendor optimized versions of LAPACK to compute each operation.
-The third and fourth libraries are different versions of the PLASMA
+The second and third libraries are different versions of the PLASMA
 library,
 one of which uses a runtime called Quark whilst the other uses OpenMP
 to schedule the tasks.
@@ -635,10 +631,11 @@ In all four precisions we see that StarPU with
 the ``eager'' strategy gives the best performance over
 essentially all matrix sizes.
 This is closely followed by the ``ws'' strategy
-until matrices with $n > 10000$ are considered,
-after which Quark and OpenMP perform the factorization faster.
-Note that LAPACK and MKL are never the fastest implementations
-in this case.
+and Quark.
+In double complex precision the ``eager'' strategy
+gives the best performance until matrices with
+$n > 13000$ are considered,
+after which MKL and OpenMP perform the factorization faster.
 
 \begin{figure}[t]
   \centering
@@ -657,17 +654,16 @@ in this case.
 In Figure~\ref{fig.chol_knl_ram} we perform the same experiment
 on the KNL.
 As is clear from the graphs of all four precisions,
-only MKL (and by extension LAPACK)
-are making good use of all $68$ cores in the machine:
+only MKL is making efficient use of all $68$ cores in the machine:
 the performance of all the PLASMA-based implementations
-stagnates rather early.
+begins to stagnate whilst MKL keeps on climbing.
 With further autotuning described in NLAFET deliverable D6.4
 we will be able to increase the performance substantially.
 In all cases we see that Quark and StarPU with the ``eager''
 scheduler are the best amongst the PLASMA implementations,
 and the best overall until the largest test matrices are used.
 OpenMP appears to be lagging behind the other implementations
-in performance,
+in performance most of the time,
 but does not suffer the same stagnation as Quark and StarPU.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -694,9 +690,9 @@ the OpenMP implementation into StarPU here,
 so the various StarPU versions do not appear in this section.
 
 In Figure~\ref{fig.lu_numa} we plot the results from the NUMA node.
-Here we see that LAPACK, MKL, and Quark all give
-relatively similar performance though
-Quark is significantly slower for the larger matrices in our
+Here we see that MKL and Quark give
+relatively similar performance,
+though Quark is significantly slower for the larger matrices in our
 experiments.
 In all cases OpenMP lags behind all other implementations:
 this is due to the way that task-dependencies have been expressed
@@ -704,7 +700,7 @@ in the new PLASMA implementation,
 leading to less parallelism being expressed,
 and should not be considered a deficiency of the runtime itself.
 The PLASMA development team are currently exploring options
-to rectify the situation.
+to rectify the situation which will be released imminently.
 
 \begin{figure}[t]
   \centering
@@ -723,7 +719,7 @@ to rectify the situation.
 In Figure~\ref{fig.lu_knl_ram} we perform the same experiment
 on the KNL system.
 As before,
-the LAPACK and MKL implementations scale well whilst
+the MKL implementation scales well whilst
 the performance of Quark stagnates and even decreases
 slightly for very large matrices.
 Meanwhile,
@@ -765,10 +761,11 @@ For double and double complex precision on the top row,
 we see that initially StarPU with the ``eager'' and ``ws'' strategies
 perform best, closely followed by Quark.
 However,
-after matrices of size $8000$ are considered MKL
-(and hence LAPACK) take the lead whilst the
-performance of the other runtimes stagnates.
-OpenMP is almost the worst performer in these cases,
+after matrices of size $8000$--$10000$ (depending upon the precisions)
+are considered,
+MKL takes the lead whilst the
+performance of the other runtimes begin to stagnate.
+OpenMP is often the worst performer in these cases,
 and also stagnates when larger matrices are used.
 For the complex and single precisions the behaviour is rather similar,
 though StarPU with the ``eager'' scheduler is competitive until
@@ -790,8 +787,8 @@ matrices of size larger than $10000$ are used.
 
 We perform the same experiment on the KNL in
 Figure~\ref{fig.qr_knl_ram}.
-Here we see that all but LAPACK and MKL stagnate very quickly
-and give relatively poor performance.
+Here we see that all runtimes except for MKL stagnate very quickly
+and give relatively poor performance by comparison.
 These issues may well be resolved by utilising the
 autotuning described in NLAFET deliverable D6.4.
 Even though the performance leaves much to be desired,
@@ -825,7 +822,7 @@ to LAPACK and MKL in this scenario.
 
 The results obtained on the NUMA node are given in
 Figure~\ref{fig.ldlt_numa}.
-We see that clearly MKL (and hence LAPACK) are performing very well,
+We see that clearly MKL is performing very well,
 but OpenMP is significantly better than Quark.
 Interestingly,
 none of the implementations are stagnating when the larger matrices

@@ -463,13 +463,13 @@ we prefer to take the second approach and perform autotuning
 through configuration files.
 In order to maximize the number of architectures where our
 autotuning can be performed,
-we would like our optimiser to be written in a language such as
+we would like our optimiser to be written in languages such as
 C or Python, which are supported in all major operating systems.
 
 Although there are a large number of autotuning frameworks
 available for download,
-the only one we have found that fits all of the criteria is
-OpenTuner~\cite{ansel:pact:2014}.
+the only one we have found that fits all of our desired
+criteria is OpenTuner~\cite{ansel:pact:2014}.
 OpenTuner is a Python module with minimal dependencies that
 can be used to optimise all the quantities mentioned previously.
 Particularly interesting is its use of ensemble optimisation:
@@ -490,7 +490,7 @@ perform tuning withing NLAFET,
 using the PLASMA project (for dense linear algebra)
 as an example.
 
-Overall,
+To give an overview of our approach,
 we aim to use optimization software such as OpenTuner
 (or even a full grid-sweep)
 to determine optimal values of the block size for
@@ -528,7 +528,7 @@ we would like to fit a function to these points
 can be returned for any matrix size)
 before writing Lua code to implement this function.
 From here,
-the software can simple call the Lua script to obtain
+the software can simply call the Lua script to obtain
 the parameters for any input matrix.
 This second issue is rather difficult to automate:
 there are a variety of different functions needed to
@@ -539,8 +539,10 @@ performing a grid-sweep over all block sizes for
 a variety of matrix sizes
 is very simple and the optimal parameters can easily be
 stored in a csv file.
-In order to use OpenTuner there is a small amount of
-extra work required:
+The downside is that grid sweeps are extremely expensive.
+In order to use OpenTuner,
+to reduce the time for the sweep,
+there is a small amount of extra work required:
 we must define a Python class with the following 3 functions
 \begin{itemize}
 \item \texttt{manipulator} -- to define the search space,
@@ -557,26 +559,30 @@ investigating with the current block size and take the average time
 over $5$ runs (where $5$ is actually a user-chosen parameter).
 Finally in \texttt{save\_final\_config} we output the
 ``optimal'' block size in JSON format.
-A wrapper script collects the JSON files for various matrix sizes
+A wrapper script collates the JSON files for various matrix sizes
 into a single CSV file.
 
 The actual optimization is taken care of by OpenTuner itself,
 meaning that there is nothing else to do but to limit
 the number of tests performed using the command-line argument
-\texttt{\-\-test-limit=x}.
+\texttt{-$\,$-test-limit=x}.
+This was set to $30$ for our experiments whereas doing a full
+grid sweep needs $55$ runs for each matrix size;
+we can save almost half the sweep time by using OpenTuner.
+
 We can also define multiple initial guesses for the optimal
 block size using the command-line argument
-\texttt{\-\-seed-configuration=f} where \texttt{f} is a JSON
+\texttt{-$\,$-seed-configuration=f} where \texttt{f} is a JSON
 file containing, for example, \texttt{\{``blocksize'': 256\}}.
-We have defined a few initial guesses for the powers of 2 etc.
+We used this latter option to define a few initial guesses
+for the powers of 2 etc.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Curve fitting}
 \label{sec.curvefitting}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Once we have found the optimal block sizes for a variety of matrix
-sizes (1000 to 30000 in steps of 1000 within our experiments)
-we would like to fit a curve to the resulting data,
+sizes we would like to fit a curve to the resulting data,
 which can then be coded in Lua.
 Using this fitted curve we can then return near-optimal
 parameters for any input matrix,
@@ -696,6 +702,37 @@ Note that even performing the same routine in different
 precisions can lead to drastically differing behaviours
 (compare Figures~\ref{fig.fit_log}~and~\ref{fig.fit_step}).
 
+\begin{figure}[ht]
+  \centering
+\begin{verbatim}
+function potrf_nb (dtype, n)
+    if dtype == 'S' then
+        if n <= 1000 then
+            return 128
+        else
+            return math.min(512,
+            math.floor(-898.372659 + 134.77263 * math.log(n)))
+        end
+    elseif dtype == 'D' then
+        if n < 5000 then
+       	    return 124
+        elseif n < 19000 then
+            return 291
+        else
+            return 487
+        end
+    else
+        return 256
+    end
+end
+\end{verbatim}
+  \caption{Lua code implementing the curves fitted to the single and
+    double precision Cholesky factorizations. The arguments to the
+    function are \texttt{dtype}, a character which determines the
+    precisions of the computation, and \texttt{n}, the size of the matrix.}
+  \label{fig.lua_code}
+\end{figure}
+
 As such,
 we can only recommend that each routine is treated
 independently and no initial assumptions are
@@ -709,6 +746,9 @@ Clearly,
 once these trends have been found,
 they need to be coded within Lua functions so that the
 software can find the appropriate block sizes at runtime.
+As an example, the Lua code for the single and double
+precision variants of the Cholesky factorization is given
+in Figure~\ref{fig.lua_code}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Performance results}
@@ -721,10 +761,10 @@ previous sections.
 Using a 2 socket NUMA node with
 Haswell cores (2 x Xeon(R) CPU E5-2650 v3, 2.30GHz)
 we ran the OpenTuner procedure to obtain the
-best block sizes,
-fit various curves to the resulting data
-as described in section~\ref{sec.curvefitting},
-and then encoded these curves in Lua functions.
+best block sizes for various matrix sizes and
+fit various curves to the resulting data---%
+as described in section~\ref{sec.curvefitting}---%
+before encoding these curves in Lua functions.
 
 We will compare the performance of OpenMP PLASMA
 using the default parameters (i\@.e\@.~taking a block size of $256$)
@@ -749,7 +789,7 @@ Single precision is on the left and double precision on the right.
 As we can see,
 the tuned version always performs at least as well as
 the untuned version and is often superior.
-Both versions converge to a similar performance,
+Both versions converge to a similar level of performance,
 with the tuned version being marginally better.
 
 \begin{figure}[ht]
@@ -779,8 +819,8 @@ GFlop rates.
 In Figure~\ref{fig.tuned_getrf} we see the results of
 GETRF (the $LU$ factorization).
 In this case
-we see that the tuned version always preferable
-and the gap between the two versions has widened.
+we see that the tuned version is always preferable
+and the gap between the two versions has widened significantly.
 Indeed for the larger matrices in our tests we see a
 performance gap of over 100 GFlop/s between them,
 in both precisions.

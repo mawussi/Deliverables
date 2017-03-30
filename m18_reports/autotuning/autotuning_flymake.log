@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  30 MAR 2017 09:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  30 MAR 2017 09:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -774,122 +774,12 @@ LaTeX Warning: Citation `ansel:pact:2014' on page 4 undefined on input line 472
 .
 
 [4]
-/home/srelton/NLAFET/Deliverables/m18_reports/autotuning/autotuning_flymake.tex
-:568: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.568 \texttt{-$\-test-limit=x}
-                               .
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/srelton/NLAFET/Deliverables/m18_reports/autotuning/autotuning_flymake.tex
-:574: Missing $ inserted.
-<inserted text> 
-                $
-l.574 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (97.73018pt too wide) in paragraph at lines 565--574
-\T1/lmr/m/n/12 ment \T1/lmtt/m/n/12 -$-\OML/lmm/m/it/12 test \OMS/lmsy/m/n/12 ^
-^@ \OML/lmm/m/it/12 limit \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 x:Wecanalsodefinem
-ultipleinitialguessesfortheoptimalblocksizeusingthecommand \OMS/lmsy/m/n/12 ^^@
-
- []
-
-
-Overfull \hbox (392.02667pt too wide) in paragraph at lines 565--574
-\OML/lmm/m/it/12 lineargument[]where[]isaJSONfilecontaining; forexample; []:Weh
-avedefinedafewinitialguessesforthepowersof\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 etc
-:$ 
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 579--586
-\T1/lmtt/m/n/12 Once we have found the optimal block sizes for a variety of mat
-rix sizes (1000
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 579--586
-\T1/lmtt/m/n/12 to 30000 in steps of 1000 within our experiments) we would like
- to fit a curve
- []
-
-
-Overfull \hbox (32.58113pt too wide) in paragraph at lines 579--586
-\T1/lmtt/m/n/12 to the resulting data, which can then be coded in Lua. Using th
-is fitted curve
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 579--586
-\T1/lmtt/m/n/12 we can then return near-optimal parameters for any input matrix
-, regardless
+Overfull \hbox (3.06789pt too wide) in paragraph at lines 573--579
+[]\T1/lmr/m/n/12 We can also de-fine mul-ti-ple ini-tial guesses for the op-ti-
+mal block size us-ing the command-
  []
 
 [5]
-Overfull \hbox (0.80592pt too wide) in paragraph at lines 587--593
-[]\T1/lmtt/m/n/12 In this section we will show the variety of behaviours that t
-he optimal
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 587--593
-\T1/lmtt/m/n/12 block size can take as the matrix size changes, propose a numbe
-r of models
- []
-
-
-Overfull \hbox (20.23112pt too wide) in paragraph at lines 587--593
-\T1/lmtt/m/n/12 to fit the resulting data, and describe how the parameters of s
-uch models can
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 587--593
-\T1/lmtt/m/n/12 be estimated. We found that the following four models can cover
- all of the
- []
-
-LaTeX Font Info:    Try loading font information for OMS+lmtt on input line 595
-.
-LaTeX Font Info:    No file OMSlmtt.fd. on input line 595.
-
-LaTeX Font Warning: Font shape `OMS/lmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 595.
-
-
-Overfull \hbox (6.3808pt too wide) in paragraph at lines 595--596
-[]\T1/lmtt/m/n/12 Constant models - Block size does not depend on the input mat
-rix size. 
- []
-
-
-Overfull \hbox (24.9058pt too wide) in paragraph at lines 596--597
-[]\T1/lmtt/m/n/12 Linear models - Block size increases linearly with the input 
-matrix size. 
- []
-
-
-Overfull \hbox (18.7308pt too wide) in paragraph at lines 597--599
-[]\T1/lmtt/m/n/12 Logarithmic models - Block size increases logarithmically wit
-h the input
- []
-
-
-Overfull \hbox (12.5558pt too wide) in paragraph at lines 599--601
-[]\T1/lmtt/m/n/12 Piecewise models - A combination of the other three models is
- required,
- []
-
 Package epstopdf Info: Source file: <fig/curvefit_const.eps>
 (epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 201161 bytes
@@ -898,51 +788,15 @@ Package epstopdf Info: Source file: <fig/curvefit_const.eps>
 (epstopdf)                    size: 9629 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_const-eps-con
 verted-to.pdf fig/curvefit_const.eps>
-(epstopdf)             \includegraphics on input line 606.
+(epstopdf)             \includegraphics on input line 610.
 Package epstopdf Info: Output file is already uptodate.
-<fig/curvefit_const-eps-converted-to.pdf, id=31, 249.93375pt x 160.6pt>
+ <fig/curvefit_const-eps-converted-to.pdf, id=31, 249.93375pt x 160.6pt>
 File: fig/curvefit_const-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_const-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_const-eps-converted-to.pdf used on input 
-line 606.
+line 610.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
-
-Overfull \hbox (6.98093pt too wide) in paragraph at lines 613--626
-[]\T1/lmtt/m/n/12 First we investigate the performance of DGEMM for matrix mult
-iplication.
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 613--626
-\T1/lmtt/m/n/12 As we can see from Figure 1[], the optimal block size is largel
-y independent
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 613--626
-\T1/lmtt/m/n/12 of the matrix size. Therefore, we use the mean of all the value
-s to return
- []
-
-
-Overfull \hbox (19.33107pt too wide) in paragraph at lines 613--626
-\T1/lmtt/m/n/12 a constant block size: in this case the constant is $\OT1/lmr/m
-/n/12 304$\T1/lmtt/m/n/12 . The reason for the
- []
-
-
-Overfull \hbox (20.23112pt too wide) in paragraph at lines 613--626
-\T1/lmtt/m/n/12 lack of dependence on the matrix size is fairly straightforward
-s, since DGEMM
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 613--626
-\T1/lmtt/m/n/12 is very arithmetic intensive, involving only fused multiply-add
-s, the block
- []
-
 Package epstopdf Info: Source file: <fig/curvefit_linear.eps>
 (epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 206682 bytes
@@ -951,27 +805,16 @@ Package epstopdf Info: Source file: <fig/curvefit_linear.eps>
 (epstopdf)                    size: 11252 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_linear-eps-co
 nverted-to.pdf fig/curvefit_linear.eps>
-(epstopdf)             \includegraphics on input line 630.
+(epstopdf)             \includegraphics on input line 634.
 Package epstopdf Info: Output file is already uptodate.
+
 <fig/curvefit_linear-eps-converted-to.pdf, id=32, 249.93375pt x 160.6pt>
 File: fig/curvefit_linear-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_linear-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_linear-eps-converted-to.pdf used on input
- line 630.
+ line 634.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
-
-Overfull \hbox (61.25885pt too wide) in paragraph at lines 637--643
-[]\T1/lmtt/m/n/12 Next we investigate DGETRF for $\OML/lmm/m/it/12 LU$ \T1/lmtt
-/m/n/12 factorization in Figure 2[]. In this experiment
- []
-
-
-Overfull \hbox (32.58113pt too wide) in paragraph at lines 637--643
-\T1/lmtt/m/n/12 it is clear that a linear model provides a much better fit for 
-the data. Doing
- []
-
 Package epstopdf Info: Source file: <fig/curvefit_log.eps>
 (epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 206627 bytes
@@ -980,37 +823,17 @@ Package epstopdf Info: Source file: <fig/curvefit_log.eps>
 (epstopdf)                    size: 11245 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_log-eps-conve
 rted-to.pdf fig/curvefit_log.eps>
-(epstopdf)             \includegraphics on input line 647.
+(epstopdf)             \includegraphics on input line 651.
 Package epstopdf Info: Output file is already uptodate.
+
 <fig/curvefit_log-eps-converted-to.pdf, id=33, 249.93375pt x 160.6pt>
 File: fig/curvefit_log-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_log-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_log-eps-converted-to.pdf used on input li
-ne 647.
+ne 651.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
-
-Overfull \hbox (37.85594pt too wide) in paragraph at lines 655--660
-[]\T1/lmtt/m/n/12 In Figure 3[] we observe that the block size for SPOTRF (Chol
-esky factorization
- []
-
-
-Overfull \hbox (81.98116pt too wide) in paragraph at lines 655--660
-\T1/lmtt/m/n/12 in single precision) increases logarithmically with the matrix 
-size. The least-squares
- []
-
-
-Overfull \hbox (42.97244pt too wide) in paragraph at lines 655--660
-\T1/lmtt/m/n/12 fit of a model $\OML/lmm/m/it/12 y \OT1/lmr/m/n/12 = \OML/lmm/m
-/it/12 a \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 b []\OT1/lmr/m/n/12 (\OML/lmm/m/it/
-12 x\OT1/lmr/m/n/12 )$ \T1/lmtt/m/n/12 on a set of $\OML/lmm/m/it/12 k$ \T1/lmt
-t/m/n/12 data points $\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 x[]; y[]\OT1/lmr/m/n/12
- )$ \T1/lmtt/m/n/12 gives the parameters 
- []
-
-[6]
+ [6]
 Package epstopdf Info: Source file: <fig/curvefit_step.eps>
 (epstopdf)                    date: 2017-03-29 21:21:02
 (epstopdf)                    size: 206226 bytes
@@ -1019,159 +842,17 @@ Package epstopdf Info: Source file: <fig/curvefit_step.eps>
 (epstopdf)                    size: 11091 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/curvefit_step-eps-conv
 erted-to.pdf fig/curvefit_step.eps>
-(epstopdf)             \includegraphics on input line 671.
+(epstopdf)             \includegraphics on input line 675.
 Package epstopdf Info: Output file is already uptodate.
- <fig/curvefit_step-eps-converted-to.pdf, id=39, 249.93375pt x 160.6pt>
+
+<fig/curvefit_step-eps-converted-to.pdf, id=38, 249.93375pt x 160.6pt>
 File: fig/curvefit_step-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/curvefit_step-eps-converted-to.pdf>
 Package pdftex.def Info: fig/curvefit_step-eps-converted-to.pdf used on input l
-ine 671.
+ine 675.
 (pdftex.def)             Requested size: 249.93314pt x 160.5996pt.
-
-Overfull \hbox (6.98093pt too wide) in paragraph at lines 678--693
-[]\T1/lmtt/m/n/12 Finally, by looking at the performance of DPOTRF (Cholesky fa
-ctorization
- []
-
-
-Overfull \hbox (51.10614pt too wide) in paragraph at lines 678--693
-\T1/lmtt/m/n/12 in double precision) in Figure 4[], we see an example of a rout
-ine where a piecewise
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 678--693
-\T1/lmtt/m/n/12 function is the best choice to model the data. In this particul
-ar case a step
- []
-
-
-Overfull \hbox (44.93114pt too wide) in paragraph at lines 678--693
-\T1/lmtt/m/n/12 function is an appropriate model, though there are other routin
-es where initially
- []
-
-
-Overfull \hbox (14.05612pt too wide) in paragraph at lines 678--693
-\T1/lmtt/m/n/12 the function is logarithmic before settling at some constant va
-lue. In this
- []
-
-
-Overfull \hbox (19.03105pt too wide) in paragraph at lines 678--693
-\T1/lmtt/m/n/12 particular step function the value changes when the matrix size
-s are $\OT1/lmr/m/n/12 5000$ \T1/lmtt/m/n/12 and
- []
-
-
-Overfull \hbox (19.33093pt too wide) in paragraph at lines 694--700
-[]\T1/lmtt/m/n/12 In summary there are a variety of different behaviours that t
-he block size
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 694--700
-\T1/lmtt/m/n/12 can exhibit depending upon the routine in question. Note that e
-ven performing
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 694--700
-\T1/lmtt/m/n/12 the same routine in different precisions can lead to drasticall
-y differing
- []
-
-[7]
-Overfull \hbox (13.15593pt too wide) in paragraph at lines 701--714
-[]\T1/lmtt/m/n/12 As such, we can only recommend that each routine is treated i
-ndependently
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 701--714
-\T1/lmtt/m/n/12 and no initial assumptions are made about their behaviour. Furt
-hermore, these
- []
-
-
-Overfull \hbox (81.98116pt too wide) in paragraph at lines 701--714
-\T1/lmtt/m/n/12 results are only measured on a Haswell NUMA node. Moving to mor
-e recent architectures,
- []
-
-
-Overfull \hbox (57.28114pt too wide) in paragraph at lines 701--714
-\T1/lmtt/m/n/12 or the Intel Xeon Phi (codenamed Knights Landing) may lead to d
-rastically different
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 701--714
-\T1/lmtt/m/n/12 behaviours. Clearly, once these trends have been found, they ne
-ed to be coded
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 701--714
-\T1/lmtt/m/n/12 within Lua functions so that the software can find the appropri
-ate block sizes
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 719--730
-\T1/lmtt/m/n/12 In this section we aim to demonstrate the improvements in perfo
-rmance that
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 719--730
-\T1/lmtt/m/n/12 can be gained by applying the procedure described in the previo
-us sections.
- []
-
-
-Overfull \hbox (1.69911pt too wide) in paragraph at lines 719--730
-\T1/lmtt/m/n/12 Using a 2 socket NUMA node with Haswell cores (2 x Xeon(R) CPU 
-E5-2650 v3,
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 719--730
-\T1/lmtt/m/n/12 2.30GHz) we ran the OpenTuner procedure to obtain the best bloc
-k sizes, fit
- []
-
-
-Overfull \hbox (38.75613pt too wide) in paragraph at lines 719--730
-\T1/lmtt/m/n/12 various curves to the resulting data as described in section 4[
-], and then encoded
- []
-
-
-Overfull \hbox (37.85594pt too wide) in paragraph at lines 731--738
-[]\T1/lmtt/m/n/12 We will compare the performance of OpenMP PLASMA using the de
-fault parameters
- []
-
-
-Overfull \hbox (25.50607pt too wide) in paragraph at lines 731--738
-\T1/lmtt/m/n/12 (i.e. taking a block size of $\OT1/lmr/m/n/12 256$\T1/lmtt/m/n/
-12 ) against our tuned version for four different
- []
-
-
-Overfull \hbox (12.75902pt too wide) in paragraph at lines 731--738
-\T1/lmtt/m/n/12 routines: matrix multiplication, Cholesky factorization, $\OML/
-lmm/m/it/12 LU$ \T1/lmtt/m/n/12 factorization,
- []
-
-
-Overfull \hbox (26.22943pt too wide) in paragraph at lines 731--738
-\T1/lmtt/m/n/12 and $\OML/lmm/m/it/12 QR$ \T1/lmtt/m/n/12 factorization. In eac
-h case we will show the performance using square
- []
-
+ [7]
 Package epstopdf Info: Source file: <fig/tuned_sgemm.eps>
 (epstopdf)                    date: 2017-03-29 21:34:11
 (epstopdf)                    size: 198148 bytes
@@ -1180,14 +861,15 @@ Package epstopdf Info: Source file: <fig/tuned_sgemm.eps>
 (epstopdf)                    size: 8967 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_sgemm-eps-conver
 ted-to.pdf fig/tuned_sgemm.eps>
-(epstopdf)             \includegraphics on input line 741.
+(epstopdf)             \includegraphics on input line 779.
 Package epstopdf Info: Output file is already uptodate.
-<fig/tuned_sgemm-eps-converted-to.pdf, id=46, 254.9525pt x 164.615pt>
+
+<fig/tuned_sgemm-eps-converted-to.pdf, id=45, 254.9525pt x 164.615pt>
 File: fig/tuned_sgemm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_sgemm-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_sgemm-eps-converted-to.pdf used on input lin
-e 741.
+e 779.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dgemm.eps>
 (epstopdf)                    date: 2017-03-29 21:34:09
@@ -1197,40 +879,16 @@ Package epstopdf Info: Source file: <fig/tuned_dgemm.eps>
 (epstopdf)                    size: 8959 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dgemm-eps-conver
 ted-to.pdf fig/tuned_dgemm.eps>
-(epstopdf)             \includegraphics on input line 742.
+(epstopdf)             \includegraphics on input line 780.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_dgemm-eps-converted-to.pdf, id=47, 250.9375pt x 164.615pt>
+<fig/tuned_dgemm-eps-converted-to.pdf, id=46, 250.9375pt x 164.615pt>
 File: fig/tuned_dgemm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dgemm-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dgemm-eps-converted-to.pdf used on input lin
-e 742.
+e 780.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
-
-Overfull \hbox (44.03094pt too wide) in paragraph at lines 747--756
-[]\T1/lmtt/m/n/12 First, in Figure 5[], we look at the performance of GEMM (mat
-rix multiplication)
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 747--756
-\T1/lmtt/m/n/12 before and after tuning. Single precision is on the left and do
-uble precision
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 747--756
-\T1/lmtt/m/n/12 on the right. As we can see, the tuned version always performs 
-at least as
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 747--756
-\T1/lmtt/m/n/12 well as the untuned version and is often superior. Both version
-s converge
- []
-
 Package epstopdf Info: Source file: <fig/tuned_spotrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:13
 (epstopdf)                    size: 198148 bytes
@@ -1239,14 +897,15 @@ Package epstopdf Info: Source file: <fig/tuned_spotrf.eps>
 (epstopdf)                    size: 8963 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_spotrf-eps-conve
 rted-to.pdf fig/tuned_spotrf.eps>
-(epstopdf)             \includegraphics on input line 759.
+(epstopdf)             \includegraphics on input line 797.
 Package epstopdf Info: Output file is already uptodate.
-<fig/tuned_spotrf-eps-converted-to.pdf, id=48, 254.9525pt x 164.615pt>
+
+<fig/tuned_spotrf-eps-converted-to.pdf, id=47, 254.9525pt x 164.615pt>
 File: fig/tuned_spotrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_spotrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_spotrf-eps-converted-to.pdf used on input li
-ne 759.
+ne 797.
 (pdftex.def)             Requested size: 216.71063pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dpotrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:10
@@ -1256,28 +915,16 @@ Package epstopdf Info: Source file: <fig/tuned_dpotrf.eps>
 (epstopdf)                    size: 8805 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dpotrf-eps-conve
 rted-to.pdf fig/tuned_dpotrf.eps>
-(epstopdf)             \includegraphics on input line 760.
+(epstopdf)             \includegraphics on input line 798.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_dpotrf-eps-converted-to.pdf, id=49, 250.9375pt x 164.615pt>
+<fig/tuned_dpotrf-eps-converted-to.pdf, id=48, 250.9375pt x 164.615pt>
 File: fig/tuned_dpotrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dpotrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dpotrf-eps-converted-to.pdf used on input li
-ne 760.
+ne 798.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
-
-Overfull \hbox (25.49893pt too wide) in paragraph at lines 766--772
-[]\T1/lmtt/m/n/12 Next we consider POTRF (the Cholesky decomposition) in Figure
- 6[]. As before
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 766--772
-\T1/lmtt/m/n/12 we see that the tuned version is almost always superior to the 
-untuned version
- []
-
 Package epstopdf Info: Source file: <fig/tuned_sgetrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:12
 (epstopdf)                    size: 200077 bytes
@@ -1286,14 +933,15 @@ Package epstopdf Info: Source file: <fig/tuned_sgetrf.eps>
 (epstopdf)                    size: 9383 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_sgetrf-eps-conve
 rted-to.pdf fig/tuned_sgetrf.eps>
-(epstopdf)             \includegraphics on input line 775.
+(epstopdf)             \includegraphics on input line 813.
 Package epstopdf Info: Output file is already uptodate.
-<fig/tuned_sgetrf-eps-converted-to.pdf, id=50, 250.9375pt x 164.615pt>
+
+<fig/tuned_sgetrf-eps-converted-to.pdf, id=49, 250.9375pt x 164.615pt>
 File: fig/tuned_sgetrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_sgetrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_sgetrf-eps-converted-to.pdf used on input li
-ne 775.
+ne 813.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dgetrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:10
@@ -1303,35 +951,17 @@ Package epstopdf Info: Source file: <fig/tuned_dgetrf.eps>
 (epstopdf)                    size: 8965 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dgetrf-eps-conve
 rted-to.pdf fig/tuned_dgetrf.eps>
-(epstopdf)             \includegraphics on input line 776.
+(epstopdf)             \includegraphics on input line 814.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_dgetrf-eps-converted-to.pdf, id=51, 250.9375pt x 164.615pt>
+<fig/tuned_dgetrf-eps-converted-to.pdf, id=50, 250.9375pt x 164.615pt>
 File: fig/tuned_dgetrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dgetrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dgetrf-eps-converted-to.pdf used on input li
-ne 776.
+ne 814.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
-
-Overfull \hbox (11.85883pt too wide) in paragraph at lines 781--789
-[]\T1/lmtt/m/n/12 In Figure 7[] we see the results of GETRF (the $\OML/lmm/m/it
-/12 LU$ \T1/lmtt/m/n/12 factorization). In this
- []
-
-
-Overfull \hbox (14.05612pt too wide) in paragraph at lines 781--789
-\T1/lmtt/m/n/12 case we see that the tuned version always preferable and the ga
-p between the
- []
-
-
-Overfull \hbox (20.23112pt too wide) in paragraph at lines 781--789
-\T1/lmtt/m/n/12 two versions has widened. Indeed for the larger matrices in our
- tests we see
- []
-
-[8]
+ [8]
 Package epstopdf Info: Source file: <fig/tuned_sgeqrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:11
 (epstopdf)                    size: 200081 bytes
@@ -1340,14 +970,15 @@ Package epstopdf Info: Source file: <fig/tuned_sgeqrf.eps>
 (epstopdf)                    size: 9368 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_sgeqrf-eps-conve
 rted-to.pdf fig/tuned_sgeqrf.eps>
-(epstopdf)             \includegraphics on input line 792.
+(epstopdf)             \includegraphics on input line 830.
 Package epstopdf Info: Output file is already uptodate.
- <fig/tuned_sgeqrf-eps-converted-to.pdf, id=55, 250.9375pt x 164.615pt>
+
+<fig/tuned_sgeqrf-eps-converted-to.pdf, id=54, 250.9375pt x 164.615pt>
 File: fig/tuned_sgeqrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_sgeqrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_sgeqrf-eps-converted-to.pdf used on input li
-ne 792.
+ne 830.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 Package epstopdf Info: Source file: <fig/tuned_dgeqrf.eps>
 (epstopdf)                    date: 2017-03-29 21:34:09
@@ -1357,138 +988,38 @@ Package epstopdf Info: Source file: <fig/tuned_dgeqrf.eps>
 (epstopdf)                    size: 8823 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/tuned_dgeqrf-eps-conve
 rted-to.pdf fig/tuned_dgeqrf.eps>
-(epstopdf)             \includegraphics on input line 793.
+(epstopdf)             \includegraphics on input line 831.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/tuned_dgeqrf-eps-converted-to.pdf, id=56, 250.9375pt x 164.615pt>
+<fig/tuned_dgeqrf-eps-converted-to.pdf, id=55, 250.9375pt x 164.615pt>
 File: fig/tuned_dgeqrf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/tuned_dgeqrf-eps-converted-to.pdf>
 Package pdftex.def Info: fig/tuned_dgeqrf-eps-converted-to.pdf used on input li
-ne 793.
+ne 831.
 (pdftex.def)             Requested size: 213.29787pt x 139.9234pt.
 
-Overfull \hbox (19.15424pt too wide) in paragraph at lines 799--811
-[]\T1/lmtt/m/n/12 Finally, Figure 8[] shows the results for GEQRF (the $\OML/lm
-m/m/it/12 QR$ \T1/lmtt/m/n/12 factorization). In
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 799--811
-\T1/lmtt/m/n/12 single precision arithmetic the tuned version is only slightly 
-better than
- []
-
-
-Overfull \hbox (14.05612pt too wide) in paragraph at lines 799--811
-\T1/lmtt/m/n/12 the untuned version. However, in double precision, the tuned ve
-rsion is far
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 799--811
-\T1/lmtt/m/n/12 superior and is around 150 GFlop/s faster at one point. In both
- cases the
- []
-
-
-Overfull \hbox (14.05612pt too wide) in paragraph at lines 799--811
-\T1/lmtt/m/n/12 two versions converge to a similar performance as the matrix si
-ze increases,
- []
-
-
-Overfull \hbox (26.40613pt too wide) in paragraph at lines 816--824
-\T1/lmtt/m/n/12 To conclude, we have described a process to move from a piece o
-f software with
- []
-
-
-Overfull \hbox (69.63115pt too wide) in paragraph at lines 816--824
-\T1/lmtt/m/n/12 no tuning whatsoever towards software which is highly tuned for
- a given architecture.
- []
-
-
-Overfull \hbox (14.05612pt too wide) in paragraph at lines 816--824
-\T1/lmtt/m/n/12 Our process makes use of the OpenTuner optimization software to
- find optimal
- []
-
-
-Overfull \hbox (1.70612pt too wide) in paragraph at lines 816--824
-\T1/lmtt/m/n/12 parameters, combined with data analysis and curve fitting techn
-iques which
- []
-
-
-Overfull \hbox (44.03094pt too wide) in paragraph at lines 825--829
-[]\T1/lmtt/m/n/12 As seen from our experiments with the PLASMA library for dens
-e linear algebra,
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 825--829
-\T1/lmtt/m/n/12 we can obtain results that are superior to untuned versions in 
-almost every
- []
-
-
-Overfull \hbox (56.38095pt too wide) in paragraph at lines 830--839
-[]\T1/lmtt/m/n/12 Future work in this area could focus on functions with multip
-le tuning paramers.
- []
-
-
-Overfull \hbox (20.23112pt too wide) in paragraph at lines 830--839
-\T1/lmtt/m/n/12 In such functions it may be more difficult to fit a surface to 
-the data found
- []
-
-
-Overfull \hbox (20.23112pt too wide) in paragraph at lines 830--839
-\T1/lmtt/m/n/12 by OpenTuner. Some possible ways to tackle this may be to fit e
-ach parameter
- []
-
-
-Overfull \hbox (7.88112pt too wide) in paragraph at lines 830--839
-\T1/lmtt/m/n/12 separately and use a copula (an idea borrowed from statistics),
- or to apply
- []
-
-[9]
 No file autotuning_flymake.bbl.
 
 AED: lastpage setting LastPage
-[10] (./autotuning_flymake.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+[9] [10] [11] (./autotuning_flymake.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 568 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 4483 strings out of 493029
- 58702 string characters out of 6136234
- 132671 words of memory out of 5000000
- 7879 multiletter control sequences out of 15000+600000
- 40261 words of font info for 43 fonts, out of 8000000 for 9000
+ 4475 strings out of 493029
+ 58618 string characters out of 6136234
+ 135681 words of memory out of 5000000
+ 7874 multiletter control sequences out of 15000+600000
+ 39362 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,366b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,437b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 pdfTeX warning: \pdfdraftmode enabled, not changing output pdf
 
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  29 MAR 2017 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  30 MAR 2017 12:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymak
+**/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymak
 e.tex
 
-(/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake
+(/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake
 .tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:1: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -36,7 +36,7 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no K in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{anderson1999lapack}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:1: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -318,7 +318,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{agullo2009comparative}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:6: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -365,7 +365,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{dongarra2011achieving}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:7: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -978,7 +978,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 1--18
  []
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:20: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1105,7 +1105,7 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{DBLP:journals/corr/abs-0709-1272}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:22: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -1132,7 +1132,7 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no E in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{FLAWN3}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:22: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -1512,7 +1512,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:29: Undefined control sequence.
 <write> ...rence `fig:tile_algo' on page \thepage 
                                                   \space undefined\on@line .
@@ -1529,7 +1529,7 @@ LaTeX Warning: Reference `fig:tile_algo' on page  undefined on input line 29.
 
 Missing character: There is no . in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:30: LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1546,7 +1546,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:31: Undefined control sequence.
 l.31   \captionsetup
                     [subfigure]{justification=justified,singlelinecheck=false}
@@ -1613,7 +1613,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:32: LaTeX Error: Environment subfigure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1632,7 +1632,7 @@ Missing character: There is no ] in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 3 in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:32: Missing number, treated as zero.
 <to be read again> 
                    }
@@ -1642,7 +1642,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:32: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
@@ -1655,7 +1655,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:33: Undefined control sequence.
 l.33     \includegraphics
                          [width=3.5cm, height=3.5cm]{fig/one-sided-initial}
@@ -1713,7 +1713,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:34: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1740,7 +1740,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no . in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:35: LaTeX Error: \begin{document} ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1754,7 +1754,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:37: LaTeX Error: Environment subfigure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1773,7 +1773,7 @@ Missing character: There is no ] in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 3 in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:37: Missing number, treated as zero.
 <to be read again> 
                    }
@@ -1783,7 +1783,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:37: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
@@ -1796,7 +1796,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:38: Undefined control sequence.
 l.38     \includegraphics
                          [width=3.5cm, height=3.5cm]{fig/one-sided-tile}
@@ -1851,7 +1851,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:39: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1879,7 +1879,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no . in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:41: LaTeX Error: \begin{document} ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1893,7 +1893,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:43: LaTeX Error: Environment subfigure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1912,7 +1912,7 @@ Missing character: There is no ] in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 3 in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:43: Missing number, treated as zero.
 <to be read again> 
                    }
@@ -1922,7 +1922,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:43: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
@@ -1935,7 +1935,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:44: Undefined control sequence.
 l.44     \includegraphics
                          [width=3.5cm, height=3.5cm]{fig/one-sided-tile-facto}
@@ -1996,7 +1996,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:45: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2056,7 +2056,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:47: LaTeX Error: \begin{document} ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2070,7 +2070,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:48: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2216,7 +2216,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:52: LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2260,7 +2260,7 @@ Overfull \hbox (5.00002pt too wide) in paragraph at lines 20--53
  []
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:54: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2563,7 +2563,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 54--59
  []
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:60: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2722,7 +2722,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{agullo2009comparative}
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:63: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
@@ -2750,7 +2750,7 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 60--64
 [] 
  []
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:66: Undefined control sequence.
 l.66 \subsection
                 {Tile QR factorization}
@@ -2761,7 +2761,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:66: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2797,7 +2797,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
 []
  []
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:68: Undefined control sequence.
 l.68 \subsection
                 {Tile LU factorization}
@@ -2808,7 +2808,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:68: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -2839,7 +2839,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:69: Undefined control sequence.
 l.69 \subsection
                 {Tile Cholesky factorization}
@@ -2874,7 +2874,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-/home/srelton/Dropbox/NLAFET-manc/m18_reports/one-sided/one-sided-tile_flymake.
+/home/srelton/NLAFET/Deliverables/m18_reports/one-sided/one-sided-tile_flymake.
 tex:70: Undefined control sequence.
 l.70 \subsection
                 {Tile LDLT factorization}

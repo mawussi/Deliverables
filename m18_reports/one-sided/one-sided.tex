@@ -237,7 +237,7 @@
 % First Last (UMU/UNIMAN/STFC/INRIA)
 Negin Baghepour (UNIMAN)\\
 Samuel Relton (UNIMAN)\\
-Mawussi Zounon (UNIMAN)c
+Mawussi Zounon (UNIMAN)
 
 \vspace{2em}
 
@@ -248,10 +248,6 @@ First Last (UMU/UNIMAN/STFC/INRIA)\\
 First Last (UMU/UNIMAN/STFC/INRIA)
 
 \vspace{2em}
-
-
-
-
 
 
 % TODO: List additional contributors, if any.
@@ -327,14 +323,14 @@ there will undoubtedly be linear systems to solve.
 Since the advent of ``big data'' these systems have become larger,
 necessitating the use of high-performance linear algebra routines
 to solve them in a reasonable amount of time.
-Usually such (dense) systems are solved using either
-the Cholesky, $LU$, $QR$, or symmetric-indefinite factorizations;
-collectively known as the one-sided factorizations.
+Usually such dense systems are solved using either
+the Cholesky, $LU$, $QR$, or symmetric-indefinite factorizations
+(collectively known as the one-sided factorizations).
 
 In this work we aim to compare different implementations of
 these routines using the novel task-based programming paradigm.
 Whilst this has existed for a number of years,
-it has only recently appeared in OpenMP~4.5.
+it has only recently appeared in OpenMP~4.0.
 Overall,
 our efforts in applying OpenMP to this problem
 are collated in the new release of the PLASMA library~\cite{addh09}
@@ -367,6 +363,8 @@ Each task will (usually) be performed by a single core
 and each completed task leads to further tasks becoming available.
 Once the dependencies for a task have been fulfilled it
 can immediately be assigned to a core.
+Some more detail on this model of programming
+used in a linear algebra context is given in section~\ref{sec.tile}.
 
 The goal of this report is to compare implementations of
 the four factorizations mentioned above
@@ -381,6 +379,9 @@ an Intel Broadwell NUMA node
 and the Intel Xeon Phi (codenamed Knights Landing).
 
 The rest of this document is arranged as follows.
+Section~\ref{sec.tile} gives an introduction
+to the use of tile-based algorithms and
+task-based programming in linear algebra.
 In section~\ref{sec.runtime_systems} we give a
 brief summary of the capabilities of the various
 runtime systems used to implement the four factorizations.
@@ -419,10 +420,12 @@ The runtime systems that we will be using are
 \item StarPU.
 \end{itemize}
 
-Firstly, OpenMP is the standard way to parallelize code over a
-multi-core architecture.  The pragma \texttt{\#pragma omp parallel
-  for} is a well-known method for parallelizing \texttt{"for loops"}
-over the available cores.  However, it is only recently that OpenMP
+First, OpenMP is the standard way to parallelize code over a
+multi-core architecture.  The pragma
+\texttt{\#pragma omp parallel for}
+is a well-known method for parallelizing loops
+over the available cores.
+However, it is only recently that OpenMP
 began to support task-based programming.  This is the main drawback of
 using task-based OpenMP currently: advanced features, such as
 assigning a priority to critical tasks or choosing from a variety of
@@ -546,7 +549,7 @@ and list the compilers and versions of MKL used but,
 briefly, we have:
 \begin{itemize}
 \item a 2-socket NUMA node with Intel Broadwell processors, and
-\item the new Intel Xeon Phi (codenamed Knights Landing, i.e. KNL).
+\item the new Intel Xeon Phi (codenamed Knights Landing, i\@.e\@.~KNL).
 \end{itemize}
 
 In each scenario we will compare a number of different software libraries
@@ -602,7 +605,7 @@ meaning that much better performance can be obtained
 after autotuning,
 which is the subject of NLAFET deliverable D6.4.
 Therefore comparisons with MKL at this point
-may be seen as rather premature,
+may be considered rather premature,
 though it is important to compare these preliminary implementations
 with state-of-the-art vendor releases.
 
@@ -654,9 +657,9 @@ after which MKL and OpenMP perform the factorization faster.
 In Figure~\ref{fig.chol_knl_ram} we perform the same experiment
 on the KNL.
 As is clear from the graphs of all four precisions,
-only MKL is making efficient use of all $68$ cores in the machine:
-the performance of all the PLASMA-based implementations
-begins to stagnate whilst MKL keeps on climbing.
+MKL and OpenMP are making very efficient use of all $68$ cores in the machine:
+the performance of the other PLASMA-based implementations
+begins to stagnate whilst MKL and OpenMP keep increasing.
 With further autotuning described in NLAFET deliverable D6.4
 we will be able to increase the performance substantially.
 In all cases we see that Quark and StarPU with the ``eager''
@@ -761,13 +764,13 @@ For double and double complex precision on the top row,
 we see that initially StarPU with the ``eager'' and ``ws'' strategies
 perform best, closely followed by Quark.
 However,
-after matrices of size $8000$--$10000$ (depending upon the precisions)
+after matrices of size $8000$--$10000$ (depending upon the precision)
 are considered,
 MKL takes the lead whilst the
 performance of the other runtimes begin to stagnate.
 OpenMP is often the worst performer in these cases,
 and also stagnates when larger matrices are used.
-For the complex and single precisions the behaviour is rather similar,
+For complex and single precision the behaviour is rather similar,
 though StarPU with the ``eager'' scheduler is competitive until
 matrices of size larger than $10000$ are used.
 
@@ -818,7 +821,7 @@ Finally,
 we look at the symmetric-indefinite factorization.
 Unfortunately, KStar could not generate a StarPU version of this
 function so we can only compare OpenMP and Quark
-to LAPACK and MKL in this scenario.
+MKL in this scenario.
 
 The results obtained on the NUMA node are given in
 Figure~\ref{fig.ldlt_numa}.
@@ -853,7 +856,7 @@ although Quark appears to be stagnating in some of these experiments.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 It is clear from our experiments that our current implementations in
-Quark, OpenMP, and StarPU are nowhere near optimal.
+Quark, OpenMP, and StarPU are not optimal.
 In order to catch up with MKL for larger matrices a significant amount
 of autotuning will need to be performed (see deliverable D6.4).
 However,
