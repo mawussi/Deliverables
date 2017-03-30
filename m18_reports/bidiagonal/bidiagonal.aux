@@ -17,14 +17,13 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{golub1965calculating}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{5}{section.1}}
 \citation{dongarra1989block}
 \citation{bischof1987wy}
 \citation{grosser1999efficient}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{5}{section.1}}
 \citation{haidar2013improved}
 \citation{DBLP:journals/corr/abs-0709-1272}
 \citation{FLAWN3}
-\citation{haidar2012analysis}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:SVD_initial}{{1a}{6}{Full $5\times 5$ tile matrix.\relax }{figure.caption.3}{}}
 \newlabel{sub@fig:SVD_initial}{{a}{6}{Full $5\times 5$ tile matrix.\relax }{figure.caption.3}{}}
@@ -36,6 +35,7 @@
 \newlabel{fig:two_stage}{{1}{6}{Illustration of the two-stage bidiagonal reduction process.\relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Principles of tile algorithms}{6}{section.2}}
 \newlabel{sec:tile}{{2}{6}{Principles of tile algorithms}{section.2}{}}
+\citation{haidar2012analysis}
 \citation{ltaief2010parallel}
 \citation{haidar2013improved}
 \newlabel{fig:geqrt_1}{{2a}{7}{QR\relax }{figure.caption.4}{}}
@@ -54,7 +54,7 @@
 \newlabel{fig:rect_panel}{{2}{7}{Panel factorization using the triangle on top of square QR factorization kernel (TSQRT). \relax }{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Reduction to band bidiagonal form}{7}{section.3}}
 \newlabel{sec:band}{{3}{7}{Reduction to band bidiagonal form}{section.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Late update strategy}{7}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Late update strategy}{8}{subsection.3.1}}
 \newlabel{fig:qr_1}{{3a}{8}{\small {Panel QR}\relax }{figure.caption.5}{}}
 \newlabel{sub@fig:qr_1}{{a}{8}{\small {Panel QR}\relax }{figure.caption.5}{}}
 \newlabel{fig:qr_update_1}{{3b}{8}{Update\relax }{figure.caption.5}{}}
@@ -119,8 +119,8 @@
 \newlabel{fig:dge2gb_HASWELL}{{8}{12}{Performance comparison of different implementations of DGE2GB on a 2x Intel Xeon(R) CPU E5-2650 v3 @ 2.30GHz (20 cores), with square matrices ranging in size from $1,000 \times 1,000$ to $20,000 \times 20,000$. The experiment with 20 threads is performed with the NUMA configuration "numactl --interleave=all" while the experiment with 10 threads using only one 10-core socket.\relax }{figure.caption.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Potential improvements}{12}{subsection.3.4}}
 \citation{haidar2013improved}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces DAG for the late update strategy for band reduction when A(i,i) dependencies are expressed at the upper/lower tile granularity. This partial view is limited to the factorization of the first panel and the update of the corresponding trailing matrix.\relax }}{13}{figure.caption.11}}
-\newlabel{fig:dag_hack}{{9}{13}{DAG for the late update strategy for band reduction when A(i,i) dependencies are expressed at the upper/lower tile granularity. This partial view is limited to the factorization of the first panel and the update of the corresponding trailing matrix.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces DAG for the late update strategy for band reduction when $A(i,i)$ dependencies are expressed at the upper/lower tile granularity. This partial view is limited to the factorization of the first panel and the update of the corresponding trailing matrix.\relax }}{13}{figure.caption.11}}
+\newlabel{fig:dag_hack}{{9}{13}{DAG for the late update strategy for band reduction when $A(i,i)$ dependencies are expressed at the upper/lower tile granularity. This partial view is limited to the factorization of the first panel and the update of the corresponding trailing matrix.\relax }{figure.caption.11}{}}
 \newlabel{fig:dge2gb_DDR4_HACK}{{10a}{14}{Results with DDR4\relax }{figure.caption.12}{}}
 \newlabel{sub@fig:dge2gb_DDR4_HACK}{{a}{14}{Results with DDR4\relax }{figure.caption.12}{}}
 \newlabel{fig:dge2gb_HBW_HACK}{{10b}{14}{Results with MCDRAM\relax }{figure.caption.12}{}}

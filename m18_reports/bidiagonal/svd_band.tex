@@ -277,7 +277,7 @@ NUMA node (two-socket Xeon(R) CPU E5-2650 v3 @ 2.30GHz--Haswell)
 and a 68-core
 Intel KNL\footnote{https://ark.intel.com/products/94035/Intel-Xeon-Phi-Processor-7250-16GB-1\_40-GHz-68-core}
 and all the computations are done in double precision arithmetic.
-The performance (Gflop/s) displayed is calculated by dividing the
+The performance (GFlop/s) displayed is calculated by dividing the
 standard theoretical flops by the time to solution.
 
 \begin{figure}[h!]
@@ -327,7 +327,7 @@ bandwidth four times greater than the DDR4 bandwidth,
 but with a storage capacity limited to 16GB.
 There are different configuration options
 of MCDRAM, but in this experiment it has been configured
-in flat mode i.e. the 16GB memory can be directly allocated from within
+in flat mode i\@.e\@.~the 16GB memory can be directly allocated from within
 an application as is the case for DDR4.
 In our experiments we provide results for both DDR4 and MCDRAM.
 
@@ -349,7 +349,7 @@ CPU E5-2650 v3) using 20 threads and 10 threads in
 Figure~\ref{fig:dge2gb_HASWELL_20} and
 Figure~\ref{fig:dge2gb_HASWELL_20} respectively.
 However, unlike for the 68-core Intel KNL,
-the late update strategy exhibited a more severe
+the late update strategy exhibits a more severe
 performance penalty.
 
 In the next subsection we investigate ways to remove
@@ -378,7 +378,7 @@ kernel in charge of the elimination of the square tiles in the panel
 modifies $A(1,1)$ (read and write dependency). The update kernel then
 waits until the completion of the panel factorization. But a further
 analysis of the algorithm helps to realize that as illustrated in
-Figure~\ref{fig:rect_panel}, once $A(1,1)$ is factorized, the
+Figure~\ref{fig:rect_panel}, that once $A(1,1)$ is factorized the
 elimination operations applied to the rest of the panel modify only
 the upper triangular part of $A(1,1)$. On the other hand, the update
 of the first tile-row requires only reflectors stored in the lower
@@ -390,14 +390,14 @@ Currently our OpenMP implementation supports dependencies only
 between full tiles.
 This introduces an unnecessary dependency between
 the first tile-row update and the first tile-column
-elimination through the A(1,1) tile.
-To solve this issue, we might want to
-split all A(i,i) tiles into upper and lower parts.
+elimination through the $A(1,1)$ tile.
+To solve this we might want to
+split all $A(i,i)$ tiles into upper and lower parts.
 
 Alternatively, one can modify the way OpenMP expresses
 its data dependencies.
-To illustrate this, lets consider an $nb \times nb$ tile B.
-The standard way to express a read or input dependency on B is
+To illustrate this, lets consider an $nb \times nb$ tile $B$.
+The standard way to express a read or input dependency on $B$ is
 \begin{lstlisting}
   #pragma omp task depend(in:B[0:nb*nb])
 \end{lstlisting}
@@ -423,7 +423,7 @@ column major storing) and an input dependency on the
 lower triangular by \texttt{\#pragma omp task depend(in:B[1])} (one is
 the starting index of the lower triangular tile).
 
-Expressing A(i,i) tiles dependency at the upper/lower triangular
+Expressing tile dependency at upper/lower triangular
 granularity helps us achieving a highly parallel kernel as
 demonstrated by the corresponding DAG depicted in Figure~\ref{fig:dag_hack}.
 \begin{wrapfigure}{r}{0.5\textwidth}
@@ -431,7 +431,7 @@ demonstrated by the corresponding DAG depicted in Figure~\ref{fig:dag_hack}.
     \includegraphics[width=0.48\textwidth]{fig/dag_better}
   \end{center}
   \caption{DAG for the late update strategy for band reduction when
-      A(i,i) dependencies are expressed at the upper/lower tile
+      $A(i,i)$ dependencies are expressed at the upper/lower tile
       granularity. This partial view is limited to the factorization of the
       first panel and the update of the corresponding trailing matrix.}
   \label{fig:dag_hack}
@@ -516,10 +516,12 @@ required. This shows the efficiency of the Plasma-2.8.0 bidiagonalization
 kernel, and the performance of our OpenMP implementation
 in comparison with Plasma-2.8.0 demonstrates the effectiveness of our prototype.
 
-Furthermore, the hint of working at triangular tile granularity helps
-to gain only a slight performance improvement for the early update
-strategy while it requires declaring OpenMP dependencies in a
-non-conventional way. For this reason, it makes sense to keep the tile
+Furthermore, working at triangular tile granularity only gains
+a slight performance improvement for the early update
+strategy,
+whilst it requires declaring OpenMP dependencies in a
+non-conventional way.
+For this reason, it makes sense to keep the tile
 oriented strategy with dependencies at full tile granularity,
 as it is reasonably efficient and respects the standard OpenMP programming
 conventions.

@@ -15,6 +15,7 @@ matrix has been converted into a 5-by-5 tile matrix.  One of the
 advantages of working at tile granularity is that it provides more
 room for parallelism with many tasks to keep all computational cores
 busy.
+
 Another advantage of tile algorithms is that they alleviate
 the fork-join overhead inherent to parallelized LAPACK
 block algorithms~\cite{haidar2012analysis}.
@@ -24,7 +25,7 @@ represented in form of a Directed Acyclic Graph (DAG) where each node
 represents a task, while the edges represent the
 data dependencies between the tasks.
 These tasks are then scheduled
-thanks to a runtime system which check the dependencies and
+thanks to a runtime system which checks the dependencies and
 takes care of launching tasks on appropriate cores.
 
   \begin{figure}[h!]
@@ -68,8 +69,8 @@ takes care of launching tasks on appropriate cores.
     \label{fig:rect_panel}}
 \end{figure}
 
-For the sake of illustration we show in Figure~\ref{fig:rect_panel}
-the tile algorithm variant of QR factorization for a panel
+For the sake of illustration, Figure~\ref{fig:rect_panel}
+shows the tile algorithm variant of QR factorization for a panel
 (block-column).
 Following the example shown in
 Figure~\ref{fig:two_stage}, the panel has been divided into 5 tiles.
@@ -78,7 +79,7 @@ a standard QR factorization kernel to
 factorize the top-most tile (Figure~\ref{fig:geqrt_1}),
 and a specialized kernel to use the top triangular matrix
 from the first QR factorization
-to zero the square tiles below (Figures~\ref{fig:tsqrt_2}-\ref{fig:tsqrt_5}).
+to eliminate the square tiles below (Figures~\ref{fig:tsqrt_2}-\ref{fig:tsqrt_5}).
 This kernel is denoted TSQRT and stands
 for ``triangle on top of square tile QR factorization''.
 In the next few sections we will introduce other specialized kernels,
