@@ -310,49 +310,40 @@ This project has received funding from the \emph{European Union's Horizon 2020 r
 \section{Introduction}
 \label{sec.introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In most pieces of scientific software there are a number of
-parameters that can be tweaked to obtain better performance.
-These can take a variety of forms including
-continuous variables (e.g. a parameter in a model of some data),
-integer variables (e.g. the number of threads to spawn in a
-parallel section of code),
-or even categorical variables (e.g. on/off switches for compiler flags).
+In most pieces of scientific software there are a number of parameters
+that can be tweaked to obtain better performance.  These can take a
+variety of forms including continuous variables (e.g. a parameter in a
+model of some data), integer variables (e.g. the number of threads to
+spawn in a parallel section of code), or even categorical variables
+(e.g. on/off switches for compiler flags).
 
-In this document we discuss,
-with a specific focus on the needs of the NLAFET project,
-how to optimise such parameters via autotuning.
-In particular we concentrate on off-line autotuning;
-meaning that the optimisation is performed before running the
-user runs the software on their own problems.
-An alternative approach is on-line autotuning,
-where the parameters are allowed to vary during the execution
-of a large problem.
-This latter approach will be covered in other NLAFET deliverables.
+In this document we discuss, with a specific focus on the needs of the
+NLAFET project, how to optimise such parameters via autotuning.  In
+particular we concentrate on off-line autotuning; meaning that the
+optimisation is performed before running the user runs the software on
+their own problems.  An alternative approach is on-line autotuning,
+where the parameters are allowed to vary during the execution of a
+large problem.  This latter approach will be covered in other NLAFET
+deliverables.
 
-To begin,
-let us explain the specific needs of the NLAFET project
-with regards to off-line autotuning.
-The NLAFET project aims to deliver software for a large number of
-linear algebra problems,
-on both shared and distributed memory architectures,
-making use of runtime systems such as OpenMP, StarPU, and ParSec,
-for example.
+To begin, let us explain the specific needs of the NLAFET project with
+regards to off-line autotuning.  The NLAFET project aims to deliver
+software for a large number of linear algebra problems, on both shared
+and distributed memory architectures, making use of runtime systems
+such as OpenMP, StarPU, and PaRSEC, for example.
 
 Many of the algorithms employed to solve these linear algebra problems
-involve decomposing a large matrix into smaller ``blocks''.
-These blocks are then dealt with by separate cores
-(or nodes in the distributed memory setting)
-and are later combined to give the final solution to the problem.
-This approach is the key idea behind the
-PLASMA and MAGMA projects~\cite{addh09}
-and has been incorporated into many other libraries such as Intel MKL.
-In terms of autotuning,
-this means that positive integers controlling the size of the blocks
-must be chosen to maximize performance.
-Note that the optimal block size may be different for each linear
-algebra routine.
-For example, performing a matrix multiplication
-may required a different block size than an $LU$ factorization.
+involve decomposing a large matrix into smaller ``blocks''.  These
+blocks are then dealt with by separate cores (or nodes in the
+distributed memory setting) and are later combined to give the final
+solution to the problem.  This approach is the key idea behind the
+PLASMA and MAGMA projects~\cite{addh09} and has been incorporated into
+many other libraries such as Intel MKL.  In terms of autotuning, this
+means that positive integers controlling the size of the blocks must
+be chosen to maximize performance.  Note that the optimal block size
+may be different for each linear algebra routine.  For example,
+performing a matrix multiplication may required a different block size
+than an $LU$ factorization.
 
 Other algorithms,
 especially for sparse matrices,
@@ -366,16 +357,16 @@ sometimes at the expense of accuracy,
 making these values continuous tunable parameters.
 
 Finally,
-all these algorithms need to compiled across a number of different
+all these algorithms need to be compiled across a number of different
 architectures with
-different compilers, various numbers of cores, various number of GPUs etc.
+different compilers, various number of cores, various number of GPUs etc.
 The compiler flags used during the compilation can have a dramatic
 effect on the overall performance.
 For example,
 whether or not vectorization is enabled when compiling with GCC will
 have a large impact on performance.
-Similarly using the flags -O1, -O2, or -O3 during compilation can have a
-dramatic impact on overall runtime.
+Similarly using the flags -O1, -O2, or -O3 during the compilation can have a
+dramatic impact on the overall runtime.
 Further examples include parameters to select the runtime scheduling
 strategy in StarPU etc.
 These categorical parameters also need to be optimized to
@@ -393,7 +384,7 @@ Currently,
 many pieces of software attempt to perform a ``grid-sweep''
 which tries all (or a representative sample)
 of the parameter combinations before selecting the best.
-The grid-sweep will act a baseline for us to test the efficiency of
+The grid-sweep will act as a baseline for us to test the efficiency of
 other optimisation strategies considered.
 
 To test our choice of autotuning strategy,
