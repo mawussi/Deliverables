@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  29 MAR 2017 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.15)  30 MAR 2017 08:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/bidiagonal_flymake.t
+**/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/bidiagonal_flymake.t
 ex
 
-(/home/srelton/Dropbox/NLAFET-manc/m18_reports/bidiagonal/bidiagonal_flymake.te
+(/home/srelton/NLAFET/Deliverables/m18_reports/bidiagonal/bidiagonal_flymake.te
 x
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
@@ -613,18 +613,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
-\ttl@box=\box27
-\beforetitleunit=\skip56
-\aftertitleunit=\skip57
-\ttl@plus=\dimen126
-\ttl@minus=\dimen127
-\ttl@toksa=\toks22
-\titlewidth=\dimen128
-\titlewidthlast=\dimen129
-\titlewidthfirst=\dimen130
-)
 (/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count103
@@ -632,7 +620,7 @@ Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip58
+\algocf@hangindent=\skip56
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -647,46 +635,46 @@ Package `algorithm2e' Release 5.1 -- october 19 2015 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
 ********************************************************
-\skiptotal=\skip59
-\skiplinenumber=\skip60
-\skiprule=\skip61
-\skiphlne=\skip62
-\skiptext=\skip63
-\skiplength=\skip64
-\algomargin=\skip65
-\skipalgocfslide=\skip66
-\algowidth=\dimen131
-\inoutsize=\dimen132
-\inoutindent=\dimen133
-\interspacetitleruled=\dimen134
-\interspacealgoruled=\dimen135
-\interspacetitleboxruled=\dimen136
-\algocf@ruledwidth=\skip67
-\algocf@inoutbox=\box28
-\algocf@inputbox=\box29
-\AlCapSkip=\skip68
-\AlCapHSkip=\skip69
-\algoskipindent=\skip70
-\algocf@nlbox=\box30
-\algocf@hangingbox=\box31
-\algocf@untilbox=\box32
-\algocf@skipuntil=\skip71
-\algocf@capbox=\box33
-\algoheightruledefault=\skip72
-\algoheightrule=\skip73
-\algotitleheightruledefault=\skip74
-\algotitleheightrule=\skip75
+\skiptotal=\skip57
+\skiplinenumber=\skip58
+\skiprule=\skip59
+\skiphlne=\skip60
+\skiptext=\skip61
+\skiplength=\skip62
+\algomargin=\skip63
+\skipalgocfslide=\skip64
+\algowidth=\dimen126
+\inoutsize=\dimen127
+\inoutindent=\dimen128
+\interspacetitleruled=\dimen129
+\interspacealgoruled=\dimen130
+\interspacetitleboxruled=\dimen131
+\algocf@ruledwidth=\skip65
+\algocf@inoutbox=\box27
+\algocf@inputbox=\box28
+\AlCapSkip=\skip66
+\AlCapHSkip=\skip67
+\algoskipindent=\skip68
+\algocf@nlbox=\box29
+\algocf@hangingbox=\box30
+\algocf@untilbox=\box31
+\algocf@skipuntil=\skip69
+\algocf@capbox=\box32
+\algoheightruledefault=\skip70
+\algoheightrule=\skip71
+\algotitleheightruledefault=\skip72
+\algotitleheightrule=\skip73
 \c@algocfline=\count104
 \c@algocfproc=\count105
 \c@algocf=\count106
-\algocf@algoframe=\box34
-\algocf@algobox=\box35
+\algocf@algoframe=\box33
+\algocf@algobox=\box34
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks23
+\@emptytoks=\toks22
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -694,7 +682,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
-\@mathmargin=\skip76
+\@mathmargin=\skip74
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -702,12 +690,12 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks24
-\ex@=\dimen137
+\@emptytoks=\toks23
+\ex@=\dimen132
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen138
+\pmbraise@=\dimen133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -722,9 +710,9 @@ LaTeX Info: Redefining \overline on input line 297.
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box36
-\strutbox@=\box37
-\big@size=\dimen139
+\Mathstrutbox@=\box35
+\strutbox@=\box36
+\big@size=\dimen134
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count112
@@ -732,21 +720,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \dotsspace@=\muskip11
 \c@parentequation=\count114
 \dspbrk@lvl=\count115
-\tag@help=\toks25
+\tag@help=\toks24
 \row@=\count116
 \column@=\count117
 \maxfields@=\count118
-\andhelp@=\toks26
-\eqnshift@=\dimen140
-\alignsep@=\dimen141
-\tagshift@=\dimen142
-\tagwidth@=\dimen143
-\totwidth@=\dimen144
-\lineht@=\dimen145
-\@envbody=\toks27
-\multlinegap=\skip77
-\multlinetaggap=\skip78
-\mathdisplay@stack=\toks28
+\andhelp@=\toks25
+\eqnshift@=\dimen135
+\alignsep@=\dimen136
+\tagshift@=\dimen137
+\tagwidth@=\dimen138
+\totwidth@=\dimen139
+\lineht@=\dimen140
+\@envbody=\toks26
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
@@ -756,8 +744,8 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@line=\count120
 \c@ALC@rem=\count121
 \c@ALC@depth=\count122
-\ALC@tlm=\skip79
-\algorithmicindent=\skip80
+\ALC@tlm=\skip77
+\algorithmicindent=\skip78
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
@@ -768,13 +756,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen146
-\captionmargin@=\dimen147
-\captionwidth=\dimen148
-\caption@tempdima=\dimen149
-\caption@indent=\dimen150
-\caption@parindent=\dimen151
-\caption@hangindent=\dimen152
+\captionmargin=\dimen141
+\captionmargin@=\dimen142
+\captionwidth=\dimen143
+\caption@tempdima=\dimen144
+\caption@indent=\dimen145
+\caption@parindent=\dimen146
+\caption@hangindent=\dimen147
 )
 \c@ContinuedFloat=\count123
 Package caption Info: hyperref package is loaded.
@@ -785,8 +773,8 @@ Package caption Info: wrapfig package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/preprint/authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip81
-\@affilsep=\skip82
+\affilsep=\skip79
+\@affilsep=\skip80
 \c@Maxaffil=\count126
 \c@authors=\count127
 \c@affil=\count128
@@ -797,40 +785,40 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count129
-\output=\toks29
+\output=\toks28
 \linenoprevgraf=\count130
-\linenumbersep=\dimen153
-\linenumberwidth=\dimen154
+\linenumbersep=\dimen148
+\linenumberwidth=\dimen149
 \c@linenumber=\count131
 \c@pagewiselinenumber=\count132
 \c@LN@truepage=\count133
 \c@internallinenumber=\count134
 \c@internallinenumbers=\count135
-\quotelinenumbersep=\dimen155
-\bframerule=\dimen156
-\bframesep=\dimen157
-\bframebox=\box38
+\quotelinenumbersep=\dimen150
+\bframerule=\dimen151
+\bframesep=\dimen152
+\bframebox=\box37
 LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count136
-\lst@gtempboxa=\box39
-\lst@token=\toks30
+\lst@gtempboxa=\box38
+\lst@token=\toks29
 \lst@length=\count137
-\lst@currlwidth=\dimen158
+\lst@currlwidth=\dimen153
 \lst@column=\count138
 \lst@pos=\count139
-\lst@lostspace=\dimen159
-\lst@width=\dimen160
+\lst@lostspace=\dimen154
+\lst@width=\dimen155
 \lst@newlines=\count140
 \lst@lineno=\count141
-\lst@maxwidth=\dimen161
+\lst@maxwidth=\dimen156
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count142
 \lst@skipnumbers=\count143
-\lst@framebox=\box40
+\lst@framebox=\box39
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -880,37 +868,37 @@ LaTeX Warning: Label `fig:dge2gb_HASWELL' multiply defined.
 )
 \openout1 = `bidiagonal_flymake.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 237.
-LaTeX Font Info:    ... okay on input line 237.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 237.
-LaTeX Font Info:    ... okay on input line 237.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 237.
-LaTeX Font Info:    ... okay on input line 237.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 237.
-LaTeX Font Info:    ... okay on input line 237.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 237.
-LaTeX Font Info:    ... okay on input line 237.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 237.
-LaTeX Font Info:    ... okay on input line 237.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 237.
-LaTeX Font Info:    ... okay on input line 237.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 237.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 223.
+LaTeX Font Info:    ... okay on input line 223.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 223.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count144
-\scratchdimen=\dimen162
-\scratchbox=\box41
+\scratchdimen=\dimen157
+\scratchbox=\box40
 \nofMPsegments=\count145
 \nofMParguments=\count146
-\everyMPshowfont=\toks31
+\everyMPshowfont=\toks30
 \MPscratchCnt=\count147
-\MPscratchDim=\dimen163
+\MPscratchDim=\dimen158
 \MPnumerator=\count148
 \makeMPintoPDFobject=\count149
-\everyMPtoPDFconversion=\toks32
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -962,9 +950,9 @@ e
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 237.
-\AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 237.
+(lastpage)             ! on input line 223.
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring OFF on input line 223.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -973,9 +961,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 237.
-LaTeX Info: Redefining \pageref on input line 237.
-LaTeX Info: Redefining \nameref on input line 237.
+LaTeX Info: Redefining \ref on input line 223.
+LaTeX Info: Redefining \pageref on input line 223.
+LaTeX Info: Redefining \nameref on input line 223.
 \@outlinefile=\write3
 \openout3 = `bidiagonal_flymake.out'.
 
@@ -987,76 +975,76 @@ Package caption Info: End \AtBeginDocument code.
 <fig/NLAFET-logo2.png, id=3, 903.375pt x 317.185pt>
 File: fig/NLAFET-logo2.png Graphic file (type png)
  <use fig/NLAFET-logo2.png>
-Package pdftex.def Info: fig/NLAFET-logo2.png used on input line 242.
+Package pdftex.def Info: fig/NLAFET-logo2.png used on input line 228.
 (pdftex.def)             Requested size: 364.19667pt x 127.87358pt.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 287.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 273.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 287.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 273.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 287
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 273
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 287
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 273
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 287.
+(Font)              <12> on input line 273.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 287.
+(Font)              <8> on input line 273.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 287.
-LaTeX Font Info:    Try loading font information for U+msa on input line 287.
+(Font)              <6> on input line 273.
+LaTeX Font Info:    Try loading font information for U+msa on input line 273.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 287.
+LaTeX Font Info:    Try loading font information for U+msb on input line 273.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 334.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 320.
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 334.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 320.
 
-Overfull \hbox (10.61427pt too wide) in paragraph at lines 335--337
+Overfull \hbox (10.61427pt too wide) in paragraph at lines 321--323
 []\T1/lmr/m/n/12 Jack Don-garra. In-no-va-tive Com-put-ing Lab-o-ra-tory, Uni-v
 er-sity of Ten-nessee, Knoxville,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--350
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
 
  []
 
@@ -1066,7 +1054,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 360.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 346.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1074,23 +1062,17 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.360 \end{itemize}
-                    [1] [2]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 389.
-
- (/usr/share/texmf/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-(./bidiagonal_flymake.toc)
+l.346 \end{itemize}
+                    [1] [2] (./bidiagonal_flymake.toc)
 \tf@toc=\write4
 \openout4 = `bidiagonal_flymake.toc'.
 
- (./bidiagonal_flymake.lof)
+
+(./bidiagonal_flymake.lof)
 \tf@lof=\write5
 \openout5 = `bidiagonal_flymake.lof'.
 
- [3] [4]
-(./svd_abstract.tex) (./svd_intro.tex
+ [3] [4] (./svd_abstract.tex) (./svd_intro.tex
 
 LaTeX Warning: Citation `golub1965calculating' on page 5 undefined on input lin
 e 37.
@@ -1111,7 +1093,7 @@ e 58.
 LaTeX Warning: Citation `haidar2013improved' on page 6 undefined on input line 
 73.
 
-<fig/SVD_1_grid.pdf, id=130, 881.69403pt x 881.69403pt>
+<fig/SVD_1_grid.pdf, id=131, 881.69403pt x 881.69403pt>
 File: fig/SVD_1_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_1_grid.pdf>
@@ -1120,14 +1102,14 @@ Package pdftex.def Info: fig/SVD_1_grid.pdf used on input line 97.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 98.
 
-<fig/SVD_band_bidiag.pdf, id=131, 979.66pt x 979.66pt>
+<fig/SVD_band_bidiag.pdf, id=132, 979.66pt x 979.66pt>
 File: fig/SVD_band_bidiag.pdf Graphic file (type pdf)
 
 <use fig/SVD_band_bidiag.pdf>
 Package pdftex.def Info: fig/SVD_band_bidiag.pdf used on input line 102.
 (pdftex.def)             Requested size: 99.57121pt x 99.57121pt.
 
-<fig/SVD_bidiag.pdf, id=132, 979.66pt x 979.66pt>
+<fig/SVD_bidiag.pdf, id=133, 979.66pt x 979.66pt>
 File: fig/SVD_bidiag.pdf Graphic file (type pdf)
  <use fig/SVD_bidiag.pdf>
 Package pdftex.def Info: fig/SVD_bidiag.pdf used on input line 108.
@@ -1145,42 +1127,42 @@ LaTeX Warning: Citation `FLAWN3' on page 6 undefined on input line 7.
 LaTeX Warning: Citation `haidar2012analysis' on page 6 undefined on input line 
 20.
 
-[6] <fig/SVD_rect_panel_1.pdf, id=143, 178.5069pt x 881.69403pt>
+[6] <fig/SVD_rect_panel_1.pdf, id=144, 178.5069pt x 881.69403pt>
 File: fig/SVD_rect_panel_1.pdf Graphic file (type pdf)
 
 <use fig/SVD_rect_panel_1.pdf>
 Package pdftex.def Info: fig/SVD_rect_panel_1.pdf used on input line 34.
 (pdftex.def)             Requested size: 19.91637pt x 99.58318pt.
 
-<fig/SVD_rect_panel_3.pdf, id=144, 178.5069pt x 881.69403pt>
+<fig/SVD_rect_panel_3.pdf, id=145, 178.5069pt x 881.69403pt>
 File: fig/SVD_rect_panel_3.pdf Graphic file (type pdf)
 
 <use fig/SVD_rect_panel_3.pdf>
 Package pdftex.def Info: fig/SVD_rect_panel_3.pdf used on input line 40.
 (pdftex.def)             Requested size: 19.91637pt x 99.58318pt.
 
-<fig/SVD_rect_panel_5.pdf, id=145, 178.5069pt x 881.69403pt>
+<fig/SVD_rect_panel_5.pdf, id=146, 178.5069pt x 881.69403pt>
 File: fig/SVD_rect_panel_5.pdf Graphic file (type pdf)
 
 <use fig/SVD_rect_panel_5.pdf>
 Package pdftex.def Info: fig/SVD_rect_panel_5.pdf used on input line 46.
 (pdftex.def)             Requested size: 19.91637pt x 99.58318pt.
 
-<fig/SVD_rect_panel_6.pdf, id=146, 178.5069pt x 881.69403pt>
+<fig/SVD_rect_panel_6.pdf, id=147, 178.5069pt x 881.69403pt>
 File: fig/SVD_rect_panel_6.pdf Graphic file (type pdf)
 
 <use fig/SVD_rect_panel_6.pdf>
 Package pdftex.def Info: fig/SVD_rect_panel_6.pdf used on input line 52.
 (pdftex.def)             Requested size: 19.91637pt x 99.58318pt.
 
-<fig/SVD_rect_panel_7.pdf, id=147, 178.5069pt x 881.69403pt>
+<fig/SVD_rect_panel_7.pdf, id=148, 178.5069pt x 881.69403pt>
 File: fig/SVD_rect_panel_7.pdf Graphic file (type pdf)
 
 <use fig/SVD_rect_panel_7.pdf>
 Package pdftex.def Info: fig/SVD_rect_panel_7.pdf used on input line 58.
 (pdftex.def)             Requested size: 19.91637pt x 99.58318pt.
 
-<fig/SVD_rect_panel_8.pdf, id=148, 178.5069pt x 881.69403pt>
+<fig/SVD_rect_panel_8.pdf, id=149, 178.5069pt x 881.69403pt>
 File: fig/SVD_rect_panel_8.pdf Graphic file (type pdf)
 
 <use fig/SVD_rect_panel_8.pdf>
@@ -1195,76 +1177,76 @@ LaTeX Warning: Citation `ltaief2010parallel' on page 7 undefined on input line
 LaTeX Warning: Citation `haidar2013improved' on page 7 undefined on input line 
 7.
 
-<fig/SVD_panel_1_grid.pdf, id=159, 881.69403pt x 881.69403pt>
+[7] <fig/SVD_panel_1_grid.pdf, id=167, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_1_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_1_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_1_grid.pdf used on input line 44.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_panel_2_grid.pdf, id=160, 881.69403pt x 881.69403pt>
+<fig/SVD_panel_2_grid.pdf, id=168, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_2_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_2_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_2_grid.pdf used on input line 50.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_panel_3_grid.pdf, id=161, 881.69403pt x 881.69403pt>
+<fig/SVD_panel_3_grid.pdf, id=169, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_3_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_3_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_3_grid.pdf used on input line 56.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_panel_4_grid.pdf, id=162, 881.69403pt x 881.69403pt>
+<fig/SVD_panel_4_grid.pdf, id=170, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_4_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_4_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_4_grid.pdf used on input line 62.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_panel_5_grid.pdf, id=163, 881.69403pt x 881.69403pt>
+<fig/SVD_panel_5_grid.pdf, id=171, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_5_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_5_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_5_grid.pdf used on input line 68.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_panel_6_grid.pdf, id=164, 881.69403pt x 881.69403pt>
+<fig/SVD_panel_6_grid.pdf, id=172, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_6_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_6_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_6_grid.pdf used on input line 74.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_panel_7_grid.pdf, id=165, 881.69403pt x 881.69403pt>
+<fig/SVD_panel_7_grid.pdf, id=173, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_7_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_7_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_7_grid.pdf used on input line 80.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_panel_8_grid.pdf, id=166, 881.69403pt x 881.69403pt>
+<fig/SVD_panel_8_grid.pdf, id=174, 881.69403pt x 881.69403pt>
 File: fig/SVD_panel_8_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_panel_8_grid.pdf>
 Package pdftex.def Info: fig/SVD_panel_8_grid.pdf used on input line 86.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
- [7]
-<fig/dag.pdf, id=177, 668.4975pt x 766.865pt>
+ <fig/dag.pdf, id=178, 668.4975pt x 766.865pt>
 File: fig/dag.pdf Graphic file (type pdf)
- <use fig/dag.pdf>
+
+<use fig/dag.pdf>
 Package pdftex.def Info: fig/dag.pdf used on input line 117.
 (pdftex.def)             Requested size: 227.62206pt x 261.1168pt.
  [8]
-<fig/SVD_tile_1_grid.pdf, id=194, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_1_grid.pdf, id=195, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_1_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_1_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_1_grid.pdf used on input line 167.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_2_grid.pdf, id=195, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_2_grid.pdf, id=196, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_2_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_2_grid.pdf>
@@ -1275,14 +1257,14 @@ Underfull \hbox (badness 4995) in paragraph at lines 174--174
 []\T1/lmr/m/n/10.95 (b) |[][]Tile-row up-
  []
 
-<fig/SVD_tile_3_grid.pdf, id=196, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_3_grid.pdf, id=197, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_3_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_3_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_3_grid.pdf used on input line 179.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_4_grid.pdf, id=197, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_4_grid.pdf, id=198, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_4_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_4_grid.pdf>
@@ -1293,14 +1275,14 @@ Underfull \hbox (badness 1565) in paragraph at lines 186--186
 []\T1/lmr/m/n/10.95 (d) |[][]Tile-rows up-
  []
 
-<fig/SVD_tile_5_grid.pdf, id=198, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_5_grid.pdf, id=199, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_5_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_5_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_5_grid.pdf used on input line 191.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_6_grid.pdf, id=199, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_6_grid.pdf, id=200, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_6_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_6_grid.pdf>
@@ -1311,42 +1293,42 @@ Underfull \hbox (badness 3179) in paragraph at lines 198--198
 []\T1/lmr/m/n/10.95 (f) |[][]Tile-rows up-
  []
 
-<fig/SVD_tile_7_grid.pdf, id=200, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_7_grid.pdf, id=201, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_7_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_7_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_7_grid.pdf used on input line 203.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_8_grid.pdf, id=201, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_8_grid.pdf, id=202, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_8_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_8_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_8_grid.pdf used on input line 209.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_9_grid.pdf, id=202, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_9_grid.pdf, id=203, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_9_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_9_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_9_grid.pdf used on input line 215.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_10_grid.pdf, id=203, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_10_grid.pdf, id=204, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_10_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_10_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_10_grid.pdf used on input line 221.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_11_grid.pdf, id=204, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_11_grid.pdf, id=205, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_11_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_11_grid.pdf>
 Package pdftex.def Info: fig/SVD_tile_11_grid.pdf used on input line 227.
 (pdftex.def)             Requested size: 91.04742pt x 91.04016pt.
 
-<fig/SVD_tile_12_grid.pdf, id=205, 881.69403pt x 881.69403pt>
+<fig/SVD_tile_12_grid.pdf, id=206, 881.69403pt x 881.69403pt>
 File: fig/SVD_tile_12_grid.pdf Graphic file (type pdf)
 
 <use fig/SVD_tile_12_grid.pdf>
@@ -1356,7 +1338,7 @@ Package pdftex.def Info: fig/SVD_tile_12_grid.pdf used on input line 233.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/dag_tile.pdf, id=207, 1475.5125pt x 550.055pt>
+<fig/dag_tile.pdf, id=208, 1475.5125pt x 550.055pt>
 File: fig/dag_tile.pdf Graphic file (type pdf)
  <use fig/dag_tile.pdf>
 Package pdftex.def Info: fig/dag_tile.pdf used on input line 260.
@@ -1371,17 +1353,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 279.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 279.
+[9] [10]
 Package epstopdf Info: Source file: <fig/dge2gb_KNL.eps>
-(epstopdf)                    date: 2017-03-29 10:57:15
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 196004 bytes
 (epstopdf)             Output file: <fig/dge2gb_KNL-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-29 10:57:49
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9236 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_KNL-eps-convert
 ed-to.pdf fig/dge2gb_KNL.eps>
 (epstopdf)             \includegraphics on input line 286.
 Package epstopdf Info: Output file is already uptodate.
-<fig/dge2gb_KNL-eps-converted-to.pdf, id=209, 599.23875pt x 479.7925pt>
+
+<fig/dge2gb_KNL-eps-converted-to.pdf, id=224, 599.23875pt x 479.7925pt>
 File: fig/dge2gb_KNL-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/dge2gb_KNL-eps-converted-to.pdf>
@@ -1389,17 +1373,17 @@ Package pdftex.def Info: fig/dge2gb_KNL-eps-converted-to.pdf used on input line
  286.
 (pdftex.def)             Requested size: 227.62206pt x 182.24982pt.
 Package epstopdf Info: Source file: <fig/dge2gb_KNL_HBW.eps>
-(epstopdf)                    date: 2017-03-29 10:57:16
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 196009 bytes
 (epstopdf)             Output file: <fig/dge2gb_KNL_HBW-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-29 10:57:49
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9252 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_KNL_HBW-eps-con
 verted-to.pdf fig/dge2gb_KNL_HBW.eps>
 (epstopdf)             \includegraphics on input line 292.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/dge2gb_KNL_HBW-eps-converted-to.pdf, id=210, 599.23875pt x 479.7925pt>
+<fig/dge2gb_KNL_HBW-eps-converted-to.pdf, id=225, 599.23875pt x 479.7925pt>
 File: fig/dge2gb_KNL_HBW-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/dge2gb_KNL_HBW-eps-converted-to.pdf>
@@ -1411,20 +1395,17 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 285--299
 [][]  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <fig/dge2gb_HASWELL.eps>
-(epstopdf)                    date: 2017-03-29 10:57:34
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 197104 bytes
 (epstopdf)             Output file: <fig/dge2gb_HASWELL-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-29 10:57:50
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9351 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_HASWELL-eps-con
 verted-to.pdf fig/dge2gb_HASWELL.eps>
 (epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
-<fig/dge2gb_HASWELL-eps-converted-to.pdf, id=211, 599.23875pt x 478.78876pt>
+<fig/dge2gb_HASWELL-eps-converted-to.pdf, id=226, 599.23875pt x 478.78876pt>
 File: fig/dge2gb_HASWELL-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/dge2gb_HASWELL-eps-converted-to.pdf>
@@ -1432,18 +1413,18 @@ Package pdftex.def Info: fig/dge2gb_HASWELL-eps-converted-to.pdf used on input
 line 306.
 (pdftex.def)             Requested size: 227.62206pt x 181.86856pt.
 Package epstopdf Info: Source file: <fig/dge2gb_HASWELL_10.eps>
-(epstopdf)                    date: 2017-03-29 10:59:34
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 197103 bytes
 (epstopdf)             Output file: <fig/dge2gb_HASWELL_10-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2017-03-29 10:59:44
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9328 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_HASWELL_10-eps-
 converted-to.pdf fig/dge2gb_HASWELL_10.eps>
 (epstopdf)             \includegraphics on input line 312.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/dge2gb_HASWELL_10-eps-converted-to.pdf, id=212, 599.23875pt x 478.78876pt>
+<fig/dge2gb_HASWELL_10-eps-converted-to.pdf, id=227, 599.23875pt x 478.78876pt>
 File: fig/dge2gb_HASWELL_10-eps-converted-to.pdf Graphic file (type pdf)
 <use fig/dge2gb_HASWELL_10-eps-converted-to.pdf>
 Package pdftex.def Info: fig/dge2gb_HASWELL_10-eps-converted-to.pdf used on inp
@@ -1457,10 +1438,10 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 305--321
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9] [10] [11]
+[11] [12]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 403.
- <fig/dag_better.pdf, id=245, 797.98125pt x 477.785pt>
+ <fig/dag_better.pdf, id=253, 797.98125pt x 477.785pt>
 File: fig/dag_better.pdf Graphic file (type pdf)
 
 <use fig/dag_better.pdf>
@@ -1471,19 +1452,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--439
 \T1/lmr/m/n/12 Fig-ure []9[].
  []
 
-[12]
 Package epstopdf Info: Source file: <fig/dge2gb_KNL_HACK.eps>
-(epstopdf)                    date: 2017-03-29 10:57:26
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 196006 bytes
 (epstopdf)             Output file: <fig/dge2gb_KNL_HACK-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-03-29 10:57:51
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9225 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_KNL_HACK-eps-co
 nverted-to.pdf fig/dge2gb_KNL_HACK.eps>
 (epstopdf)             \includegraphics on input line 469.
 Package epstopdf Info: Output file is already uptodate.
-
-<fig/dge2gb_KNL_HACK-eps-converted-to.pdf, id=261, 599.23875pt x 479.7925pt>
+<fig/dge2gb_KNL_HACK-eps-converted-to.pdf, id=257, 599.23875pt x 479.7925pt>
 File: fig/dge2gb_KNL_HACK-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/dge2gb_KNL_HACK-eps-converted-to.pdf>
@@ -1491,18 +1470,18 @@ Package pdftex.def Info: fig/dge2gb_KNL_HACK-eps-converted-to.pdf used on input
  line 469.
 (pdftex.def)             Requested size: 227.62206pt x 182.24982pt.
 Package epstopdf Info: Source file: <fig/dge2gb_KNL_HACK_HBW.eps>
-(epstopdf)                    date: 2017-03-29 10:57:27
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 196008 bytes
 (epstopdf)             Output file: <fig/dge2gb_KNL_HACK_HBW-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-03-29 10:57:51
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9219 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_KNL_HACK_HBW-ep
 s-converted-to.pdf fig/dge2gb_KNL_HACK_HBW.eps>
 (epstopdf)             \includegraphics on input line 474.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/dge2gb_KNL_HACK_HBW-eps-converted-to.pdf, id=262, 599.23875pt x 479.7925pt
+<fig/dge2gb_KNL_HACK_HBW-eps-converted-to.pdf, id=258, 599.23875pt x 479.7925pt
 >
 File: fig/dge2gb_KNL_HACK_HBW-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/dge2gb_KNL_HACK_HBW-eps-converted-to.pdf>
@@ -1514,19 +1493,22 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 468--482
 [][] [] 
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <fig/dge2gb_HASWELL_HACK.eps>
-(epstopdf)                    date: 2017-03-29 10:57:35
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 197098 bytes
 (epstopdf)             Output file: <fig/dge2gb_HASWELL_HACK-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-03-29 10:57:52
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9330 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_HASWELL_HACK-ep
 s-converted-to.pdf fig/dge2gb_HASWELL_HACK.eps>
 (epstopdf)             \includegraphics on input line 489.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/dge2gb_HASWELL_HACK-eps-converted-to.pdf, id=263, 599.23875pt x 478.78876p
+<fig/dge2gb_HASWELL_HACK-eps-converted-to.pdf, id=259, 599.23875pt x 478.78876p
 t>
 File: fig/dge2gb_HASWELL_HACK-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/dge2gb_HASWELL_HACK-eps-converted-to.pdf>
@@ -1534,18 +1516,18 @@ Package pdftex.def Info: fig/dge2gb_HASWELL_HACK-eps-converted-to.pdf used on i
 nput line 489.
 (pdftex.def)             Requested size: 227.62206pt x 181.86856pt.
 Package epstopdf Info: Source file: <fig/dge2gb_HASWELL_HACK_10.eps>
-(epstopdf)                    date: 2017-03-29 10:59:35
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 197113 bytes
 (epstopdf)             Output file: <fig/dge2gb_HASWELL_HACK_10-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-03-29 10:59:45
+(epstopdf)                    date: 2017-03-29 21:21:03
 (epstopdf)                    size: 9317 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/dge2gb_HASWELL_HACK_10
 -eps-converted-to.pdf fig/dge2gb_HASWELL_HACK_10.eps>
 (epstopdf)             \includegraphics on input line 495.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/dge2gb_HASWELL_HACK_10-eps-converted-to.pdf, id=264, 599.23875pt x 478.788
+<fig/dge2gb_HASWELL_HACK_10-eps-converted-to.pdf, id=260, 599.23875pt x 478.788
 76pt>
 File: fig/dge2gb_HASWELL_HACK_10-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/dge2gb_HASWELL_HACK_10-eps-converted-to.pdf>
@@ -1564,12 +1546,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: Citation `haidar2013improved' on page 13 undefined on input line
  511.
 
-[13]) (./svd_bidiag.tex
+[13]) (./svd_bidiag.tex [14]
 
-LaTeX Warning: Citation `ltaief2013high' on page 14 undefined on input line 11.
+LaTeX Warning: Citation `ltaief2013high' on page 15 undefined on input line 11.
 
 
-[14]
 
 LaTeX Warning: Citation `haidar2011parallel' on page 15 undefined on input line
  30.
@@ -1588,41 +1569,35 @@ No file bidiagonal_flymake.bbl.
 
 AED: lastpage setting LastPage
 [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
  (./bidiagonal_flymake.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
+Package rerunfilecheck Info: File `bidiagonal_flymake.out' has not changed.
+(rerunfilecheck)             Checksum: 734A27D1FC5606AFC1DCBD9A43ED5FF1;579.
 
-
-Package rerunfilecheck Warning: File `bidiagonal_flymake.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bidiagonal_flymake.out':
-(rerunfilecheck)             Before: 03FE6AFD871FAAF7C38BD25EC7ED34E2;583
-(rerunfilecheck)             After:  734A27D1FC5606AFC1DCBD9A43ED5FF1;579.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 407.
  ) 
 Here is how much of TeX's memory you used:
- 12563 strings out of 493029
- 182747 string characters out of 6136234
- 302944 words of memory out of 5000000
- 15769 multiletter control sequences out of 15000+600000
- 75907 words of font info for 67 fonts, out of 8000000 for 9000
+ 12274 strings out of 493029
+ 178900 string characters out of 6136234
+ 299991 words of memory out of 5000000
+ 15485 multiletter control sequences out of 15000+600000
+ 79350 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,13n,43p,715b,1088s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 pdfTeX warning: \pdfdraftmode enabled, not changing output pdf
 
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

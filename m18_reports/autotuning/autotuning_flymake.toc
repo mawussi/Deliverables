@@ -3,4 +3,4 @@
 \contentsline {section}{\numberline {3}Applying OpenTuner within NLAFET}{5}
 \contentsline {section}{\numberline {4}Curve fitting}{6}
 \contentsline {section}{\numberline {5}Performance results}{8}
-\contentsline {section}{\numberline {6}Conclusions}{8}
+\contentsline {section}{\numberline {6}Conclusions}{9}

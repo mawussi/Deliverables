@@ -48,6 +48,7 @@
     "fig.fit_linear"
     "fig.fit_log"
     "fig.fit_step"
+    "fig.lua_code"
     "sec.performance"
     "fig.tuned_gemm"
     "fig.tuned_potrf"

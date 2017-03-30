@@ -5,5 +5,5 @@
 \contentsline {section}{\numberline {5}Cholesky factorization}{9}
 \contentsline {section}{\numberline {6}$LU$ factorization}{10}
 \contentsline {section}{\numberline {7}$QR$ factorization}{11}
-\contentsline {section}{\numberline {8}Symmetric-indefinite factorization}{11}
+\contentsline {section}{\numberline {8}Symmetric-indefinite factorization}{12}
 \contentsline {section}{\numberline {9}Conclusions}{12}
