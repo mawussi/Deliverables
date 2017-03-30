@@ -330,7 +330,9 @@ To begin, let us explain the specific needs of the NLAFET project with
 regards to off-line autotuning.  The NLAFET project aims to deliver
 software for a large number of linear algebra problems, on both shared
 and distributed memory architectures, making use of runtime systems
-such as OpenMP, StarPU, and PaRSEC, for example.
+such as OpenMP~\cite{ayguade2009design},
+StarPU~\cite{AugThiNamWac11CCPE}, and PaRSEC~\cite{bosilca2013parsec},
+for example.
 
 Many of the algorithms employed to solve these linear algebra problems
 involve decomposing a large matrix into smaller ``blocks''.  These
@@ -398,7 +400,7 @@ aiming to determine which one is most suitable
 for the NLAFET project.
 In section~\ref{sec:opentuner} we give more details
 on how the chosen strategy can be applied to linear algebra software
-by combining it with a Lua interface.
+by combining it with a Lua interface~\cite{ierusalimschy2006lua}.
 Then in section~\ref{sec.curvefitting} we analyze some typical
 behaviours exhibited by the block size and show how fitting curves
 to the block size data allows us to select near-optimal block sizes
@@ -447,15 +449,13 @@ To downside to this approach is that different parts of the software
 cannot be tuned independently:
 the entire algorithm must be re-run to try a new set of parameters.
 
-Since the NLAFET project targets multiple architectures,
-including upcoming ARM-based HPC machines that are not readily
-available at present,
-we prefer to take the second approach and perform autotuning
-through configuration files.
-In order to maximize the number of architectures where our
-autotuning can be performed,
-we would like our optimiser to be written in languages such as
-C or Python, which are supported in all major operating systems.
+Since the NLAFET project targets multiple architectures, including
+upcoming ARM-based HPC machines~\cite{seal2001arm} that are not
+readily available at present, we prefer to take the second approach
+and perform autotuning through configuration files.  In order to
+maximize the number of architectures where our autotuning can be
+performed, we would like our optimiser to be written in languages such
+as C or Python, which are supported in all major operating systems.
 
 Although there are a large number of autotuning frameworks
 available for download,
@@ -867,7 +867,7 @@ or to apply Gaussian process regression in this
 multi-dimensional setting.
 
 \bibliographystyle{plain}
-\bibliography{/home/srelton/MATFUN/Total_Bibliography.bib}
+\bibliography{autotuning}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % END OF THE ACTUAL DELIVERABLE
