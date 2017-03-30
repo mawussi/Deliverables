@@ -3,7 +3,7 @@ algorithms were successful in exploiting early cache-based
 architectures, they have shown significant performance
 limitations on modern many/multi-core architectures and many
 well-tuned LAPACK-style kernels
-fail to achieve a satisfactory performance on these
+fail to achieve satisfactory performance on these
 architectures~\cite{agullo2009comparative}.
 As reported by Dongarra et al\@.~in~\cite{dongarra2011achieving},
 three factors contribute to this
@@ -15,17 +15,18 @@ massively parallel architectures since it introduces many unnecessary
 synchronization points, keeping many computational resources frequently
 idle.
 Secondly, LAPACK processes data at a coarse granularity,
-typically work on the block-column level (also known as panel),
+typically working on the block-column level (also known as a panel),
 which fails to exhibit enough parallelism to
 keep all the cores busy.
 Finally, while all factorization algorithms in LAPACK are based on
-a recursive panel factorization followed by the corresponding trailing
-matrix update, the panel factorization uses memory-bound operations.
+a recursive panel factorization followed by the update of the
+corresponding trailing matrix,
+the panel factorization uses memory-bound operations.
 
 In order to use modern many/multi-core architectures at full
 efficiency, a new generation of linear algebra libraries such as
 PLASMA~\cite{DBLP:journals/corr/abs-0709-1272} and FLAME~\cite{FLAWN3}
-have cast LAPACK block-column algorithms into tile algorithms. Tile
+have cast LAPACK panel-based algorithms into tile algorithms. Tile
 algorithms enjoy the property of addressing each of the three
 drawbacks that keep LAPACK from providing a reasonable performance on
 modern massively parallel architectures.
@@ -58,26 +59,26 @@ CPU as illustrated in Figure~\ref{fig:tile_algo}.
 \end{figure}
 
 The order of execution of the tasks in tile algorithms are commonly
-represented in form of a DAG where each node represents a task, while
+represented in the form of a DAG where each node represents a task, while
 the edges represent the data dependencies between the tasks.  These
-tasks are then scheduled thanks to a runtime system which checks the
+tasks are then scheduled by a runtime system that checks the
 dependencies and takes care of launching tasks on appropriate cores.
 
 The superiority of the tile layout algorithms over traditional
-approaches has been elegantly demonstrated through one-sided
-factorization benchmark suite reported in~\cite{agullo2009comparative}.
+approaches has been elegantly demonstrated through a one-sided
+factorization benchmark suite~\cite{agullo2009comparative}.
 
 In the last few years,
 the PLASMA development team dedicated their full
-energy to design highly efficient tile
+energy to designing highly efficient tile
 algorithms for one-sided factorizations.
 In 2008, Buttari et al.~\cite{buttari2008parallel},
-introduced the first algorithm for parallel tiled QR factorization for
+introduced the first algorithm for parallel tiled $QR$ factorization for
 multicore architectures.
-This algorithm has been extended in 2010 by
+This algorithm was extended in 2010 by
 Hadri et al.~\cite{hadri2010tile} to present a new fully asynchronous
-method for computing a QR factorization of tall and skinny matrices.
-The Cholesky and LU factorization versions are studied
+method for computing a $QR$ factorization of tall and skinny matrices.
+The Cholesky and $LU$ factorization versions are studied
 in~\cite{DBLP:journals/corr/abs-0709-1272}, while the algorithm to
 compute the $LDL^T$ factorization of symmetric indefinite matrices is
 discussed in~\cite{becker2011towards}.
