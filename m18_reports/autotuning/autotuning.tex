@@ -69,8 +69,8 @@
 % Either public or confidential. Look up the correct level in the the
 % grant agreement.
 
-% \def\nlafetDisseminationLevel{PU --- Public}
-\def\nlafetDisseminationLevel{CO --- Confidential}
+\def\nlafetDisseminationLevel{PU --- Public}
+%\def\nlafetDisseminationLevel{CO --- Confidential}
 
 
 
@@ -214,6 +214,8 @@
   \rowcolor{orange}
   \bf Date & \bf Editor & \bf Status & \bf Ver. & \bf Changes \\
   \hline
+  2017-04-11 & Samuel Relton & Complete & 1.0 & Feedback from
+                                                reviewers added.\\
   2017-03-27 & Samuel Relton & Draft & 0.1 & Initial version of
                                              document produced. \\
   \hline
@@ -226,7 +228,7 @@
 \noindent
 \textsc{Author(s)}\\[1em]
 % First Last (UMU/UNIMAN/STFC/INRIA)
-Negin Baghepour (UNIMAN)\\
+Negin Bagherpour (UNIMAN)\\
 Samuel Relton (UNIMAN)\\
 Mawussi Zounon (UNIMAN)
 
@@ -239,8 +241,10 @@ Mawussi Zounon (UNIMAN)
 % TODO: List the internal reviewers.
 \noindent
 \textsc{Internal reviewers}\\[1em]
-First Last (UMU/UNIMAN/STFC/INRIA)\\
-First Last (UMU/UNIMAN/STFC/INRIA)
+Nicholas Higham (UNIMAN)\\
+Mirko Myllykoski (UMU)\\
+Lars Karlsson (UMU)\\
+Stojce Nakov (STFC)
 
 \vspace{2em}
 
@@ -317,8 +321,10 @@ spawn in a parallel section of code), or even categorical variables
 (e.g. on/off switches for compiler flags).
 
 In this document we discuss, with a specific focus on the needs of the
-NLAFET project, how to optimise such parameters via autotuning.  In
-particular we concentrate on off-line autotuning; meaning that the
+NLAFET project, how to optimize such parameters via autotuning.
+We propose a methodology that can be applied to
+the various pieces of software produced by the NLAFET consortium.
+In particular we concentrate on off-line autotuning; meaning that the
 optimisation is performed before the user runs the software on
 their own problems.  An alternative approach is on-line autotuning,
 where the parameters are allowed to vary during the execution of a
@@ -330,8 +336,7 @@ regards to off-line autotuning.  The NLAFET project aims to deliver
 software for a large number of linear algebra problems, on both shared
 and distributed memory architectures, making use of runtime systems
 such as OpenMP~\cite{ayguade2009design},
-StarPU~\cite{AugThiNamWac11CCPE}, and PaRSEC~\cite{bosilca2013parsec},
-for example.
+StarPU~\cite{AugThiNamWac11CCPE}, and PaRSEC~\cite{bosilca2013parsec}.
 
 Many of the algorithms employed to solve these linear algebra problems
 involve decomposing a large matrix into smaller ``blocks''.  These
@@ -341,9 +346,9 @@ solution to the problem.  This approach is the key idea behind the
 PLASMA and MAGMA projects~\cite{addh09} and has been incorporated into
 many other libraries such as Intel MKL.  In terms of autotuning, this
 means that positive integers controlling the size of the blocks must
-be chosen to maximize performance.  Note that the optimal block size
+be chosen to maximize performance.  Note that the optimal tile size
 may be different for each linear algebra routine.  For example,
-performing a matrix multiplication may require a different block size
+performing a matrix multiplication may require a different tile size
 to an $LU$ factorization.
 
 Other algorithms,
@@ -351,7 +356,7 @@ especially for sparse matrices,
 tend to be iterative in nature.
 In particular some algorithms have two layers of iteration
 (an inner and outer iteration)
-and the tolerance of each iteration can differ.
+and the convergence tolerance of each iteration can differ.
 Increasing the error tolerance of the iterations
 leads to a faster solution,
 sometimes at the expense of accuracy,
@@ -373,13 +378,13 @@ strategy in StarPU etc.
 These categorical parameters also need to be optimized to
 achieve the best possible performance.
 
-The large number of parameters to optimise leads to a combinatorial
+The large number of parameters to optimize leads to a combinatorial
 explosion of possible options.
 Furthermore,
 due to the variety of parameter types that need to be optimized
 (integer, continuous, and categorical)
 a very general optimization routine is required.
-We believe that genetic algorithms are well-suited to optimise
+We believe that genetic algorithms are well-suited to optimize
 such high-dimensional problems with various parameter types.
 Currently,
 many pieces of software attempt to perform a ``grid-sweep''
@@ -391,18 +396,22 @@ other optimisation strategies considered.
 To test our choice of autotuning strategy,
 we will show the results when this procedure is employed to tune
 the PLASMA library for dense linear algebra.
+For this particular library we will be optimizing,
+and fitting models to,
+a single parameter.
+Extensions to multiple parameters are discussed in the conclusions.
 
 The rest of this report is organised as follows.
 In section~\ref{sec.review} we compare a number of existing
-autotuning approaches,
+off-line autotuning approaches,
 aiming to determine which one is most suitable
 for the NLAFET project.
 In section~\ref{sec:opentuner} we give more details
 on how the chosen strategy can be applied to linear algebra software
 by combining it with a Lua interface~\cite{ierusalimschy2006lua}.
 Then in section~\ref{sec.curvefitting} we analyze some typical
-behaviours exhibited by the block size and show how fitting curves
-to the block size data allows us to select near-optimal block sizes
+behaviours exhibited by the tile size and show how fitting curves
+to the tile size data allows us to select near-optimal tile sizes
 for all sizes of input matrix.
 In section~\ref{sec.performance} we show how our
 tuning strategy improves the performance of PLASMA for
@@ -414,10 +423,10 @@ section~\ref{sec.conclusions}.
 \label{sec.review}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 There are a number of off-line autotuning frameworks already
-available from the HPC community
-which are largely split into two categories:
+available from the HPC community,
+and they are largely split into two categories:
 \begin{itemize}
-\item those which require modification to the source code, and,
+\item those which require modification to the source code, and
 \item those which interface with the source code via, for example,
   a configuration file.
 \end{itemize}
@@ -427,12 +436,12 @@ source code directly
 (such as the
 Periscope Tuning Framework~\cite{mice13},~\cite{ptf14})
 are that the developer has fine-grain control over specifically what
-is being optimised and that different sections of the code can be
-optimised independently;
+is being optimized and that different sections of the code can be
+optimized independently,
 possibly speeding up the autotuning process.
 On the other hand,
-the overall code must be linked up to the tuning library which
-increases the number of dependencies of the software.
+the overall code must be linked up to the tuning library,
+which increases the number of dependencies of the software.
 Issues can also arise in the future if the chosen
 autotuning framework becomes unsupported due to lack of funding,
 or fails to compile on new architectures.
@@ -442,18 +451,19 @@ has one distinct advantage over the previous approach:
 it is more modular and flexible.
 This separation between the computational routines and the
 autotuning means that,
-if our chosen optimiser fails to run on a certain architecture
+if our chosen optimizer fails to run on a certain architecture
 it can easily be replaced by another.
-To downside to this approach is that different parts of the software
+One disadvantage of this approach is that different parts of the software
 cannot be tuned independently:
 the entire algorithm must be re-run to try a new set of parameters.
 
 Since the NLAFET project targets multiple architectures, including
-upcoming ARM-based HPC machines~\cite{seal2001arm} that are not
+upcoming ARM-based HPC machines~\cite{seal2001arm} \textcolor{red}{GET
+  RECENT REF} that are not
 readily available at present, we prefer to take the second approach
 and perform autotuning through configuration files.  In order to
 maximize the number of architectures where our autotuning can be
-performed, we would like our optimiser to be written in languages such
+performed, we would like our optimizer to be written in languages such
 as C or Python, which are supported in all major operating systems.
 
 Although there are a large number of autotuning frameworks
@@ -461,8 +471,10 @@ available for download,
 the only one we have found that fits all of our desired
 criteria is OpenTuner~\cite{ansel:pact:2014}.
 OpenTuner is a Python module with minimal dependencies that
-can be used to optimise all the quantities mentioned previously.
-Particularly interesting is its use of ensemble optimisation:
+can be used to optimize all the quantities mentioned previously.
+
+A particularly interesting feature of OpenTuner
+is its use of ensemble optimisation:
 a large number of algorithms
 (including genetic optimisation and simulated annealing etc.)
 are fed into a multi-armed bandit model
@@ -483,19 +495,19 @@ as an example.
 To give an overview of our approach,
 we aim to use optimization software such as OpenTuner
 (or even a full grid-sweep)
-to determine optimal values of the block size for
+to determine optimal values of the tile size for
 a range of different matrix shapes and sizes.
 Once these values have been found,
-we need to inform PLASMA which block size is appropriate for
+we need to inform PLASMA which tile size is appropriate for
 each matrix via an intermediary interface.
 However,
 instead of using a simple configuration file
 we opt to use a Lua script.
 
-Lua is a lightweight, embeddable, and open-source scripting language
+Lua is a lightweight, portable, embeddable, and open-source scripting language
 that is ideal for making small extensions to larger software projects.
 In this scenario,
-we can use Lua to return an ``optimal'' block size for matrices with
+we can use Lua to return an ``optimal'' tile size for matrices with
 sizes that we haven't tested by interpolating the values seen
 during our autotuning runs.
 Also,
@@ -514,7 +526,7 @@ or some other method such as a grid-sweep,
 to find optimal parameters for a range of matrix sizes.
 Second,
 we would like to fit a function to these points
-(so that a good value of the block size
+(so that a good value of the tile size
 can be returned for any matrix size)
 before writing Lua code to implement this function.
 From here,
@@ -522,10 +534,10 @@ the software can simply call the Lua script to obtain
 the parameters for any input matrix.
 This second issue is rather difficult to automate:
 there are a variety of different functions needed to
-fit the various behaviours we observe the block size showing.
+fit the various behaviours we observe the tile size showing.
 
 For the first issue,
-performing a grid-sweep over all block sizes for
+performing a grid-sweep over all tile sizes for
 a variety of matrix sizes
 is very simple and the optimal parameters can easily be
 stored in a csv file.
@@ -545,50 +557,59 @@ In \texttt{manipulator} we simply define the tile size as a
 multiple of $8$ (the width of the vector units on most CPUs)
 between $80$ and $520$.
 Within \texttt{run} we simply run the routine we are currently
-investigating with the current block size and take the average time
+investigating with the current tile size and take the average time
 over $5$ runs (where $5$ is actually a user-chosen parameter).
 Finally in \texttt{save\_final\_config} we output the
-``optimal'' block size in JSON format.
+``optimal'' tile size in JSON format.
 A wrapper script collates the JSON files for various matrix sizes
 into a single CSV file.
 
 The actual optimization is taken care of by OpenTuner itself,
 meaning that there is nothing else to do but to limit
-the number of tests performed using the command-line argument
+the number of tests performed (i.e.\ function calls)
+using the command-line argument
 \texttt{-$\,$-test-limit=x}.
 This was set to $30$ for our experiments whereas doing a full
-grid sweep needs $55$ runs for each matrix size;
+grid sweep over all tile sizes requires $55$ runs for each matrix size;
 we can save almost half the sweep time by using OpenTuner.
 
 We can also define multiple initial guesses for the optimal
-block size using the command-line argument
+tile size using the command-line argument
 \texttt{-$\,$-seed-configuration=f} where \texttt{f} is a JSON
 file containing, for example, \texttt{\{``blocksize'': 256\}}.
 We used this latter option to define a few initial guesses
 for the powers of 2 etc.
+We found that OpenTuner was able to identify maxima
+close to that provided by a grid sweep with half the number of runs
+per matrix size:
+reducing the overall optimization time (for all the routines we considered)
+from 12 to 6 hours.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Curve fitting}
 \label{sec.curvefitting}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Once we have found the optimal block sizes for a variety of matrix
+Once we have found the optimal tile sizes for a variety of matrix
 sizes we would like to fit a curve to the resulting data,
 which can then be coded in Lua.
 Using this fitted curve we can then return near-optimal
 parameters for any input matrix,
 regardless of its size.
+The following experiments were performed
+on a 2 socket NUMA node with
+with 20 Haswell cores (2 x Xeon(R) CPU E5-2650 v3, 2.30GHz).
 
 In this section we will show the variety of behaviours
-that the optimal block size can take as the matrix size changes,
+that the optimal tile size can take as the matrix size changes,
 propose a number of models to fit the resulting data,
 and describe how the parameters of such models can be estimated.
 We found that the following four models can cover all
 of the routines we investigated.
 
 \begin{itemize}
-\item Constant models - Block size does not depend on the input matrix size.
-\item Linear models - Block size increases linearly with the input matrix size.
-\item Logarithmic models - Block size increases logarithmically with the
+\item Constant models - tile size does not depend on the input matrix size.
+\item Linear models - tile size increases linearly with the input matrix size.
+\item Logarithmic models - tile size increases logarithmically with the
   input matrix size.
 \item Piecewise models - A combination of the other three models is required,
   for example a step function is a combination of constant models.
@@ -598,8 +619,8 @@ of the routines we investigated.
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=1]{fig/curvefit_const.eps}
-  \caption{The optimal block size for DGEMM is independent of the
-    matrix size so a constant model is most appropriate.
+  \caption{The optimal tile size for DGEMM is independent of the
+    matrix size, so a constant model is most appropriate.
     On this architecture the constant is $304$.}
   \label{fig.fit_const}
 \end{figure}
@@ -607,29 +628,29 @@ of the routines we investigated.
 First we investigate the performance of DGEMM
 for matrix multiplication.
 As we can see from Figure~\ref{fig.fit_const},
-the optimal block size is largely independent of the matrix size.
+the optimal tile size is largely independent of the matrix size.
 Therefore, we use the mean of all the values to return a constant
-block size:
+tile size:
 in this case the constant is $304$.
 The reason for the lack of dependence on the matrix size is
 fairly straightforwards,
 since DGEMM is very arithmetic intensive,
 involving only fused multiply-adds,
-the block size is affected only by the memory hierarchy
+the tile size is affected only by the memory hierarchy
 and cache size.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=1]{fig/curvefit_linear.eps}
-  \caption{The optimal block size for DGETRF appears to depend
+  \caption{The optimal tile size for DGETRF appears to depend
     linearly on the matrix size. In this model the intercept is
     $92.25$ with a gradient of $0.008$.}
   \label{fig.fit_linear}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Next we investigate DGETRF for $LU$ factorization
-in Figure~\ref{fig.fit_linear}.
+with partial pivoting in Figure~\ref{fig.fit_linear}.
 In this experiment it is clear that a linear model
 provides a much better fit for the data.
 Doing a least-squares fit gives an intercept of $92.25$
@@ -639,14 +660,14 @@ and a gradient of $0.008$.
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=1]{fig/curvefit_log.eps}
-  \caption{The optimal block size for SPOTRF appears to depend
+  \caption{The optimal tile size for SPOTRF appears to depend
     logarithmically on the matrix size.
-    The least-squares fit provides the block size function
+    The least-squares fit provides the tile size function
     $y = -898 + 135\log(x)$.}
   \label{fig.fit_log}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In Figure~\ref{fig.fit_log} we observe that the block size for
+In Figure~\ref{fig.fit_log} we observe that the tile size for
 SPOTRF (Cholesky factorization in single precision)
 increases logarithmically with the matrix size.
 The least-squares fit of a model $y = a + b\log(x)$ on
@@ -663,7 +684,7 @@ $y = -898 + 135 \log(x)$.
 \begin{figure}[ht]
   \centering
   \includegraphics[scale=1]{fig/curvefit_step.eps}
-  \caption{The optimal block size for DPOTRF appears to
+  \caption{The optimal tile size for DPOTRF appears to
     be a step function. The three constants in this step function
     are $124$, $291$, and $487$.}
   \label{fig.fit_step}
@@ -686,11 +707,13 @@ when the matrix sizes are $5000$ and $19000$,
 whilst the three constants are $124$, $291$, and $487$.
 
 In summary there are a variety of different behaviours that
-the block size can exhibit depending upon the
+the tile size can exhibit depending upon the
 routine in question.
 Note that even performing the same routine in different
 precisions can lead to drastically differing behaviours
 (compare Figures~\ref{fig.fit_log}~and~\ref{fig.fit_step}).
+This is likely due to the complex interaction between the
+memory hierarchy and the width of the SIMD units within each core.
 
 \begin{figure}[ht]
   \centering
@@ -735,7 +758,7 @@ may lead to drastically different behaviours.
 Clearly,
 once these trends have been found,
 they need to be coded within Lua functions so that the
-software can find the appropriate block sizes at runtime.
+software can find the appropriate tile sizes at runtime.
 As an example, the Lua code for the single and double
 precision variants of the Cholesky factorization is given
 in Figure~\ref{fig.lua_code}.
@@ -749,15 +772,15 @@ improvements in performance that can be gained
 by applying the procedure described in the
 previous sections.
 Using a 2 socket NUMA node with
-Haswell cores (2 x Xeon(R) CPU E5-2650 v3, 2.30GHz)
+20 Haswell cores (2 x Xeon(R) CPU E5-2650 v3, 2.30GHz)
 we ran the OpenTuner procedure to obtain the
-best block sizes for various matrix sizes and
+best tile sizes for various matrix sizes and
 fit various curves to the resulting data---%
 as described in section~\ref{sec.curvefitting}---%
 before encoding these curves in Lua functions.
 
 We will compare the performance of OpenMP PLASMA
-using the default parameters (i\@.e\@.~taking a block size of $256$)
+using the default parameters (i\@.e\@.~taking a tile size of $256$)
 against our tuned version for four different routines:
 matrix multiplication, Cholesky factorization,
 $LU$ factorization, and $QR$ factorization.
@@ -864,6 +887,14 @@ each parameter separately and use a copula
 (an idea borrowed from statistics),
 or to apply Gaussian process regression in this
 multi-dimensional setting.
+
+Further research could also look at simulating performance results
+as opposed to measuring them directly.
+This would significantly reduce the time needed to optimize
+the parameters,
+but reliability may suffer as a result.
+Simulators such as SimGrid (tied to StarPU) have shown
+promising results in this area.
 
 \bibliographystyle{plain}
 \bibliography{autotuning}
