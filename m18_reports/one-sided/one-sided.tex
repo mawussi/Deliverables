@@ -475,7 +475,7 @@ whenever they become idle.
 This strategy does not allow for data prefetching since the scheduling
 decision is taken as late as possible.
 Meanwhile, the ``dmda'' (deque model data aware) strategy
-uses an estimate of the runtime
+uses an estimate of the runtime based on a database of previous runs
 (and memory transfer time) of each task to schedule them into
 multiple queues for each core,
 aiming to minimize the overall runtime.
@@ -495,6 +495,10 @@ This is designed to keep all cores busy at all times.
 There are a number of other scheduling strategies implemented within
 StarPU but these are the ones best-suited to
 operation on a single node.
+Unfortunately the ``prio'' scheduler using task priorities cannot be
+used in this report,
+since a native StarPU implementation is required to
+make use of task priority features.
 The downside to StarPU is the additional overhead in task scheduling
 as a result of the numerous advanced features supported.
 However,
@@ -599,7 +603,7 @@ in StarPU:
 we use the ``eager'', ``dmda',' and ``ws'' strategies in our
 experiments as discussed in the previous section.
 Due to some issues with the automatic conversion of the source code,
-in particular the way certain blocks of memory are accessed during pivoting,
+in particular the way certain locations memory are accessed during pivoting,
 we are unable to use PLASMA KStar for all routines:
 we can use PLASMA KStar only for the Cholesky and $QR$ factorizations.
 
@@ -741,8 +745,9 @@ the MKL implementation scales well whilst
 the performance of Quark stagnates and even decreases
 slightly for very large matrices.
 Meanwhile,
-the lower level of parallelism expressed by the OpenMP
-implementation leads to an enormous performance hit on the KNL:
+the lower level of parallelism expressed by the OpenMP implementation,
+due to the issues mentioned above,
+leads to an enormous performance hit on the KNL:
 the large number of cores need lots of parallelism
 to be utilised efficiently.
 When the OpenMP version is reimplemented we expect to see

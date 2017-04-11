@@ -20,7 +20,7 @@ typically working on the block-column level (also known as a panel),
 which fails to exhibit enough parallelism to
 keep all the cores busy.
 Finally, while all factorization algorithms in LAPACK are based on
-a recursive panel factorization followed by the update of the
+a recursive panel factorization followed by an update to the
 corresponding trailing matrix,
 the panel factorization uses memory-bound operations
 (i.e.\ level-1 and level-2 BLAS operations).
