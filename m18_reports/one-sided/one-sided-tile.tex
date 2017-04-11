@@ -1,4 +1,4 @@
-While LAPACK~\cite{anderson1999lapack} linear algebra factorization
+While LAPACK~\cite{lug99} linear algebra factorization
 algorithms were successful in exploiting early cache-based
 architectures, they have shown significant performance
 limitations on modern many/multi-core architectures and many
@@ -26,6 +26,7 @@ the panel factorization uses memory-bound operations.
 In order to use modern many/multi-core architectures at full
 efficiency, a new generation of linear algebra libraries such as
 PLASMA~\cite{DBLP:journals/corr/abs-0709-1272} and FLAME~\cite{FLAWN3}
+\textcolor{red}{CHANGE FLAME REF, THEY DIDN'T DO THIS IN 2001!}
 have cast LAPACK panel-based algorithms into tile algorithms. Tile
 algorithms enjoy the property of addressing each of the three
 drawbacks that keep LAPACK from providing a reasonable performance on
@@ -52,20 +53,20 @@ CPU as illustrated in Figure~\ref{fig:tile_algo}.
     \caption{\label{fig:tile_facto}
      Many kernels operating on different tiles in parallel.}
   \end{subfigure}
-  \caption{Illustration of matrix division in square tiles as the case
+  \caption{Illustration of matrix division in square tiles as is the case
     in tile algorithms. This helps working at  a finer granularity to
-    keep the maximum of the cores busy.}
+    keep the maximum number of cores busy.}
     \label{fig:tile_algo}
 \end{figure}
 
 The order of execution of the tasks in tile algorithms are commonly
-represented in the form of a DAG where each node represents a task, while
+represented in the form of a DAG in which each node represents a task, while
 the edges represent the data dependencies between the tasks.  These
 tasks are then scheduled by a runtime system that checks the
 dependencies and takes care of launching tasks on appropriate cores.
 
 The superiority of the tile layout algorithms over traditional
-approaches has been elegantly demonstrated through a one-sided
+approaches has been demonstrated conclusively through a one-sided
 factorization benchmark suite~\cite{agullo2009comparative}.
 
 In the last few years,
@@ -85,4 +86,5 @@ discussed in~\cite{becker2011towards}.
 
 This work revisits the state-of-the-art tile algorithms for
 one-sided factorizations and provides an
-efficient task-based OpenMP implementation.
+efficient task-based OpenMP implementation for comparison with
+other runtime systems.
