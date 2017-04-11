@@ -328,10 +328,13 @@ to solve them in a reasonable amount of time.
 Usually such dense systems are solved using
 the Cholesky, $LU$, $QR$, or symmetric-indefinite factorizations
 (collectively known as the one-sided factorizations).
+The LAPACK names for these factorizations are
+POTRF, GETRF, GEQRF, and (SY/HE)TRF, respectively.
 
 In this work we compare different implementations of
 these routines using the novel task-based programming paradigm.
-Whilst this has existed for a number of years,
+Whilst this has existed for a number of years in the runtimes
+described in section~\ref{sec.runtime_systems},
 it has only recently been supported in OpenMP, since version~4.0.
 Our efforts in applying OpenMP to this problem
 are collated in the new release of the PLASMA library~\cite{addh09}
@@ -347,6 +350,9 @@ before the tasks to update the trailing matrix can begin.
 Typically these interdependencies are expressed using a
 directed acylic graph (DAG),
 which is also known as a task-graph.
+The nodes of the graph are functions to be computed and
+the edges denote dependencies between the output of one task
+to the input of another.
 As an example,
 the DAG for a small Cholesky factorization is shown in
 Figure~\ref{fig.chol_dag} below.
@@ -395,7 +401,7 @@ Finally we summarize the results and give some conclusions
 in section~\ref{sec.conclusions}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Tile layout one-sided factorization}
+\section{Tile-based one-sided factorization}
 \label{sec.tile}
 \input{one-sided-tile.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -416,7 +422,7 @@ and can scale to distributed architectures with
 minimal effort.
 The runtime systems that we will use are
 \begin{itemize}
-\item OpenMP,
+\item OpenMP\footnote{\url{http://www.openmp.org}},
 \item Quark, and
 \item StarPU.
 \end{itemize}
@@ -435,9 +441,9 @@ OpenMP standard or have not been widely implemented.  This is due to
 the relative immaturity of task-based programming within OpenMP.
 Meanwhile, the benefits to using OpenMP are its wide availability and
 lightweight framework (meaning there are few significant overheads
-when using the task-based paradigm).  As is well known, currently
-OpenMP does not widely support the use of accelerators and is not
-designed for distributed memory computation.
+when using the task-based paradigm).  As is well known, current
+OpenMP implementations do not widely support the use of accelerators
+and OpenMP is not designed for distributed memory computation.
 
 Quark is a research project implementing task-based programming
 produced by ICL at the University of Tennessee%
@@ -506,7 +512,8 @@ in particular ParSec (also from ICL at the University of Tennessee)%
 \footnote{Available from
   \url{https://bitbucket.org/icldistcomp/parsec} as of 23rd March 2017.}.
 ParSec supports the use of accelerators and distributed memory machines,
-but is currently rather difficult to use.
+but is currently rather difficult to use due to the
+different way the DAG is described.
 The ParSec team is currently working on a simplified interface,
 similar to that used by StarPU,
 along with a similar source-to-source compiler for converting OpenMP code.
@@ -520,14 +527,16 @@ along with a similar source-to-source compiler for converting OpenMP code.
 \begin{table}[t]
   \centering
   \caption{Architecture details for the Intel Broadwell NUMA node and
-    the Intel Xeon Phi (KNL).}
+    the Intel Xeon Phi (KNL).
+    Note that gcc is used for compatibility with the KStar
+    source-to-source compiler.}
   \vspace{.5em}
   \begin{tabular}{|r | l | l |}
     \hline
     \textbf{Platform} & Xeon E5-2690 v4 & Xeon Phi 7250\\
     \textbf{Cores}    & $2 \times 14$ (2.6GHz) & 68 (1.4GHz)\\
-    \textbf{On-chip Memory} & L1 32KB (per core) & L1 32KB\\
-                      & L2 256KB (per core) & L2 34MB\\
+    \textbf{On-chip Memory} & L1 32KB (per core) & L1 32KB (per core)\\
+                      & L2 256KB (per core) & L2 512KB (per core)\\
                       & L3 35MB (per NUMA island)  & MCDRAM 16GB\\
     \textbf{Main Memory} & 128GB DDR4 & 320GB DDR4\\
     \textbf{Bandwidth} & 76.8 GB/s & 115.2 GB/s\\
@@ -552,6 +561,9 @@ briefly, we have:
 \end{itemize}
 Note that, on the Intel KNL,
 we are using the DDR4 memory as opposed to the MCDRAM.
+Using the MCDRAM explicitly can result in much higher performance
+rates,
+but the amount of available memory is limited.
 
 In each scenario we will compare a number of different software libraries
 for the factorizations which,
@@ -587,6 +599,7 @@ in StarPU:
 we use the ``eager'', ``dmda',' and ``ws'' strategies in our
 experiments as discussed in the previous section.
 Due to some issues with the automatic conversion of the source code,
+in particular the way certain blocks of memory are accessed during pivoting,
 we are unable to use PLASMA KStar for all routines:
 we can use PLASMA KStar only for the Cholesky and $QR$ factorizations.
 
@@ -603,7 +616,7 @@ compare the runtime systems themselves
 and not the actual performance obtained}.
 We are using \emph{untuned} versions of PLASMA in these experiments,
 meaning that much better performance can be obtained
-after autotuning,
+after autotuning of the tile size,
 which is the subject of NLAFET deliverable D6.4.
 Therefore comparisons with MKL at this point
 may be considered rather premature,
