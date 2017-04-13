@@ -313,6 +313,17 @@ This project has received funding from the \emph{European Union's Horizon 2020 r
 \section{Introduction}
 \label{sec.introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{quotation}
+  \emph{D6.4:
+    ``Review of techniques for pruning the search space in the context
+    of autotuning, resulting in prototypes for an offline auto-tuning
+    framework based on heuristic search.
+    Includes reporting on optimal circumstances for switching
+    scheduling
+    approaches at runtime.''
+  }
+\end{quotation}
+
 In most pieces of scientific software there are a number of parameters
 that can be tweaked to obtain better performance.  These can take a
 variety of forms including continuous variables (e.g. a parameter in a
@@ -369,7 +380,7 @@ different compilers, various number of cores, various number of GPUs etc.
 The compiler flags used during the compilation can have a dramatic
 effect on the overall performance.
 For example,
-whether or not vectorization is enabled when compiling with GCC will
+whether or not vectorization is enabled when compiling with gcc will
 have a large impact on performance.
 Similarly using the flags -O1, -O2, or -O3 during the compilation can have a
 dramatic impact on the overall runtime.
@@ -458,8 +469,7 @@ cannot be tuned independently:
 the entire algorithm must be re-run to try a new set of parameters.
 
 Since the NLAFET project targets multiple architectures, including
-upcoming ARM-based HPC machines~\cite{seal2001arm} \textcolor{red}{GET
-  RECENT REF} that are not
+upcoming ARM-based HPC machines~\cite{armhpc16} that are not
 readily available at present, we prefer to take the second approach
 and perform autotuning through configuration files.  In order to
 maximize the number of architectures where our autotuning can be
