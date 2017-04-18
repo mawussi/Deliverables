@@ -497,7 +497,7 @@ gives the scheduling system more information
 upon which to base its future decisions.
 Finally,
 the ``ws'' (work-stealing) strategy allows each core to
-steal work from the other cores when they becomes idle.
+steal work from the other cores when they become idle.
 This is designed to keep all cores busy at all times.
 
 There are a number of other scheduling strategies implemented within
@@ -611,7 +611,7 @@ in StarPU:
 we use the ``eager'', ``dmda',' and ``ws'' strategies in our
 experiments as discussed in the previous section.
 Due to some issues with the automatic conversion of the source code,
-in particular the way certain locations memory are accessed during pivoting,
+in particular the way certain memory locations are accessed during pivoting,
 we are unable to use PLASMA KStar for all routines:
 we can use PLASMA KStar only for the Cholesky and $QR$ factorizations.
 
