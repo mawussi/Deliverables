@@ -221,7 +221,7 @@
   \rowcolor{orange}
   \bf Date & \bf Editor & \bf Status & \bf Ver. & \bf Changes \\
   \hline
-  2017-04-11 & Samuel Relton & Final & 1.0 & Incorporated reviewer suggestions.\\
+  2017-04-18 & Samuel Relton & Final & 1.0 & Incorporated reviewer suggestions.\\
   2017-03-27 & Samuel Relton & Draft & 0.1 & Initial version of
                                              document produced. \\
   \hline
@@ -363,10 +363,10 @@ the edges denote dependencies between the output of one task
 to the input of another.
 As an example,
 the DAG for a small Cholesky factorization is shown in
-Figure~\ref{fig.chol_dag} below.
+Figure~\ref{fig.chol_dag}.
 \begin{figure}[th]
   \centering
-  \includegraphics[scale=.6]{fig/spotrf_dag.png}
+  \includegraphics[scale=.55]{fig/spotrf_dag.png}
   \caption{DAG for a small Cholesky factorization.}
   \label{fig.chol_dag}
 \end{figure}
@@ -506,18 +506,18 @@ operation on a single node.
 Unfortunately the ``prio'' scheduler using task priorities cannot be
 used in this report,
 since a native StarPU implementation is required to
-make use of task priority features.
+make use of task priority features:
+we use the KStar source-to-source compiler in this work,
+which automatically converts OpenMP task-based programs to
+StarPU programs%
+\footnote{Downloaded from \url{http://kstar.gforge.inria.fr} on
+  23rd March 2017.}.
 The downside to StarPU is the additional overhead in task scheduling
 as a result of the numerous advanced features supported.
 However,
 the support for accelerators and distributed memory
 means that StarPU is readily applicable to heterogeneous computing
 environments.
-We also make use of the KStar source-to-source compiler in this work,
-which automatically converts OpenMP task-based programs to
-StarPU programs%
-\footnote{Downloaded from \url{http://kstar.gforge.inria.fr/#!index.md} on
-  23rd March 2017.}.
 
 There are also other runtime systems that could be considered,
 in particular ParSec (also from ICL at the University of Tennessee)%
