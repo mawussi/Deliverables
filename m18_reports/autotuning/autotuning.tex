@@ -214,7 +214,7 @@
   \rowcolor{orange}
   \bf Date & \bf Editor & \bf Status & \bf Ver. & \bf Changes \\
   \hline
-  2017-04-11 & Samuel Relton & Complete & 1.0 & Feedback from
+  2017-04-18 & Samuel Relton & Complete & 1.0 & Feedback from
                                                 reviewers added.\\
   2017-03-27 & Samuel Relton & Draft & 0.1 & Initial version of
                                              document produced. \\
@@ -376,7 +376,7 @@ making these values continuous tunable parameters.
 Finally,
 all these algorithms need to be compiled across a number of different
 architectures with
-different compilers, various number of cores, various number of GPUs etc.
+different compilers, various number of cores, and various number of GPUs~etc.
 The compiler flags used during the compilation can have a dramatic
 effect on the overall performance.
 For example,
@@ -471,7 +471,7 @@ the entire algorithm must be re-run to try a new set of parameters.
 Since the NLAFET project targets multiple architectures, including
 upcoming ARM-based HPC machines~\cite{armhpc16} that are not
 readily available at present, we prefer to take the second approach
-and perform autotuning through configuration files.  In order to
+and perform autotuning through a configuration interface.  In order to
 maximize the number of architectures where our autotuning can be
 performed, we would like our optimizer to be written in languages such
 as C or Python, which are supported in all major operating systems.
@@ -516,6 +516,8 @@ we opt to use a Lua script.
 
 Lua is a lightweight, portable, embeddable, and open-source scripting language
 that is ideal for making small extensions to larger software projects.
+Its only dependency is the availability of a C compiler so it does not
+hamper the portability of the overall software.
 In this scenario,
 we can use Lua to return an ``optimal'' tile size for matrices with
 sizes that we haven't tested by interpolating the values seen
@@ -545,6 +547,11 @@ the parameters for any input matrix.
 This second issue is rather difficult to automate:
 there are a variety of different functions needed to
 fit the various behaviours we observe the tile size showing.
+However,
+it would be easy to automate this latter part by using spline
+interpolation or kernel density estimation
+for example,
+at the expense of possibly overfitting the observed parameters.
 
 For the first issue,
 performing a grid-sweep over all tile sizes for
@@ -590,10 +597,15 @@ file containing, for example, \texttt{\{``blocksize'': 256\}}.
 We used this latter option to define a few initial guesses
 for the powers of 2 etc.
 We found that OpenTuner was able to identify maxima
-close to that provided by a grid sweep with half the number of runs
+close to those provided by a grid sweep with half the number of runs
 per matrix size:
 reducing the overall optimization time (for all the routines we considered)
 from 12 to 6 hours.
+Note that we have only considered 4 routines in this report
+(in both single and double precision)
+from over 50 routines in the current version of PLASMA,
+so using OpenTuner could reduce the optimization time by a
+number of days in a larger experiment.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Curve fitting}
@@ -607,7 +619,7 @@ parameters for any input matrix,
 regardless of its size.
 The following experiments were performed
 on a 2 socket NUMA node with
-with 20 Haswell cores (2 x Xeon(R) CPU E5-2650 v3, 2.30GHz).
+20 Haswell cores (2 x Xeon(R) CPU E5-2650 v3, 2.30GHz).
 
 In this section we will show the variety of behaviours
 that the optimal tile size can take as the matrix size changes,
@@ -897,6 +909,8 @@ each parameter separately and use a copula
 (an idea borrowed from statistics),
 or to apply Gaussian process regression in this
 multi-dimensional setting.
+We could also use spline interpolation
+or kernel density estimation as mentioned previously.
 
 Further research could also look at simulating performance results
 as opposed to measuring them directly.
