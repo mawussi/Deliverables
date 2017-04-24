@@ -4,7 +4,7 @@ full efficiency,
 many LAPACK library algorithms initially powered by
 block algorithms have been redesigned into tile algorithms.
 This led to a new generation of linear algebra libraries such as
-PLASMA~\cite{DBLP:journals/corr/abs-0709-1272} and FLAME~\cite{FLAWN3}.
+PLASMA~\cite{DBLP:journals/corr/abs-0709-1272}.
 The key idea is that,
 instead of operating on block-columns as found in LAPACK,
 tile algorithms operate at a finer granularity by dividing the whole
@@ -25,7 +25,7 @@ represented in form of a Directed Acyclic Graph (DAG) where each node
 represents a task, while the edges represent the
 data dependencies between the tasks.
 These tasks are then scheduled
-thanks to a runtime system which checks the dependencies and
+by a runtime system which checks the dependencies and
 takes care of launching tasks on appropriate cores.
 
   \begin{figure}[h!]
@@ -83,5 +83,5 @@ to eliminate the square tiles below
 (Figures~\ref{fig:tsqrt_2}-\ref{fig:tsqrt_5}).
 This kernel is denoted TSQRT and stands
 for ``triangle on top of square tile QR factorization''.
-In the next few sections we will introduce other specialized kernels,
-designed to operate on tiles.
+In the next few sections we will introduce other specialized kernels
+that we designed  to operate on tiles.

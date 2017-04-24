@@ -1,5 +1,10 @@
 \section{Introduction}
-The main objective of this work is to investigate new strategies for
+\begin{quotation}
+  \emph{D2.8:
+    ``Prototypes for two-sided bidiagonal factorization.``
+  }
+\end{quotation}
+The main objective of this work is to investigate new strategies for 
 two-sided bidiagonal factorization,
 which is widely used to
 transform a full matrix into bidiagonal form using orthogonal transformations.
@@ -40,29 +45,29 @@ for modern architectures,
 the first step---%
 the reduction to bidiagonal form---%
 remains limited by
-memory-bound operations.
+bandwidth-bound operations.
 In fact, in the algorithm proposed by Golub,
-the reduction to bidiagonal form is achieved by applying a QR step to
-the first column, followed by a LQ step to the first row, then a QR
-step to the second column, and so on. Since this algorithm processes
+the reduction to bidiagonal form is achieved by applying a QR factorization to
+the first column, followed by a LQ factorization of the first row, then a QR
+factorization of the second column, and so on. Since this algorithm processes
 one column (or row) at a time using Householder transformations,
-it is limited to Level-2 BLAS kernels (and is hence memory-bound).
+it is limited to Level-2 BLAS kernels (and is hence bandwidth-bound).
 
 In 1989, to improve the bidiagonalization step,
 Dongarra, Sorensen, and Hammarling~\cite{dongarra1989block}
 proposed a new variant which has the advantage of exploiting
 Level-3 BLAS operations.
-Instead of applying the householder transformations to
+Instead of applying the Householder transformations to
 one column at a time,
-this algorithm uses an aggregated householder transformation
+this algorithm uses an aggregated Householder transformation
 strategy~\cite{bischof1987wy} to process a few columns at each time,
 giving us the opportunity to use compute-intensive Level-3 BLAS kernels.
 This modification to the bidiagonalization algorithm helps
-to reformulate approximately 50\% of the process as Level-3 BLAS operations
+to reformulate approximately 50\% of the total number of flops as Level-3 BLAS operations
 as reported by Gro{\ss}er and Lang in~\cite{grosser1999efficient}.
 
 To address the remaining 50\% of Level-2 BLAS operations in the
-algorithm, in 1999, Gro{\ss}er and Lang introduced a two-staged
+algorithm, in 1999, Gro{\ss}er and Lang introduced a two-stage
 approach.
 As illustrated in Figure~\ref{fig:two_stage}, the algorithm consists of
 a first stage for reducing the full matrix into
@@ -70,7 +75,7 @@ band bidiagonal form (Figure~\ref{fig:SVD_band_bidiag}) using only
 compute-intensive kernels,
 followed by a second stage to reduce the band
 matrix to bidiagonal form (Figure~\ref{fig:SVD_bidiag}) with
-memory-bound kernels.
+bandwidth-bound kernels.
 Since the first stage is a compute-intensive
 algorithm and represents the dominant part of the process,
 it significantly increases the overall performance of the

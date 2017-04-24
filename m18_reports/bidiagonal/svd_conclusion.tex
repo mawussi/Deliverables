@@ -1,11 +1,11 @@
 \section{Concluding remarks}\label{sec:conclusion}
-In this paper we have studied different algorithms for
+We have studied different algorithms for
 the two-stage bidiagonalization with
 a special focus on the first stage:
 reduction from a full matrix to a band bidiagonal form.
 We proved that even though the late update strategy
 is simple to implement and follows the LAPACK-style,
-it suffers from numerous synchronisation points that could be
+it suffers from numerous synchronisation points that can be
 released by the early update approach.
 
 We also discuss potential improvements by relaxing
@@ -24,7 +24,7 @@ reduction of band bidiagonal matrix to bidiagonal form,
 we have identified two potential solutions which are
 currently in development.
 
-Since this work focused on square matrices,
+Since this work focused on square and regular rectangular matrices,
 future work will be devoted to designing specialized kernels
 for very tall matrices
 (number of rows more than 3x the number of columns)

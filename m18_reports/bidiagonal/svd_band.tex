@@ -1,39 +1,33 @@
 \section{Reduction  to band bidiagonal form}
 \label{sec:band}
-The idea of using a tile algorithm to factorize a full matrix into
-a band bidiagonal one is not new.
-The approach was first introduced in 2010 by
-Dongarra~et~al\@.~\cite{ltaief2010parallel},
-and improved in 2013~\cite{haidar2013improved}
-by the same authors.
-This section aims at evaluating different options for
-designing such an algorithm
-before moving to the second stage of the factorization.
+The idea of using a tile algorithm to factorize a full matrix into a
+band bidiagonal one is not new.  The approach was first introduced in
+2010 by Dongarra~et~al\@.~\cite{ltaief2010parallel}, and improved in
+2013~\cite{haidar2013improved} by the same authors.  This section aims
+at evaluating different options for designing such an algorithm before
+moving to the second stage of the factorization.
 
-We identified two main design options:
-(1) a ``late update'' strategy, and
-(2) an ``early update'' strategy.
-Each of these strategies are introduced
-and assessed in the subsections below.
+We identified two main design options: (1) a ``late update'' strategy
+which is the algorithm implemented in Plasma-2.8.0 but with the QUARK
+runtime system, and (2) an ``early update'' strategy that we introduce
+to address some limitations of the ``late update'' strategy.  Each of
+these strategies are introduced and assessed in the subsections below.
 
 \subsection{Late update strategy}
 To reduce a full $mt \times nt$ tile matrix $A$ to a band bidiagonal
-form, the late update strategy begins by applying a QR
-factorization to the first panel $A(1:mt,1)$ (using MATLAB indexing)
-(see Figure~\ref{fig:qr_1}), then updating the trailing
-submatrix $A(1:mt,2:nt)$ (Figure~\ref{fig:qr_update_1}), followed
-by an LQ factorization of the first tile-row,
-ignoring the first column (Figure~\ref{fig:lq_1}),
-and the update of the corresponding trailing matrix
-(Figure~\ref{fig:lq_update_1}).
-This procedure is repeated until the whole matrix is reduced to
-band bidiagonal form, as illustrated in Figure~\ref{fig:panel}.
-It is important to notice that we describe this strategy
-at the tile-column (panel) and tile-row granularity but
-tile algorithms are used underneath to process each panel
-and the update of the trailing matrix.
-We can think of this as a direct translation of the LAPACK
-column-oriented procedure into a
+form, the late update strategy begins by applying a QR factorization
+to the first panel $A(1:mt,1)$ (using MATLAB indexing) (see
+Figure~\ref{fig:qr_1}), then updating the trailing submatrix
+$A(1:mt,2:nt)$ (Figure~\ref{fig:qr_update_1}), followed by an LQ
+factorization of the first tile-row, ignoring the first column
+(Figure~\ref{fig:lq_1}), and the update of the corresponding trailing
+matrix (Figure~\ref{fig:lq_update_1}).  This procedure is repeated
+until the whole matrix is reduced to band bidiagonal form, as
+illustrated in Figure~\ref{fig:panel}.  It is important to notice that
+we describe this strategy at the tile-column (panel) and tile-row
+granularity but tile algorithms are used underneath to process each
+panel and the update of the trailing matrix.  We can think of this as
+a direct translation of the LAPACK column-oriented procedure into a
 more modern tile-based algorithm.
 
 \begin{figure}[h!]
@@ -91,28 +85,21 @@ more modern tile-based algorithm.
     \label{fig:panel}}
 \end{figure}
 
-The main advantage of this strategy is its simplicity,
-the algorithm is very close to the LAPACK version.
-However,
-the individual steps of the QR factorization illustrated in
-Figure~\ref{fig:rect_panel}
-show that a full factorization of a panel
-starts with the $QR$ factorization of the first tile
-(Figure~\ref{fig:geqrt_1}), which means only one CPU core is busy
-while the others remain idle.
-Once the first tile is factorized, the
-rest of work (to annihilate the tiles below using the TSQRT
-kernel) can commence.
-Since the elimination procedure modifies the entries of the
-top triangular tile, only one square tile can be eliminated at a time
-to guarantee a correct result.
-Put differently,
-the panel factorization introduces synchronization points
-in the algorithm that
-may lead to performance penalties.
-The sequential nature of the panel factorization can be
-clearly observed in Figure~\ref{fig:dag_panel},
-which shows the DAG of the corresponding operations.
+The main advantage of this strategy is its simplicity, as the algorithm
+is very close to the LAPACK version.  However, the individual steps of
+the QR factorization illustrated in Figure~\ref{fig:rect_panel} show
+that a full factorization of a panel starts with the $QR$
+factorization of the first tile (Figure~\ref{fig:geqrt_1}), which
+means only one CPU core is busy while the others remain idle.  Once
+the first tile is factorized, the rest of work (to annihilate the
+tiles below using the TSQRT kernel) can commence.  Since the
+elimination procedure modifies the entries of the top triangular tile,
+only one square tile can be eliminated at a time to guarantee a
+correct result.  Put differently, the panel factorization introduces
+synchronization points in the algorithm that may lead to performance
+penalties.  The sequential nature of the panel factorization can be
+clearly observed in Figure~\ref{fig:dag_panel}, which shows the DAG of
+the corresponding operations.
 
 \begin{figure}
   \begin{center}
@@ -125,26 +112,22 @@ which shows the DAG of the corresponding operations.
 \end{figure}
 
 One can overcome this synchronization issue by overlapping the panel
-factorization and the update steps.
-As long as we respect the data dependencies, the algorithm can then progress onto the next step even
-though the previous step is not completed.
-In addition, when working on a panel we can
-take advantage of ``tall and skinny'' QR factorization
-strategies:
-providing elegant methods to introduce parallelism
-during a panel factorization.
-This leads us to the early update strategy.
+factorization and the update steps.  As long as we respect the data
+dependencies, the algorithm can then progress onto the next step even
+though the previous step is not completed.  In addition, when working
+on a panel we can take advantage of ``tall and skinny'' QR
+factorization strategies which provide elegant methods to introduce
+parallelism during a panel factorization.  This leads us to the early
+update strategy.
 
 \subsection{Early update strategy}
-To reduce a full tile matrix to a band bidiagonal form,
-the early update strategy also completes the QR factorization
-of the first panel and the update before starting the LQ process,
-but the operations are launched in a completely different order.
-Instead of completing the full factorization of a panel
-before applying the updates as before,
-the early update strategy looks down the panel,
-factorizes each tile, and then launches
-its corresponding updates immediately.
+To reduce a full tile matrix to a band bidiagonal form, the early
+update strategy also completes the QR factorization of the first panel
+and the update before starting the LQ process, but the operations are
+launched in a completely different order.  Instead of completing the
+full factorization of a panel before applying the updates as before,
+the early update strategy looks down the panel, factorizes each tile,
+and then launches its corresponding updates immediately.
 
 As depicted in Figure~\ref{fig:tile}, the algorithm starts with the
 factorization of the tile $A(1,1)$ (Figure~\ref{fig:tile_qr_1}),
@@ -241,19 +224,16 @@ The same approach is used during the LQ factorization step.
     \label{fig:tile}}
 \end{figure}
 
-As illustrated in the DAG (Figure~\ref{fig:dag_tile}),
-the early update approach considerably reduces the severity of the
-synchronization points.
-However,
-all the ZUNMQR kernels in charge of updating the
-first tile-row have to be completed before starting
-any TSQRT kernels,
-since the ZUNMQR kernels use the entries of the top left tile and
-those entries will be overwritten if any TSQRT kernels are
-launched before the end of the first tile-row update.
-This explains the bottleneck at TSQRT(2,1) in the DAG.
-But the completion of the first TSQRT kernel unlocks many tasks
-and leads to high levels of parallelism.
+As illustrated in the DAG (Figure~\ref{fig:dag_tile}), the early
+update approach considerably reduces the severity of the
+synchronization points.  However, all the ZUNMQR kernels in charge of
+updating the first tile-row have to be completed before starting any
+TSQRT kernels, since the ZUNMQR kernels use the entries of the top
+left tile and those entries will be overwritten if any TSQRT kernels
+are launched before the end of the first tile-row update.  This
+explains the bottleneck at TSQRT(2,1) in the DAG.  But the completion
+of the first TSQRT kernel unlocks many tasks and leads to high levels
+of parallelism.
 
 
 \begin{figure}[h!]
@@ -267,18 +247,17 @@ and leads to high levels of parallelism.
 \end{figure}
 
 \subsection{Experimental results}
-In order to assess the performance of each strategy,
-we design an OpenMP task-based version of each of the two strategies.
-In all the experiments within this section,
-we compare these strategies to the PLASMA 2.8.0 kernel
-designed for reduction of a full matrix to band bidiagonal form.
-The experiments have been performed on a
-NUMA node (two-socket Xeon(R) CPU E5-2650 v3 @ 2.30GHz--Haswell)
-and a 68-core
-Intel KNL\footnote{\url{https://ark.intel.com/products/94035/Intel-Xeon-Phi-Processor-7250-16GB-1\_40-GHz-68-core}}
-and all the computations are done in double precision arithmetic.
-The performance (GFlop/s) displayed is calculated by dividing the
-standard theoretical flops by the time to solution.
+In order to assess the performance of each strategy, we design an
+OpenMP task-based version of each of the two strategies.  In all the
+experiments within this section, we compare these strategies to the
+PLASMA 2.8.0 kernel designed for reduction of a full matrix to band
+bidiagonal form.  The experiments have been performed on a NUMA node
+(two-socket Xeon(R) CPU E5-2650 v3 @ 2.30GHz--Haswell) and a 68-core
+Intel
+KNL\footnote{\url{https://ark.intel.com/products/94035/Intel-Xeon-Phi-Processor-7250-16GB-1\_40-GHz-68-core}}
+and all the computations are done in double precision arithmetic.  The
+performance (GFlop/s) displayed is calculated by dividing the standard
+theoretical flops by the time to solution.
 
 \begin{figure}[h!]
   \begin{subfigure}[t]{0.5 \textwidth}
@@ -327,7 +306,7 @@ bandwidth four times greater than the DDR4 bandwidth,
 but with the storage capacity limited to 16GB.
 There are different configuration options
 of MCDRAM, but in this experiment it has been configured
-in flat mode i\@.e\@.~the 16GB memory can be directly allocated from within
+in flat mode, i\@.e\@.,~the 16GB memory can be directly allocated from within
 an application as is the case for DDR4.
 In our experiments we provide results for both DDR4 and MCDRAM.
 
@@ -347,7 +326,7 @@ speed.
 We obtained a similar result on a NUMA node (2x Intel Xeon(R)
 CPU E5-2650 v3) using 20 threads and 10 threads in
 Figure~\ref{fig:dge2gb_HASWELL_20} and
-Figure~\ref{fig:dge2gb_HASWELL_20} respectively.
+Figure~\ref{fig:dge2gb_HASWELL_10} respectively.
 However, unlike for the 68-core Intel KNL,
 the late update strategy exhibits a more severe
 performance penalty.
@@ -377,14 +356,14 @@ left corner tile $A(1,1)$ as input (read dependency), while the TSQRT
 kernel in charge of the elimination of the square tiles in the panel
 modifies $A(1,1)$ (read and write dependency). The update kernel then
 waits until the completion of the panel factorization. But a further
-analysis of the algorithm helps to realize that as illustrated in
-Figure~\ref{fig:rect_panel}, that once $A(1,1)$ is factorized the
+analysis of the algorithm shows that, as illustrated in
+Figure~\ref{fig:rect_panel}, once $A(1,1)$ is factorized the
 elimination operations applied to the rest of the panel modify only
 the upper triangular part of $A(1,1)$. On the other hand, the update
 of the first tile-row requires only reflectors stored in the lower
 triangular part of $A(1,1)$.
 Therefore the panel factorization and the update of
-the first tile-row could be done in parallel.
+the first tile-row can be done in parallel.
 
 Currently our OpenMP implementation supports dependencies only
 between full tiles.
@@ -424,7 +403,7 @@ lower triangular by \texttt{\#pragma omp task depend(in:B[1])} (one is
 the starting index of the lower triangular tile).
 
 Expressing tile dependency at upper/lower triangular
-granularity helps us achieving a highly parallel kernel as
+granularity helps us to achieve a highly parallel kernel, as
 demonstrated by the corresponding DAG depicted in Figure~\ref{fig:dag_hack}.
 \begin{wrapfigure}{r}{0.5\textwidth}
   \begin{center}
@@ -441,7 +420,7 @@ We also applied this modification to the early update strategy
 to remove the synchronisation point observed previously.
 In fact, since we are working at the triangular tile granularity this
 releases all unnecessarily dependencies,
-the panel and tile strategies should provide comparative results.
+so the panel and tile strategies should provide comparative results.
 
 To assess the effectiveness of this improvement,
 We reproduced the same experiments but now with
@@ -460,7 +439,7 @@ performance achieved by the early update strategy
 compared to the results in Figure~\ref{fig:dge2gb_KNL} where all dependencies
 were expressed at full tile granularity.
 We have also observed similar results for the experiments
-illustrated in Figure~\ref{fig:dge2gb_HASWELL} with the Intel Haswell NUMA node.
+illustrated in Figure~\ref{fig:dge2gb_HASWELL_HACK} with the Intel Haswell NUMA node.
 
 
 \begin{figure}[h!]
@@ -486,13 +465,13 @@ illustrated in Figure~\ref{fig:dge2gb_HASWELL} with the Intel Haswell NUMA node.
 \begin{figure}[h!]
   \begin{subfigure}[t]{0.5 \textwidth}
     \includegraphics[width=\textwidth]{fig/dge2gb_HASWELL_HACK}
-    \caption{\label{fig:dge2gb_HASWELL_20}
+    \caption{\label{fig:dge2gb_HASWELL_HACK_20}
       Results with 20 threads}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5 \textwidth}
     \includegraphics[width=\textwidth]{fig/dge2gb_HASWELL_HACK_10}
-    \caption{\label{fig:dge2gb_HASWELL_10}
+    \caption{\label{fig:dge2gb_HASWELL_HACK_10}
       Results with 10 threads}
   \end{subfigure}
   \caption{Performance comparison of different implementations of
@@ -504,7 +483,7 @@ illustrated in Figure~\ref{fig:dge2gb_HASWELL} with the Intel Haswell NUMA node.
     experiment with 10 threads used only one 10-core socket.
     The code has been modified to  express some
     data dependencies at \texttt{upper/lower triangular tile} granularity.}
-  \label{fig:dge2gb_HASWELL}
+  \label{fig:dge2gb_HASWELL_HACK}
 \end{figure}
 
 As reported in~\cite{haidar2013improved},
